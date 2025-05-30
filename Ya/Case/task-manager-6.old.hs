@@ -169,3 +169,8 @@ initial = Construct `ho` to @(Scrolling List)
    `he____` Last `he_` Node `he` Task (TODO Unit) "Keep Talking and Nobody Explodes" `he` Empty @List Unit
 
 main = unwrap (process `he'he` initial)
+
+
+type Modal = Task `P` Shafted List Task `S` Scrolling List Task
+
+toggle = is @Modal `ha_______` wrap `la___` unwrap
