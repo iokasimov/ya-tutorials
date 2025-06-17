@@ -52,9 +52,9 @@ render dimmed = shaft @List `hv` by Passed `ho` this `ho_'yokl` Prior `ha` Run `
 
 press k f p = Maybe `hv___` k `hv` Unit `hd'q` p `yui` Unit `yiu` f Unit
 
-type Panel = Scrolling List Task
+-- (Lower `ha` J `hv` Unit `hd'q`)
 
-relay = switch
+type Panel = Scrolling List Task
 
 explore' :: ASCII `AR____` Maybe (Event `T'I` Mode `P` Panel `T'I` Unit)
 explore' = is @(ASCII `M` Glyph `S_` Glyph `M` Letter) `hu` by Wrong

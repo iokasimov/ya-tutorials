@@ -151,7 +151,7 @@ process = intro @Application
   `la_____` State `ho` to `ha__` Transition `ha_` scroll @Tree `ho'ho` (`yui` Unit)
   `ho_'ha'he` Scope @(Focused Project) at
      `ho'he` Scope @Project it
-  `la_____` State `ho` to `ha__` Transition `ha_` switch `ho'ho` (`yui` Unit)
+  `la_____` State `ho` to `ha__` Transition `ha_` relay `ho'ho` (`yui` Unit)
   `ho_'ha'he` Scope @(Focused Project) at
    `ho'he'he` Scope @(Leveled Tree Item) at
    `ho'he'he` Scope @(Focused `T'I` Tree Item) at

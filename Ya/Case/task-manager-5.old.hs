@@ -95,7 +95,7 @@ draft = intro @Application
  `lo'ys'la` press `he` Upper D `he` (Mark `ha` DONE)
      `la` Wrong `hv` is @(Number `ML` Symbol `ML` Caret)
  `yok___` State `ho` to `ha__` Transition `ha_` scroll `ho'ho` (`yui` Unit)
-  `la___` State `ho` to `ha__` Transition `ha_` switch `ho'ho` (`yui` Unit)
+  `la___` State `ho` to `ha__` Transition `ha_` relay `ho'ho` (`yui` Unit)
   `ho_'ha'he` Scope @(Focused Project) at
    `ho'he'he` Scope @((Scrolling List `T'TT'I` Tree) Task) at
    `ho'he'he` Scope @(Focused `T'I` Tree Task) at

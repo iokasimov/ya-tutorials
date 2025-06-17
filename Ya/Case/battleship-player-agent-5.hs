@@ -95,10 +95,10 @@ unstock ship = intro @(State `T'I` Target `P` Fleet `P` Board Cell `JNT_` Reach 
  `yuk___` New `ha` State `hv__` Event `ha` locate `ha` (by Fore `lu`) `ha` Predicate `ha` exact `ha` Same `hv` ship `ha_` Scope `hv` at @Fleet `ho` Scope (as @(Scrolling List))
  `yok___` Try `ha__` Error `hu_` Reach @Result `ha` Fault `hv` ship `la` Ok
  `yok___` Try `ha__` Empty @List `hu_` Reach @Result `hv` by Smash `la` Ok `ha__` at @(Shafted List Ship) `he'ho` this `ho` to @List
- `yok___` New `ha` State `ha__` Event `ha` switch `ho_'ha` Scope `hv` at @Fleet
- `yuk___` New `ha` State `hv___` Event `ha` switch `hv_` by `hv` Empty @List `ha__` Scope `hv` at @(Board Cell) `ho_` Scope `hv` focus
+ `yok___` New `ha` State `ha__` Event `ha` relay `ho_'ha` Scope `hv` at @Fleet
+ `yuk___` New `ha` State `hv___` Event `ha` relay `hv_` by `hv` Empty @List `ha__` Scope `hv` at @(Board Cell) `ho_` Scope `hv` focus
  `yok___` New `ha` State `ha___` Event `ha` across `ho__'ha` Scope `hv` at @(Board Cell) `ho_` Scope `ha` shaft `hv` by Passed
- `yuk___` New `ha` State `hv___` Event `ha` switch `hv_` by `hv` None `ha__` Scope `hv` at @Target
+ `yuk___` New `ha` State `hv___` Event `ha` relay `hv_` by `hv` None `ha__` Scope `hv` at @Target
 
 exact sample item = Wrong `hu` by False `la` Valid `hu` by True `li` sample `hd'q` item
 -- exact sample item = sample `hd'q` item `yui` Unit `yiu` Unit `yi_` Boolean

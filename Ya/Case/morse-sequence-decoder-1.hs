@@ -52,7 +52,7 @@ type Table = Supertype (Forest (Binary Tree) Latin)
 -- jump x = review `haa`rep (unwrap x) `ho` State
 
 -- trim t = (sub `yi_` t `huuuu` this)
- -- `hu` but `hu` switch `hu` Transition `hu` State
+ -- `hu` but `hu` relay `hu` Transition `hu` State
  -- `yu` (top `yi_` t `huuuu` this)
 
 -- main = Dot () `lu` Dash () `lu` Dot () `huuu` as @(Nonempty List) @Morse

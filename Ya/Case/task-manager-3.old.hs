@@ -61,7 +61,7 @@ draft = intro @(State `T'I` Scrolling List Task `JNT` IO)
     `la_` press T (Mark `ha` TODO) `lo'ys'la` press D (Mark `ha` DONE)
     `la_` is @(Number `ML` Symbol `ML` Caret) `hu` Wrong ()
  `yok___` State `ha__` Transition `ha_` scroll `ho'ho` (`yui` ())
-  `la___` State `ha__` Transition `ha_` switch `ho'ho` (`yui` ())
+  `la___` State `ha__` Transition `ha_` relay `ho'ho` (`yui` ())
     `ho_'ha'he` Scope @(Focused Task) at `ho'he` Scope @Mark at
  `yok___` Again `ha` Once
 
