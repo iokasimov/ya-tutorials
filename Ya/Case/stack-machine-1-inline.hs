@@ -1,7 +1,7 @@
 import Ya
 import Ya.ASCII
 import Ya.Expo.ASCII
-import Ya.Expo.Instances
+import Ya.Instances
 import Ya.Expo.Terminal
 
 import "base" Data.Int (Int)

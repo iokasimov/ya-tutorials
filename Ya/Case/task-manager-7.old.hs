@@ -4,7 +4,7 @@ import "base" System.IO (IO)
 import "ya-world" Ya.World
 import "ya-ascii" Ya.ASCII
 import "ya-console" Ya.Console
-import "ya-tutorials" Ya.Expo.Instances
+import "ya-tutorials" Ya.Instances
 
 import qualified "ya-tutorials" Ya.Expo.Terminal as Console
 

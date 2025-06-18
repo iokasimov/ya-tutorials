@@ -1,7 +1,7 @@
 import Ya
 import Ya.World
 import Ya.ASCII
-import Ya.Expo.Instances ()
+import Ya.Instances ()
 import Ya.Expo.ASCII
 import Ya.Expo.Terminal
 

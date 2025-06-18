@@ -1,4 +1,4 @@
-module Ya.Expo.Instances where
+module Ya.Instances where
 
 import Ya
 

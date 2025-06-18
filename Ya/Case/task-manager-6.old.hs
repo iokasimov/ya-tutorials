@@ -3,7 +3,7 @@ import Ya
 import "base" System.IO (IO, print)
 import "ya-ascii" Ya.ASCII
 import "ya-tutorials" Ya.Expo.ASCII
-import "ya-tutorials" Ya.Expo.Instances
+import "ya-tutorials" Ya.Instances
 import "ya-tutorials" Ya.Expo.Terminal
 
 import qualified "ya-tutorials" Ya.Expo.Terminal as Console
