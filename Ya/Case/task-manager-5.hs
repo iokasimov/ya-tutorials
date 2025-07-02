@@ -32,7 +32,7 @@ hand cursor = is @Title `hv__` Bullet `hu` "  -  " `la` Cursor `hu` "  -> " `li`
 
 mark status = is @Title `hv__` TODO `hu` "TODO " `la` DONE `hu` "DONE " `li` status
 
-press k f p = Maybe `hv___` k `hv` Unit `hd'q` p `yui` Unit `yiu` f Unit
+press k f p = Maybe `hv___` k `hv` Unit `lu'q` p `yui` Unit `yiu` f Unit
 
 apply = is @(ASCII `M` Glyph `S_` Glyph `M` Letter) `hu` by Wrong
   `la____` press `hv` (Lower `ha` J) `hv` (Move `ha` Down)

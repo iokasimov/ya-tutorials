@@ -38,7 +38,7 @@ type Command = Move `S` Mark
 pattern Move x = This x :: Command
 pattern Mark x = That x :: Command
 
-press k f p = Maybe `he___` k `hd'q` p `yui` Unit `yiu` f Unit
+press k f p = Maybe `he___` k `lu'q` p `yui` Unit `yiu` f Unit
 
 apply = is @(ASCII `MN` Glyph `S_` Glyph `MN` Letter) `hu` Wrong Unit
  `la____` press `hv` Lower J `hv` (Move `ha` Down)

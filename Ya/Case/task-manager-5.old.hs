@@ -65,7 +65,7 @@ block_project prefix cursor project = intro @IO
 hand = is @Title `ha__` is `hu` "   * " `la` is `hu` "  -> "
 mark = is @Title `ha__` is `hu` "TODO " `la` is `hu` "DONE "
 
-press k f p = Maybe `he___` k `hd'q` p `yui` Unit `yiu` f Unit
+press k f p = Maybe `he___` k `lu'q` p `yui` Unit `yiu` f Unit
 
 type Project = Scrolling Tree Task
 

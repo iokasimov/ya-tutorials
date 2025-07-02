@@ -50,9 +50,9 @@ render dimmed = shaft @List `hv` by Passed `ho` this `ho_'yokl` Prior `ha` Run `
  `lo__'yp` Await `ha__` focus @Only `ho` this `ho_'yokl` Forth `ha` Run `ha` print (by Reveal) (by Cursor)
  `lo__'yp` Await `ha__` shaft @List `hv` by Future `ho` this `ho_'yokl` Forth `ha` Run `ha` print dimmed (by Bullet)
 
-press k f p = Maybe `hv___` k `hv` Unit `hd'q` p `yui` Unit `yiu` f Unit
+press k f p = Maybe `hv___` k `hv` Unit `lu'q` p `yui` Unit `yiu` f Unit
 
--- (Lower `ha` J `hv` Unit `hd'q`)
+-- (Lower `ha` J `hv` Unit `lu'q`)
 
 type Panel = Scrolling List Task
 

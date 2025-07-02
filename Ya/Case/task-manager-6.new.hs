@@ -102,8 +102,8 @@ render = is `hu_` output `ha` Caret `hv` by Newline
   -- `la` Heap `ha` Caret `ha` Space
   -- `la` Delete `hu` by Stop
 
-press k f p = Maybe `hv___` k `hv` Unit `hd'q` p `yui` Unit `yiu` f Unit
--- press k f p = Maybe `hv___` k `hd'q` p `yui` Unit `yiu` f Unit
+press k f p = Maybe `hv___` k `hv` Unit `lu'q` p `yui` Unit `yiu` f Unit
+-- press k f p = Maybe `hv___` k `lu'q` p `yui` Unit `yiu` f Unit
 
 type Result = Scrolling List Task
 
@@ -128,7 +128,7 @@ searchbar = push `ho_'ho'yoi` Some `ha` Fore `ha_'he` Glyph
 filter title = intro @(State `T'I` Task) Unit
  `yuk__` New `ha` State `hv__` Event `ha` locate `ha` (by Fore `lu`) `ha` Predicate `ha` exact `hv` title `ha_` Scope `hv` at @Description
 
-exact sample item = Wrong `hu` by False `la` Valid `hu` by True `li` sample `hd'q` item
+exact sample item = Wrong `hu` by False `la` Valid `hu` by True `li` sample `lu'q` item
 
 update x = intro @(State `T'I` Interface) Unit
  `yuk____` New `ha` State `hv__` Event `hv` searchbar x `ha_` Scope `hv` at @Title

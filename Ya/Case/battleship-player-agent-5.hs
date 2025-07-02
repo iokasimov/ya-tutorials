@@ -100,8 +100,8 @@ unstock ship = intro @(State `T'I` Target `P` Fleet `P` Board Cell `JNT_` Reach 
  `yok___` New `ha` State `ha___` Event `ha` across `ho__'ha` Scope `hv` at @(Board Cell) `ho_` Scope `ha` shaft `hv` by Passed
  `yuk___` New `ha` State `hv___` Event `ha` relay `hv_` by `hv` None `ha__` Scope `hv` at @Target
 
-exact sample item = Wrong `hu` by False `la` Valid `hu` by True `li` sample `hd'q` item
--- exact sample item = sample `hd'q` item `yui` Unit `yiu` Unit `yi_` Boolean
+exact sample item = Wrong `hu` by False `la` Valid `hu` by True `li_` sample `lu'q` item
+-- exact sample item = sample `lu'q` item `yui` Unit `yiu` Unit `yi_` Boolean
 
 across sunk passed = that @(List Cell) `ha` pop `hv` sunk `yokl` Forth `ha` Run `ha` State `ha` Event `ha` push `he'he'hv___` passed
 
@@ -167,10 +167,10 @@ fresh = to @List `hv` by enemy
  `lu'yp` Align `hv` (to @List `hv` guess)
  `yi` to @(Sliding List)
 
-title x = is @(List ASCII) x `yokl` Forth `ha` World `ha` output
+title x = is @(List ASCII) x `yokl` Run `ha` World `ha` output
 
-print x = x `yokl_` Forth `ha` World `ha___` is @Ship
- `ho__'yukl` Forth `ha` World `ha` output `ha` Glyph `ha` Symbol `ha` Punctuate `hv` by Hash
+print x = x `yokl_` Run `ha` Run `ha___` is @Ship
+ `ho__'yukl` Run `ha` Run `ha` output `ha` Glyph `ha` Symbol `ha` Punctuate `hv` by Hash
  `ho__'yuk` World `ha` output `ha` Caret `hv` by Space
 
 smash _ = intro @World Unit

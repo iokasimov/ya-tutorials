@@ -17,7 +17,7 @@ print cursor title = intro @World Unit
 
 type Move = Shifter List
 
-press k f p = Maybe `hv___` k `hv` Unit `hd'q` p `yui` Unit `yiu` f Unit
+press k f p = Maybe `hv___` k `hv` Unit `lu'q` p `yui` Unit `yiu` f Unit
 
 apply = is @(ASCII `M` Glyph `S_` Glyph `M` Letter) `hu` by Wrong
  `la____` (press `hv` (Lower `ha` J) `hv` Down)

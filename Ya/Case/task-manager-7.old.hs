@@ -93,7 +93,7 @@ level = Glyph `ha` Symbol `ha` Punctuation `ha` Hyphen `he` Unit
 hand = is @Title `ha__` is `hu` "    " `la` is `hu` "--> "
 mark = is @Title `ha__` is `hu` "TODO" `la` is `hu` "DONE"
 
-press k f p = Maybe `he___` k `hd'q` p `yui` Unit `yiu` f Unit
+press k f p = Maybe `he___` k `lu'q` p `yui` Unit `yiu` f Unit
 
 apply = press `he` Lower P `he` (Move `ha` Outline `ha` Down)
  `lo'ys'la` press `he` Lower N `he` (Move `ha` Outline `ha` Lift)

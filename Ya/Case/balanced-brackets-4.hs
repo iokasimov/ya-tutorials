@@ -20,7 +20,7 @@ analyze bracket = intro @(State `T'I` List Shape `JNT` Error Imbalance) Unit
  `yok__` Try `ha__` None `hu_` Error @Imbalance `ha` Missing `ha` Opened `hv` bracket `la` Valid
  `yok__` Try `ha__` Error @Imbalance `ha` Mismatch `la` Valid `ha_` compare bracket
 
-compare closed opened = opened `hd'q` closed
+compare closed opened = opened `lu'q` closed
 
 remnant = Empty @List `hu` by Valid
   `la` Error @Imbalance `ha` Missing `ha` Closed `ha` this @Shape `ha` top @(Nonempty List)

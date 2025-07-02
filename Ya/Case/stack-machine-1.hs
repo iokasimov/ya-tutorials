@@ -29,9 +29,9 @@ type Machine item = State `T'I` List item `JNT` Halts
 initial = Construct
  `ha` (Item `hv` Immediate 1) `ha` Next
  `ha` (Item `hv` Immediate 2) `ha` Next
- `ha` (Item `hv` Operation (is `ho'hd` (+))) `ha` Next
+ `ha` (Item `hv` Operation (is @(Integer `P` Integer) `ho'hd` (+))) `ha` Next
  `ha` (Item `hv` Immediate 4) `ha` Next
- `ha` (Item `hv` Operation (is `ho'hd` (+))) `ha` Last
+ `ha` (Item `hv` Operation (is @(Integer `P` Integer) `ho'hd` (+))) `ha` Last
 
 main = error `la` this `he'ho` trace
  `hv_______` by `hv` initial
