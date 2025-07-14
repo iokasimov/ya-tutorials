@@ -62,7 +62,7 @@ explore' = is @(ASCII `M` Glyph `S_` Glyph `M` Letter) `hu` by Wrong
  `lo'ys'la` First `ha` press (Lower `ha` K) (Event `ha` shift `ha` Lift `ho__'ha` Scope `hv` at @Panel `ho__'ho` is `hu` Unit)
  `lo'ys'la` First `ha` press (Upper `ha` T) (Event `ha` relay `ha` TODO `ho__'ha` Scope `hv` at @Panel `ho_` Scope `hv` focus `ho_'he` Scope `hv` at @Mark `ho__'ho` is `hu` Unit)
  `lo'ys'la` First `ha` press (Upper `ha` D) (Event `ha` relay `ha` DONE `ho__'ha` Scope `hv` at @Panel `ho_` Scope `hv` focus `ho_'he` Scope `hv` at @Mark `ho__'ho` is `hu` Unit)
- `ha_____` on @Glyph `ho'ho` on @Letter `ho` row
+ `ha_____` on @Glyph `ho'ho` on @Letter `ho` unwrap @(AR)
 
 pattern Mode x = That x
 
@@ -83,8 +83,8 @@ explore = press (Caret `ha` Newline) (Mode `ha` Focused)
  `lo'ys'la` First `ha` press (Glyph `ha` Letter `ha` Upper `ha` D) (Mark `ha` DONE)
 
 focused = Some `ha'he` Pile
- `la____` press (Newline) (Mode `ha` Explore) `ha'he` is
- `lo'ys'la` First `ha` press (Delete) (Drop) `ha'he` is
+ `la____` press (Newline) (Mode `ha` Explore) `ha` is
+ `lo'ys'la` First `ha` press (Delete) (Drop) `ha` is
 
 type Command = Explore `S` Focused
 
@@ -103,12 +103,12 @@ draft = intro @(State `T'I` Mode `P` Scrolling List Task `JNT` World) Unit
  `yok____` Run `ha'hd` render
  `yuk____` Old `ha` State `hv__` Event `hv` auto `ha_` Scope `hv` at @Mode
  `yok____` Run `ha__` command
- `yok____` New `ha` State `ha___` Event `ha` (shift `ho'ho'yui` Unit) `ho__'ha` Scope `hv` at @Panel
-   `la___` New `ha` State `ha___` Event `ha` (relay `ho'ho'yui` Unit) `ho__'ha` Scope `hv` at @Panel `ho_` Scope `hv` focus `ho_'he` Scope `hv` at @Mark
-   `la___` New `ha` State `ha___` Event `ha` (relay `ho'ho'yui` Unit) `ho__'ha` Scope `hv` at @Mode
-  `la____` New `ha` State `ha___` Event `ha` ((\_ -> pop) `ho'ho'yui` Unit) `ho__'ha` Scope `hv` at @Panel `ho_` Scope `hv` focus `ho_'he` Scope `hv` at @Title
-   `la___` New `ha` State `ha___` Event `ha` (push `ha` Glyph `ho'ho'yui` Unit) `ho__'ha` Scope `hv` at @Panel `ho_` Scope `hv` focus `ho_'he` Scope `hv` at @Title
-   `la___` New `ha` State `ha___` Event `ha` (relay `ho'ho'yui` Unit) `ho__'ha` Scope `hv` at @Mode
- `yok____` Again `ha` Once
+ -- `yok____` New `ha` State `ha___` Event `ha` (shift `ho'ho'yui` Unit) `ho__'ha` Scope `hv` at @Panel
+   -- `la___` New `ha` State `ha___` Event `ha` (relay `ho'ho'yui` Unit) `ho__'ha` Scope `hv` at @Panel `ho_` Scope `hv` focus `ho_'he` Scope `hv` at @Mark
+   -- `la___` New `ha` State `ha___` Event `ha` (relay `ho'ho'yui` Unit) `ho__'ha` Scope `hv` at @Mode
+  -- `la____` New `ha` State `ha___` Event `ha` ((\_ -> pop) `ho'ho'yui` Unit) `ho__'ha` Scope `hv` at @Panel `ho_` Scope `hv` focus `ho_'he` Scope `hv` at @Title
+   -- `la___` New `ha` State `ha___` Event `ha` (push `ha` Glyph `ho'ho'yui` Unit) `ho__'ha` Scope `hv` at @Panel `ho_` Scope `hv` focus `ho_'he` Scope `hv` at @Title
+   -- `la___` New `ha` State `ha___` Event `ha` (relay `ho'ho'yui` Unit) `ho__'ha` Scope `hv` at @Mode
+ -- `yok____` Again `ha` Once
 
 main = draft `he'he'hv` (Explore `lo` start `li` Unit)

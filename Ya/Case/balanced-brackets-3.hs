@@ -25,7 +25,7 @@ remnant = Empty @List `hu` by Valid
 inspect code = code
  `yokl_` Forth `ha` Run @(State `T'I` List Shape `JNT` Error Imbalance)
  `ha___` Some `hu` intro Unit `la_` is @Bracket `ho_` (deposit `la` analyze) `ho'yu` Unit
- `ha___` on @Glyph `ho'ho` on @Symbol `ho` row `ho'ho` on @Bracket `ho` row
+ `ha___` on @Glyph `ho'ho` on @Symbol `ho'he` is `ho'ho` on @Bracket `ho'he` is
  `he'he'hv____`by `hv` Empty @List
  `yok__` Try `ha` remnant `ha'he` that @(List Shape)
 
