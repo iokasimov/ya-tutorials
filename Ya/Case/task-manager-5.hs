@@ -32,7 +32,7 @@ hand cursor = is @Title `hv__` Bullet `hu` "  -  " `la` Cursor `hu` "  -> " `li`
 
 mark status = is @Title `hv__` TODO `hu` "TODO " `la` DONE `hu` "DONE " `li` status
 
-press k f p = Maybe `hv___` k `hv` Unit `lu'q` p `yui` Unit `yiu` f Unit
+press k f p = Maybe `hv___` k `hv` Unit `lu'q` p `yi` elide `yiu` f Unit
 
 apply = is @(ASCII `M` Glyph `S_` Glyph `M` Letter) `hu` by Wrong
   `la____` press `hv` (Lower `ha` J) `hv` (Move `ha` Down)
@@ -47,13 +47,16 @@ start = to @(Scrolling List) `ha` Nonempty @List @Task
  `ha_` Last `ho` Item (by DONE `lu` "Buy a water gun for Songkran")
 
 draft = intro @(State `T'I` Scrolling List Task `JNT` World) Unit
- `yuk___` World `hv__` prepare `lu'yp` Await `hv` clear
- `yuk___` State `ho` Old `hv___` Event `hv` auto `ha_` Scope `ha` shaft `hv` by Passed `yok___` World `ha_'yokl` Prior `ha` Run `ha` print (by Bullet)
- `yuk___` State `ho` Old `hv___` Event `hv` auto `ha_` Scope `hv` focus `ho` Scope it `yok___` World `ha_'yokl` Forth `ha` Run `ha` print (by Cursor)
- `yuk___` State `ho` Old `hv___` Event `hv` auto `ha_` Scope `ha` shaft `hv` by Future `yok___` World `ha_'yokl` Forth `ha` Run `ha` print (by Bullet)
- `yuk___` World `hv___` input `yok` Retry @Command `ha` apply `ha_` on @Glyph `ho'ho` on @Letter `ho` unwrap @(AR)
- `yok___` State `ho` New `ha___` Event `ha` (shift `ho'ho'yui` Unit)
-  `la___` State `ho` New `ha___` Event `ha` (relay `ho'ho'yui` Unit) `ho__'ha` Scope `hv` focus `ho_'he` Scope `hv` at @Mark
- `yok___` Again `ha` Once
+ `yuk____` World `hv__` prepare `lu'yp` Await `hv` clear
+ `yuk____` State `ho` Old `hv___` Event `hv` auto `ha_` Scope `ha` shaft `hv` by Passed `yok____` World `ha_'yokl` Prior `ha` Run `ha` print (by Bullet)
+ `yuk____` State `ho` Old `hv___` Event `hv` auto `ha_` Scope `hv` focus `ho` Scope it `yok____` World `ha_'yokl` Forth `ha` Run `ha` print (by Cursor)
+ `yuk____` State `ho` Old `hv___` Event `hv` auto `ha_` Scope `ha` shaft `hv` by Future `yok____` World `ha_'yokl` Forth `ha` Run `ha` print (by Bullet)
+ `yuk____` World `hv___` input `yok` Retry @Command `ha` apply `ha_` on @Glyph `ho'ho` on @Letter `ho` unwrap @(AR)
+ `yok____` State `ho` New `ha___` Event `ha_` shift `ho'ho` elide @(Optional Task)
+  `la____` State `ho` New `ha___` Event `ha_` relay `ho'ho` elide @Mark
+  `ho__'ha` Scope `hv` focus `ho_'he` Scope `hv` at @Mark
+ `yok____` Again `ha` Once
+
+-- Sieve `hv_` on @Letter `ho` elide
 
 main = draft `he'he'hv` by start

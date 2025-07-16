@@ -102,8 +102,8 @@ render = is `hu_` output `ha` Caret `hv` by Newline
   -- `la` Heap `ha` Caret `ha` Space
   -- `la` Delete `hu` by Stop
 
-press k f p = Maybe `hv___` k `hv` Unit `lu'q` p `yui` Unit `yiu` f Unit
--- press k f p = Maybe `hv___` k `lu'q` p `yui` Unit `yiu` f Unit
+press k f p = Maybe `hv___` k `hv` Unit `lu'q` p `yi` elide `yiu` f Unit
+-- press k f p = Maybe `hv___` k `lu'q` p `yi` elide `yiu` f Unit
 
 type Result = Scrolling List Task
 

@@ -38,7 +38,7 @@ type Command = Move `S` Mark
 pattern Move x = This x :: Command
 pattern Mark x = That x :: Command
 
-press k f p = Maybe `he___` k `lu'q` p `yui` Unit `yiu` f Unit
+press k f p = Maybe `he___` k `lu'q` p `yi` elide `yiu` f Unit
 
 apply = is @(ASCII `MN` Glyph `S_` Glyph `MN` Letter) `hu` Wrong Unit
  `la____` press `hv` Lower J `hv` (Move `ha` Down)
@@ -64,8 +64,8 @@ draft = intro @(State `T'I` Scrolling List Task `JNT` World)
  `yuk___` State `ho` Old `hv___` Event `hv` auto `ha_` Scope `hv` focus `ho` Scope it `yok___` World `ha_'yokl` Forth `ha` Run `ha` print (by Cursor)
  `yuk___` State `ho` Old `hv___` Event `hv` auto `ha_` Scope `ha` shaft `hv` by Future `yok___` World `ha_'yokl` Forth `ha` Run `ha` print (by Bullet)
  `yuk___` World `hv___` input `yok` Retry @Command `ha` apply `ha_` on @Glyph `ho'ho` on @Letter `ho` row
- `yok___` State `ho` New `ha___` Event `ha` (scroll `ho'ho'yui` Unit)
-  `la___` State `ho` New `ha___` Event `ha` (relay `ho'ho'yui` Unit) `ho__'ha` Scope `hv` focus `ho_'he` Scope `hv` at @Mark
+ `yok___` State `ho` New `ha___` Event `ha` (scroll `ho'ho` elide)
+  `la___` State `ho` New `ha___` Event `ha` (relay `ho'ho` elide) `ho__'ha` Scope `hv` focus `ho_'he` Scope `hv` at @Mark
  `yok___` Again `ha` Once
 
 main = draft `he'he'hv` by start
