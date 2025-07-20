@@ -45,7 +45,7 @@ string cursor (These status title) = intro @IO
 hand = is @Title `ha__` is `hu` "   * " `la` is `hu` "   > "
 mark = is @Title `ha__` is `hu` "TODO " `la` is `hu` "DONE "
 
-press k f p = Maybe `he___` k `lu'q` p `yi` elide `yiu` f Unit
+press k f p = Maybe `he___` k `lu'q` p `yi` dim `yiu` f Unit
 
 type Project = Scrolling List Task
 
@@ -72,8 +72,8 @@ process = intro @Application
  `lo'ys'la` press `he` Upper T `he` (Mark `ha` TODO)
  `lo'ys'la` press `he` Upper D `he` (Mark `ha` DONE)
      `la` Wrong `hv` is @(Number `ML` Symbol `ML` Caret)
- `yok_____` State `ho` to `ha__` Transition `ha_` scroll `ho'ho` (`yi` elide)
-  `la___` State `ho` to `ha__` Transition `ha_` relay `ho'ho` (`yi` elide)
+ `yok_____` State `ho` to `ha__` Transition `ha_` scroll `ho'ho` (`yi` dim)
+  `la___` State `ho` to `ha__` Transition `ha_` relay `ho'ho` (`yi` dim)
   `ho_'ha'he` Scope @(Focused Task) at `ho'he` Scope @Mark at
   `la___` Close `ho` to @Application
  `yok_____` Again `ha` Once

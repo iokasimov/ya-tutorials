@@ -29,7 +29,7 @@ type Move = Shifter List
 -- pattern Lift x = This x
 -- pattern Down x = That x
 
-press k f p = Maybe `hv___` k `hv` Unit `lu'q` p `yi` elide `yiu` f Unit
+press k f p = Maybe `hv___` k `hv` Unit `lu'q` p `yi` dim `yiu` f Unit
 
 apply = is @(ASCII `M` Glyph `S_` Glyph `M` Letter) `hu` Wrong Unit
  `la____` (press `hv` (Lower `ha` J) `hv` Down)
@@ -43,7 +43,7 @@ start = to @(Scrolling List) `ha` Nonempty @List @Task
 
 draft = intro @(State `T'I` Scrolling List Task `JNT` World) Unit
  `yuk___` World `hv__` prepare `lu'yp` Await `hv` clear
- `yuk___` State `ho` New `hv__` Event `hv` auto `ha_` Scope `ha` shaft `hv` by Passed `yok___` World `ha_'yokl` Prior `ha` Run `ha` print (by Bullet)
+ `yuk___` State `ho` New `hv__` Event `hv` auto `ha_` Scope `ha` shaft `hv` by Passed `yok___` World `ha_'yokl` Prior `ha` Run `ha` print (by Bullet) 
  `yuk___` State `ho` New `hv__` Event `hv` auto `ha_` Scope `hv` focus `ho` Scope it `yok___` World `ha_'yokl` Forth `ha` Run `ha` print (by Cursor)
  `yuk___` State `ho` New `hv__` Event `hv` auto `ha_` Scope `ha` shaft `hv` by Future `yok___` World `ha_'yokl` Forth `ha` Run `ha` print (by Bullet)
  `yuk___` World `hv___` input `yok` Retry `ha` apply `ha_` on @Glyph `ho'ho` on @Letter `ho` unwrap @(AR)

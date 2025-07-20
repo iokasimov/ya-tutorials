@@ -32,7 +32,7 @@ hand cursor = is @Title `hv__` Bullet `hu` "  -  " `la` Cursor `hu` "  -> " `li`
 
 mark status = is @Title `hv__` TODO `hu` "TODO " `la` DONE `hu` "DONE " `li` status
 
-press k f p = Maybe `hv___` k `hv` Unit `lu'q` p `yi` elide `yiu` f Unit
+press k f p = Maybe `hv___` k `hv` Unit `lu'q` p `yi` dim `yiu` f Unit
 
 apply = is @(ASCII `M` Glyph `S_` Glyph `M` Letter) `hu` by Wrong
   `la____` press `hv` (Lower `ha` J) `hv` (Move `ha` Down)
@@ -52,11 +52,14 @@ draft = intro @(State `T'I` Scrolling List Task `JNT` World) Unit
  `yuk____` State `ho` Old `hv___` Event `hv` auto `ha_` Scope `hv` focus `ho` Scope it `yok____` World `ha_'yokl` Forth `ha` Run `ha` print (by Cursor)
  `yuk____` State `ho` Old `hv___` Event `hv` auto `ha_` Scope `ha` shaft `hv` by Future `yok____` World `ha_'yokl` Forth `ha` Run `ha` print (by Bullet)
  `yuk____` World `hv___` input `yok` Retry @Command `ha` apply `ha_` on @Glyph `ho'ho` on @Letter `ho` unwrap @(AR)
- `yok____` State `ho` New `ha___` Event `ha_` shift `ho'ho` elide @(Optional Task)
-  `la____` State `ho` New `ha___` Event `ha_` relay `ho'ho` elide @Mark
+ `yok____` State `ho` New `ha___` Event `ha_` shift `ho'ho` dim @(Optional Task)
+  `la____` State `ho` New `ha___` Event `ha_` relay `ho'ho` dim @Mark
   `ho__'ha` Scope `hv` focus `ho_'he` Scope `hv` at @Mark
  `yok____` Again `ha` Once
 
--- Sieve `hv_` on @Letter `ho` elide
+-- Scope `hv` at @ASCII
+-- Shall `hv` be @Glyph
+-- Shall `hv` be @Symbol
+-- Match `hv` on @Symbol
 
 main = draft `he'he'hv` by start

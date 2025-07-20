@@ -50,7 +50,7 @@ render dimmed = shaft @List `hv` by Passed `ho` this `ho_'yokl` Prior `ha` Run `
  `lo__'yp` Await `ha__` focus @Only `ho` this `ho_'yokl` Forth `ha` Run `ha` print (by Reveal) (by Cursor)
  `lo__'yp` Await `ha__` shaft @List `hv` by Future `ho` this `ho_'yokl` Forth `ha` Run `ha` print dimmed (by Bullet)
 
-press k f p = Maybe `hv___` k `hv` Unit `lu'q` p `yi` elide `yiu` f Unit
+press k f p = Maybe `hv___` k `hv` Unit `lu'q` p `yi` dim `yiu` f Unit
 
 -- (Lower `ha` J `hv` Unit `lu'q`)
 
@@ -103,12 +103,12 @@ draft = intro @(State `T'I` Mode `P` Scrolling List Task `JNT` World) Unit
  `yok____` Run `ha'hd` render
  `yuk____` Old `ha` State `hv__` Event `hv` auto `ha_` Scope `hv` at @Mode
  `yok____` Run `ha__` command
- -- `yok____` New `ha` State `ha___` Event `ha_` shift `ho'ho` elide `ho__'ha` Scope `hv` at @Panel
- --   `la___` New `ha` State `ha___` Event `ha_` relay `ho'ho` elide `ho__'ha` Scope `hv` at @Panel `ho_` Scope `hv` focus `ho_'he` Scope `hv` at @Mark
- --   `la___` New `ha` State `ha___` Event `ha_` relay `ho'ho` elide `ho__'ha` Scope `hv` at @Mode
- --  `la____` New `ha` State `ha___` Event `ha_` (\_ -> pop) `ho'ho` elide `ho__'ha` Scope `hv` at @Panel `ho_` Scope `hv` focus `ho_'he` Scope `hv` at @Title
- --   `la___` New `ha` State `ha___` Event `ha_` push `ha` Glyph `ho'ho` elide `ho__'ha` Scope `hv` at @Panel `ho_` Scope `hv` focus `ho_'he` Scope `hv` at @Title
- --   `la___` New `ha` State `ha___` Event `ha_` relay `ho'ho` elide `ho__'ha` Scope `hv` at @Mode
+ -- `yok____` New `ha` State `ha___` Event `ha_` shift `ho'ho` dim `ho__'ha` Scope `hv` at @Panel
+ --   `la___` New `ha` State `ha___` Event `ha_` relay `ho'ho` dim `ho__'ha` Scope `hv` at @Panel `ho_` Scope `hv` focus `ho_'he` Scope `hv` at @Mark
+ --   `la___` New `ha` State `ha___` Event `ha_` relay `ho'ho` dim `ho__'ha` Scope `hv` at @Mode
+ --  `la____` New `ha` State `ha___` Event `ha_` (\_ -> pop) `ho'ho` dim `ho__'ha` Scope `hv` at @Panel `ho_` Scope `hv` focus `ho_'he` Scope `hv` at @Title
+ --   `la___` New `ha` State `ha___` Event `ha_` push `ha` Glyph `ho'ho` dim `ho__'ha` Scope `hv` at @Panel `ho_` Scope `hv` focus `ho_'he` Scope `hv` at @Title
+ --   `la___` New `ha` State `ha___` Event `ha_` relay `ho'ho` dim `ho__'ha` Scope `hv` at @Mode
  -- `yok____` Again `ha` Once
 
 main = draft `he'he'hv` (Explore `lo` start `li` Unit)

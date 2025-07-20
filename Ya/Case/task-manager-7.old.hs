@@ -93,7 +93,7 @@ level = Glyph `ha` Symbol `ha` Punctuation `ha` Hyphen `he` Unit
 hand = is @Title `ha__` is `hu` "    " `la` is `hu` "--> "
 mark = is @Title `ha__` is `hu` "TODO" `la` is `hu` "DONE"
 
-press k f p = Maybe `he___` k `lu'q` p `yi` elide `yiu` f Unit
+press k f p = Maybe `he___` k `lu'q` p `yi` dim `yiu` f Unit
 
 apply = press `he` Lower P `he` (Move `ha` Outline `ha` Down)
  `lo'ys'la` press `he` Lower N `he` (Move `ha` Outline `ha` Lift)
@@ -127,8 +127,8 @@ process = intro @Application
      `ho'he` Scope @(Forward List Project) at
  `yok_____` print Bullet
  `yuk_____` input `yok_` Retry `ha_` on @Letter @ASCII `ho` apply
- `yok_____` State `ho` to `ha__` Transition `ha_` scroll @List `ho'ho` (`yi` elide)
-  `la_____` State `ho` to `ha__` Transition `ha_` scroll @Tree `ho'ho` (`yi` elide)
+ `yok_____` State `ho` to `ha__` Transition `ha_` scroll @List `ho'ho` (`yi` dim)
+  `la_____` State `ho` to `ha__` Transition `ha_` scroll @Tree `ho'ho` (`yi` dim)
   `ho_'ha'he` Scope @(Focused Project) at
      `ho'he` Scope @Project it
   `la_____` State `ho` to `ha__` Transition `ha_` (\m x -> Unit `lu_` x `yo`(`yui` m))

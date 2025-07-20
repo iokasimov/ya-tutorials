@@ -1,5 +1,4 @@
 import "ya" Ya
-import "ya-world" Ya.World
 import "ya-ascii" Ya.ASCII
 import "ya-console" Ya.Console
 
@@ -18,16 +17,18 @@ analyze bracket = intro @(State `T'I` List Shape `JNT` Error Imbalance) Unit
 
 compare closed opened = opened `lu'q` closed
 
-remnant = Empty @List `hu` by Valid
+remnant = Empty @List `hu` Valid Unit
  `la` Error @Imbalance `ha` Missing `ha` Closed
  `ha` this @Shape `ha` top @(Nonempty List)
 
 inspect code = code
- `yokl_` Forth `ha` Run @(State `T'I` List Shape `JNT` Error Imbalance)
- `ha___` Some `hu` intro Unit `la_` is @Bracket `ho_` (deposit `la` analyze) `ho'yu` Unit
- `ha___` on @Glyph `ho'ho` on @Symbol `ho'he` is `ho'ho` on @Bracket `ho'he` is
- `he'he'hv____` by `hv` Empty @List
- `yok__` Try `ha` remnant `ha'he` that @(List Shape)
+ `yokl____` Forth `ha` Run @(State `T'I` List Shape `JNT` Error Imbalance)
+ `ha______` Maybe `ha` dim `ha` on @Glyph
+ `ho___'yok` Maybe `ha` dim `ha` on @Symbol `ho` Check
+ `ho___'yok` Maybe `ha` dim `ha` on @Bracket `ho` Check
+ `ho___'yokl` Check `ha` Run `ha__` deposit `la` analyze
+ `he'he'hv_______` empty @List
+ `yok_____` Check `ha` remnant `ha'he` that @(List Shape)
 
 main = Error `hu` "[ERROR] Missing or mismatching bracket!"
  `la___` Valid `hu` "[VALID] Everything is seem to be good!" `ho` is @(List ASCII)

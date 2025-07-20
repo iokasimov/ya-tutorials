@@ -26,11 +26,13 @@ remnant = Empty @List `hu` by Valid
   `la` Error @Imbalance `ha` Missing `ha` Closed `ha` this @Shape `ha` top @(Nonempty List)
 
 inspect code = code
- `yokl_` Forth `ha` Run @(State `T'I` List Shape `JNT` Error Imbalance)
- `ha___` Some `hu` intro Unit `la_` is @Bracket `ho_` (deposit `la` analyze) `ho'yu` Unit
- `ha___` on @Glyph `ho'ho` on @Symbol `ho` unwrap @(AR) `ho'ho` on @Bracket `ho` unwrap @(AR)
- `he'he'hv____`by `hv` Empty @List
- `yok__` Try `ha` remnant `ha'he` that @(List Shape)
+ `yokl__` Forth `ha` Run @(State `T'I` List Shape `JNT` Error Imbalance)
+ `ha____'yokl` Try `ha` Run `ha__` deposit `la` analyze
+ `ha____` on @Glyph `ho` dim `ho` Maybe
+ `ho_'yok` on @Symbol `ho` dim `ho` Maybe `ho` Try
+ `ho_'yok` on @Bracket `ho` dim `ho` Maybe `ho` Try
+ `he'he'hv_____` empty @List
+ `yok___` Try `ha` remnant `ha'he` that @(List Shape)
 
 main = that @(List ASCII) `ha__` mismatch `la` missing `la` balance
  `li___` inspect `ha` is @(Nonempty List ASCII) `hv` "fn main() { println('hello, <world>!') }"

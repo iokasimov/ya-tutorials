@@ -101,7 +101,7 @@ unstock ship = intro @(State `T'I` Target `P` Fleet `P` Board Cell `JNT_` Reach 
  `yuk___` New `ha` State `hv___` Event `ha` relay `hv_` by `hv` None `ha__` Scope `hv` at @Target
 
 exact sample item = Wrong `hu` by False `la` Valid `hu` by True `li_` sample `lu'q` item
--- exact sample item = sample `lu'q` item `yi` elide `yiu` Unit `yi_` Boolean
+-- exact sample item = sample `lu'q` item `yi` dim `yiu` Unit `yi_` Boolean
 
 across sunk passed = that @(List Cell) `ha` pop `hv` sunk `yokl` Forth `ha` Run `ha` State `ha` Event `ha` push `he'he'hv___` passed
 

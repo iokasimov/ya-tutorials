@@ -65,7 +65,7 @@ block_project prefix cursor project = intro @IO
 hand = is @Title `ha__` is `hu` "   * " `la` is `hu` "  -> "
 mark = is @Title `ha__` is `hu` "TODO " `la` is `hu` "DONE "
 
-press k f p = Maybe `he___` k `lu'q` p `yi` elide `yiu` f Unit
+press k f p = Maybe `he___` k `lu'q` p `yi` dim `yiu` f Unit
 
 type Project = Scrolling Tree Task
 
@@ -94,8 +94,8 @@ draft = intro @Application
  `lo'ys'la` press `he` Upper T `he` (Mark `ha` TODO)
  `lo'ys'la` press `he` Upper D `he` (Mark `ha` DONE)
      `la` Wrong `hv` is @(Number `ML` Symbol `ML` Caret)
- `yok___` State `ho` to `ha__` Transition `ha_` scroll `ho'ho` (`yi` elide)
-  `la___` State `ho` to `ha__` Transition `ha_` relay `ho'ho` (`yi` elide)
+ `yok___` State `ho` to `ha__` Transition `ha_` scroll `ho'ho` (`yi` dim)
+  `la___` State `ho` to `ha__` Transition `ha_` relay `ho'ho` (`yi` dim)
   `ho_'ha'he` Scope @(Focused Project) at
    `ho'he'he` Scope @((Scrolling List `T'TT'I` Tree) Task) at
    `ho'he'he` Scope @(Focused `T'I` Tree Task) at
