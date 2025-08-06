@@ -12,10 +12,10 @@ type Imbalance = Mismatch `S` Missing
 pattern Mismatch x = This x
 pattern Missing x = That x
 
-deposit bracket = intro @(State `T'I` List Shape `JNT` Error Imbalance) Unit
+deposit bracket = intro @(Stops Imbalance `JNT` State `T` List Shape) Unit
  `yuk__` New `ha` State `ha` Event `hv` push @List bracket
 
-analyze bracket = intro @(State `T'I` List Shape `JNT` Error Imbalance) Unit
+analyze bracket = intro @(Stops Imbalance `JNT` State `T` List Shape) Unit
  `yuk__` New `ha` State `ha` Event `hv` pop @List
  `yok__` Try `ha__` None `hu_` Error @Imbalance `ha` Missing `ha` Opened `hv` bracket `la` Valid
  `yok__` Try `ha__` Error @Imbalance `ha` Mismatch `la` Valid `ha_` compare bracket
@@ -26,7 +26,7 @@ remnant = Empty @List `hu` by Valid
   `la` Error @Imbalance `ha` Missing `ha` Closed `ha` this @Shape `ha` top @(Nonempty List)
 
 inspect code = code
- `yokl__` Forth `ha` Run @(State `T'I` List Shape `JNT` Error Imbalance)
+ `yokl__` Forth `ha` Run @(Stops Imbalance `JNT` State `T` List Shape)
  `ha____'yokl` Try `ha` Run `ha__` deposit `la` analyze
  `ha____` on @Glyph `ho` dim `ho` Maybe
  `ho_'yok` on @Symbol `ho` dim `ho` Maybe `ho` Try

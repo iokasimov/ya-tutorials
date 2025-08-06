@@ -53,12 +53,12 @@ pattern Mist e = That e :: Mark
 
 type Board = Nonempty List `T'I` Mark `P` Tile
 
-sunk x = intro @(State `T'I` Scrolling List Ship `JNT` Progress `T'I` Shafted List Ship) Unit
+sunk x = intro @(State `T` Scrolling List Ship `JNT` Stops `T` Shafted List Ship) Unit
  `yuk____` New `ha` State `hv__` Event `hv_` auto `ho'yoi` (`lu'q` Same x) `ha_'he` Scope `hv` at @(Focused Ship)
  `yok____` New `ha` State `hv__` Event `hv_` scroll `hv` by Next `ho'yoi` Continue
   `lv____` New `ha` State `hv__` Event `hv_` auto `ho'yoi` Interrupt `ha_'he` Scope `hv` at @(Shafted List Ship)
  -- TODO: can we replace it with `Retry`?
- `yok____` Try `ha` is @(Progress `T'I` Shafted List Ship `T'I` _)
+ `yok____` Try `ha` is @(Stops `T` Shafted List Ship `T` _)
  `yok____` Again `ha` Once
 
 known = enemy `yu` Mist 0
