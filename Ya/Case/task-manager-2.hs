@@ -21,7 +21,7 @@ initial = to @(Scrolling List) `ha` Nonempty @List @Title
  `ha` Item "Organize a boardgame session" `ha` Next
  `ha` Item "Buy a water gun for Songkran" `ha` Last
 
-draft = intro @(State `T'I` Scrolling List Title `JNT` World) Unit
+draft = intro @(World `JNT` State `T'I` Scrolling List Title) Unit
  `yuk___` World `hv__` prepare `lu'yp` Await `hv` clear
  `yuk___` State `ho` New `hv__` Event `hv` auto `ha_` Scope `ha` shaft `hv` by Passed `yok___` World `ha_'yokl` Prior `ha` Run `ha` print (by Bullet)
  `yuk___` State `ho` New `hv__` Event `hv` auto `ha_` Scope `hv` focus `ho` Scope it `yok___` World `ha_'yokl` Forth `ha` Run `ha` print (by Cursor)

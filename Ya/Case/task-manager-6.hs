@@ -97,7 +97,7 @@ command mode = input
 pattern Explore e = This e
 pattern Focused e = That e
 
-draft = intro @(State `T'I` Mode `P` Scrolling List Task `JNT` World) Unit
+draft = intro @(World `JNT` State `T'I` Mode `P` Scrolling List Task) Unit
  `yuk____` Run `hv__` prepare `lu'yp` Await `hv` clear
  `yuk____` Old `ha` State `hv__` Event `hv` auto
  `yok____` Run `ha'hd` render
