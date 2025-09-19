@@ -33,7 +33,7 @@ meals (These item food) = food
 
 check :: Scrolling List Creature `AR__` Stops (Creature `P` Creature) Creature
 check = meals
- `ha__` focus `ho` this @(Only Creature) `ho'he` is
+ `ha__` focus `ho` this @(Alone Creature) `ho'he` is
    `lo` other `ho` this @(Shafted List Creature)
 
 -- t a `AR____` into (from (tt a) (ttt o)) (t o)

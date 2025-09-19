@@ -120,9 +120,9 @@ review = is `hu` by Wrong
   -- `lo'ys'la` press `hv` Lower F `hv` (Find)
  `ha______` on @Glyph @ASCII `ho'ho` on @Letter `ho` row
 
-searchbar = push `ho_'ho'yoi` Some `ha` Fore `ha_'he` Glyph
- `la_` Some `hu` get `ho'ho'yui` by None
-  `la` Some `hu` pop `ho'ho'yoi'yo` Back
+searchbar = push `ho_'ho'yoi` Exist `ha` Fore `ha_'he` Glyph
+ `la_` Exist `hu` get `ho'ho'yui` by Empty
+  `la` Exist `hu` pop `ho'ho'yoi'yo` Back
  `ha_` (`hd_'q` by Delete) `ha'he` is @Caret
 
 filter title = intro @(State `T'I` Task) Unit

@@ -47,7 +47,7 @@ start = to @(Scrolling List) `ha` Nonempty @List @Task
  `ha_` Last `ho` Item (by DONE `lu` title "Buy a water gun for Songkran")
 
 render dimmed = shaft @List `hv` by Passed `ho` this `ho_'yokl` Prior `ha` Run `ha` print dimmed (by Bullet)
- `lo__'yp` Await `ha__` focus @Only `ho` this `ho_'yokl` Forth `ha` Run `ha` print (by Reveal) (by Cursor)
+ `lo__'yp` Await `ha__` focus @Alone `ho` this `ho_'yokl` Forth `ha` Run `ha` print (by Reveal) (by Cursor)
  `lo__'yp` Await `ha__` shaft @List `hv` by Future `ho` this `ho_'yokl` Forth `ha` Run `ha` print dimmed (by Bullet)
 
 press k f p = Maybe `hv___` k `hv` Unit `lu'q` p `yi` dim `yiu` f Unit
@@ -82,7 +82,7 @@ explore = press (Caret `ha` Newline) (Mode `ha` Focused)
  `lo'ys'la` First `ha` press (Glyph `ha` Letter `ha` Upper `ha` T) (Mark `ha` TODO)
  `lo'ys'la` First `ha` press (Glyph `ha` Letter `ha` Upper `ha` D) (Mark `ha` DONE)
 
-focused = Some `ha'he` Pile
+focused = Exist `ha'he` Pile
  `la____` press (Newline) (Mode `ha` Explore) `ha` is
  `lo'ys'la` First `ha` press (Delete) (Drop) `ha` is
 

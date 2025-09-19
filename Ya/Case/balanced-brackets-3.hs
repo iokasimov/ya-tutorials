@@ -12,12 +12,12 @@ deposit bracket = intro @(Stops Imbalance `JNT` State `T` List Shape) Unit
 
 analyze bracket = intro @(Stops Imbalance `JNT` State `T` List Shape) Unit
  `yuk__` New `ha` State `ha` Event `hv` pop @List
- `yok__` Try `ha__` None `hu_` Error @Imbalance `ha` Missing `ha` Opened `hv` bracket `la` Valid @Shape
+ `yok__` Try `ha__` Empty `hu_` Error @Imbalance `ha` Missing `ha` Opened `hv` bracket `la` Valid @Shape
  `yok__` Try `ha__` Error @Imbalance `ha` Mismatch `la` Valid @Shape `ha__` compare bracket
 
 compare closed opened = opened `lu'q` closed
 
-remnant = Empty @List `hu` Valid Unit
+remnant = Empty `hu` Valid Unit
  `la` Error @Imbalance `ha` Missing `ha` Closed
  `ha` this @Shape `ha` top @(Nonempty List)
 

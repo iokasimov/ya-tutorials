@@ -17,12 +17,12 @@ deposit bracket = intro @(Stops Imbalance `JNT` State `T` List Shape) Unit
 
 analyze bracket = intro @(Stops Imbalance `JNT` State `T` List Shape) Unit
  `yuk__` New `ha` State `ha` Event `hv` pop @List
- `yok__` Try `ha__` None `hu_` Error @Imbalance `ha` Missing `ha` Opened `hv` bracket `la` Valid
+ `yok__` Try `ha__` Empty `hu_` Error @Imbalance `ha` Missing `ha` Opened `hv` bracket `la` Valid
  `yok__` Try `ha__` Error @Imbalance `ha` Mismatch `la` Valid `ha_` compare bracket
 
 compare closed opened = opened `lu'q` closed
 
-remnant = Empty @List `hu` by Valid
+remnant = Empty `hu` by Valid
   `la` Error @Imbalance `ha` Missing `ha` Closed `ha` this @Shape `ha` top @(Nonempty List)
 
 inspect code = code
@@ -50,5 +50,5 @@ main = that @(List ASCII) `ha__` mismatch `la` missing `la` balance
   `yokl` Prior `ha` New `ha` State `ha` Event `ha` push
   `he'he'hv___` intro @List `ha` Glyph `ha`Symbol `ha` Bracket `hv` bracket
 
- balance _ = by `hv` Empty @List
+ balance _ = empty @List
   `lu` "[VALID] Everything is seem to be good!"

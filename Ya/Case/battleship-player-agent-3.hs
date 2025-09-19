@@ -57,7 +57,7 @@ match = intro @(Halts `JNT` State Opponent) Unit
  `yok____` Check `ha` inner
  `yok____` State `ho` New `ha__` Event `ha` put `ho_'ha` Scope `hv` focus
 
-out = None `hu` by Continue
+out = Empty `hu` by Continue
  `la__` Nail `hu` by Interrupt
    `la` Miss `hu` by Continue
    `la` Mist `hu` by Continue

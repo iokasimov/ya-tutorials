@@ -62,7 +62,7 @@ type Board = Sliding List
 type Personal = Board Tile
 type Opponent = Board Mark
 
--- + None: If there is `Some Ship` - we need to remove it from `Fleet`, stop
+-- + Empty: If there is `Exist Ship` - we need to remove it from `Fleet`, stop
 
 process = intro @(Stops Result `JNT` State `T'I` Target `P` Fleet `P` Board Cell) Unit
  `yuk__` State `ho` New `hv__` Event `ha` adjust `hv` (by Expand `lu` by Fore) `ha_` Scope `hv` at @(Board Cell)
@@ -75,16 +75,16 @@ pursuit = intro @(Stops Result `JNT` State `T'I` Target `P` Fleet `P` Board Cell
 
 -- If there is no bombing target - initialize a new bombing target
 -- If there is a bombing target - add a tile to this bombing target
-hit = auto `ha` Some @Ship
- `ha__` None @Ship `hu_` intro @(Nonempty List) `hv` Unit
+hit = auto `ha` Exist @Ship
+ `ha__` Empty @Ship `hu_` intro @(Nonempty List) `hv` Unit
    `la` push `hv` Unit `ho` that
 
 -- . If there is `Idle` tile
- -- , if there is `None Ship` - do nothing
- -- , if there is `Some Ship` - we need to remove it from `Fleet` and ski
+ -- , if there is `Empty Ship` - do nothing
+ -- , if there is `Exist Ship` - we need to remove it from `Fleet` and skip
 review = intro @(Stops Result `JNT` State `T'I` Target `P` Fleet `P` Board Cell) Unit
  `yuk___` Old `ha` State `hv__` Event `hv` get `ha_` Scope `hv` at @Target
- `yok___` Run `ha__` None `hu_` intro `ha` None `hv` Unit `la` unstock
+ `yok___` Run `ha__` Empty `hu_` intro `ha` Empty `hv` Unit `la` unstock
 
 -- 1. Try to find the same ship
 -- 2. If ship is found - remove from `Fleet`
@@ -94,11 +94,11 @@ review = intro @(Stops Result `JNT` State `T'I` Target `P` Fleet `P` Board Cell)
 unstock ship = intro @(Stops Result `JNT` State `T'I` Target `P` Fleet `P` Board Cell) Unit
  `yuk___` New `ha` State `hv__` Event `ha` locate `ha` (by Fore `lu`) `ha` Predicate `ha` exact `ha` Same `hv` ship `ha_` Scope `hv` at @Fleet `ho` Scope (as @(Scrolling List))
  `yok___` Try `ha__` Error `hu_` Reach @Result `ha` Fault `hv` ship `la` Ok
- `yok___` Try `ha__` Empty @List `hu_` Reach @Result `hv` by Smash `la` Ok `ha__` at @(Shafted List Ship) `he'ho` this `ho` to @List
+ `yok___` Try `ha__` Empty `hu_` Reach @Result `hv` by Smash `la` Ok `ha__` at @(Shafted List Ship) `he'ho` this `ho` to @List
  `yok___` New `ha` State `ha__` Event `ha` relay `ho_'ha` Scope `hv` at @Fleet
- `yuk___` New `ha` State `hv___` Event `ha` relay `hv_` by `hv` Empty @List `ha__` Scope `hv` at @(Board Cell) `ho_` Scope `hv` focus
+ `yuk___` New `ha` State `hv___` Event `ha` relay `hv` empty @List `ha__` Scope `hv` at @(Board Cell) `ho_` Scope `hv` focus
  `yok___` New `ha` State `ha___` Event `ha` across `ho__'ha` Scope `hv` at @(Board Cell) `ho_` Scope `ha` shaft `hv` by Passed
- `yuk___` New `ha` State `hv___` Event `ha` relay `hv_` by `hv` None `ha__` Scope `hv` at @Target
+ `yuk___` New `ha` State `hv___` Event `ha` relay `hv` Empty Unit `ha__` Scope `hv` at @Target
 
 exact sample item = Wrong `hu` by False `la` Valid `hu` by True `li_` sample `lu'q` item
 -- exact sample item = sample `lu'q` item `yi` dim `yiu` Unit `yi_` Boolean
@@ -118,7 +118,7 @@ match = intro @(Halts `JNT` State Opponent) Unit
  `yuk___` State `ho` Old `hv__` Event `hv` get `ha_` Scope `hv` focus `ho` Scope (as @List) `yok___` Check `ha` inner
  `yok___` State `ho` New `ha__` Event `ha` put `ho_'ha` Scope `hv` focus
 
-out = None `hu` by Continue
+out = Empty `hu` by Continue
  `la__` Nail `hu` by Interrupt
    `la` Miss `hu` by Continue
    `la` Mist `hu` by Continue
@@ -184,7 +184,7 @@ fault ship = is @(List ASCII) `hv` "One ship has not been found..." `yokl` Forth
 
 -- verge _ = is @(List ASCII) `hv` "Highly likely you lost this battle..." `yokl` Forth `ha` Run `ha` output
 
-main = process `he'he'hv__` by `hv` None @Ship `lu` fleet `lu` fresh
+main = process `he'he'hv__` by `hv` Empty @Ship `lu` fleet `lu` fresh
  -- `yi__` verge `ho'yu` Unit `la` smash `ho'yu` Unit `la` fault `ho'yu` Unit
  `yi__` smash `ho'yu` Unit `la` fault `ho'yu` Unit
   -- `la_` is @(Equipped _ _) `ho'he` that `ho` that @(Board Cell) `ho` to @List

@@ -37,7 +37,7 @@ main = error `la` this `he'ho` trace
  `hv_______` by `hv` initial
  `yokl` Forth `ha` Run
  `ha__` load `la` eval
- `he'he'hv___` Empty @List Unit where
+ `he'he'hv___` empty @List where
 
  error _ = "[ERR] No operands!" `yokl` Forth `ha` Raw `ha` output
 

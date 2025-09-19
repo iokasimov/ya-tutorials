@@ -12,12 +12,12 @@ deposit bracket = intro @(Stops Imbalance `JNT` State `T` List Shape) Unit
 
 analyze bracket = intro @(Stops Imbalance `JNT` State `T` List Shape) Unit
  `yuk__` New `ha` State `ha` Event `hv` pop @List
- `yok__` Try `ha__` None `hu_` Error @Imbalance `ha` Missing `ha` Opened `hv` bracket `la` Valid
+ `yok__` Try `ha__` Empty `hu_` Error @Imbalance `ha` Missing `ha` Opened `hv` bracket `la` Valid
  `yok__` Try `ha__` Error @Imbalance `ha` Mismatch `la` Valid `ha_` compare bracket
 
 compare closed opened = opened `lu'q` closed
 
-remnant = Empty @List `hu` by Valid
+remnant = Empty `hu` by Valid
   `la` Error @Imbalance `ha` Missing `ha` Closed `ha` this @Shape `ha` top @(Nonempty List)
 
 example = Nonempty @List
@@ -25,7 +25,7 @@ example = Nonempty @List
  `ha` Item (Closed Angle) `ha` Last
 
 main = by example
- `yokl` Forth `ha` Run `ha__` deposit `la` analyze `he'he'hv___` by `hv` Empty @List
+ `yokl` Forth `ha` Run `ha__` deposit `la` analyze `he'he'hv___` empty @List
  `yok_` Check `ha` remnant `ha'he` that @(List Shape)
  `yi__` Error `hu` "[ERROR] Missing or mismatching bracket!" `ho` is @(List ASCII)
    `la` Valid `hu` "[VALID] Everything is seem to be good."

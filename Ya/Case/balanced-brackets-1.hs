@@ -10,9 +10,9 @@ deposit bracket = intro @(Halts `JNT` State `T` List _) Unit
 
 analyze _______ = intro @(Halts `JNT` State `T` List _) Unit
  `yuk__` New `ha` State `ha` Event `hv` pop @List
- `yok__` Try `ha__` None `hu` by Error `la` Some `hu` by Valid
+ `yok__` Try `ha__` Empty `hu` by Error `la` Exist `hu` by Valid
 
-remnant = Empty @List `hu` by Valid
+remnant = Empty `hu` by Valid
  `la` Nonempty @List `he'hu` by Error
 
 example = Nonempty @List @Parenthesis
@@ -20,7 +20,7 @@ example = Nonempty @List @Parenthesis
  `ha` Item (Closed Unit) `ha` Last
 
 main = by example
- `yokl` Forth `ha` Run `ha__` deposit `la` analyze `he'he'hv___` by `hv` Empty @List
+ `yokl` Forth `ha` Run `ha__` deposit `la` analyze `he'he'hv___` empty @List
  `yok_` Check `ha` remnant `ha'he` that @(List Unit)
  `yi__` Error `hu` "[ERROR] We missed some bracket, oh my!" `ho` is @(List ASCII)
    `la` Valid `hu` "[VALID] Everything is seem to be good."

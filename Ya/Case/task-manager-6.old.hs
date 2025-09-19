@@ -142,31 +142,31 @@ process = intro @Application
 
 initial = Construct `ho` to @(Scrolling List)
  `ha______` Next `ha_` Tree `he` Task (TODO Unit) "Get ready for a Bangkok hackaton" `ho` to @(Scrolling Tree)
-  `ha_____` Next `ha_` Node `he` Task (TODO Unit) "Prepare on Chain Fusion hackaton" `ha` List `ha` Some `ha` Construct
-   `ha____` Next `he_` Node `he` Task (DONE Unit) "Ask my wife to help with a pitch" `he` Empty @List Unit
-   `ha____` Next `he_` Node `he` Task (DONE Unit) "Consider his remarks on the text" `he` Empty @List Unit
-   `he____` Last `ha_` Node `he` Task (TODO Unit) "Read about canister interactions" `ha` List `ha` Some `ha` Construct
-    `ha___` Next `he_` Node `he` Task (TODO Unit) "How to poll with smart contracts" `he` Empty @List Unit
-    `ha___` Next `he_` Node `he` Task (TODO Unit) "Can I use custom Juno canisters?" `he` Empty @List Unit
-    `ha___` Next `he_` Node `he` Task (TODO Unit) "Get an IC identity with a laptop" `he` Empty @List Unit
-    `he___` Last `he_` Node `he` Task (TODO Unit) "Should I compile JS code to WASM?"`he` Empty @List Unit
-  `ha_____` Next `he_` Node `he` Task (TODO Unit) "Purchase good round trip tickets" `he` Empty @List Unit
-  `ha_____` Next `he_` Node `he` Task (TODO Unit) "Book some room nearby Klong Toei" `he` Empty @List Unit
-  `ha_____` Next `he_` Node `he` Task (DONE Unit) "Can I take my longboard with me?" `he` Empty @List Unit
-  `ha_____` Next `ha_` Node `he` Task (DONE Unit) "Schedule activities on this week" `ha` List `ha` Some `ha` Construct
-   `ha____` Next `he_` Node `he` Task (TODO Unit) "Take some snacks from Chiang Mai" `he` Empty @List Unit
-   `he____` Last `he_` Node `he` Task (TODO Unit) "Book a yoga session some evening" `he` Empty @List Unit
-  `he_____` Last `ha_` Node `he` Task (DONE Unit) "Try to team up with ex coworkers" `ha` List `ha` Some `ha` Construct
-   `he____` Last `he_` Node `he` Task (TODO Unit) "Discuss my pitching text to them" `he` Empty @List Unit
+  `ha_____` Next `ha_` Node `he` Task (TODO Unit) "Prepare on Chain Fusion hackaton" `ha` List `ha` Exist `ha` Construct
+   `ha____` Next `he_` Node `he` Task (DONE Unit) "Ask my wife to help with a pitch" `he` empty @List
+   `ha____` Next `he_` Node `he` Task (DONE Unit) "Consider his remarks on the text" `he` empty @List
+   `he____` Last `ha_` Node `he` Task (TODO Unit) "Read about canister interactions" `ha` List `ha` Exist `ha` Construct
+    `ha___` Next `he_` Node `he` Task (TODO Unit) "How to poll with smart contracts" `he` empty @List
+    `ha___` Next `he_` Node `he` Task (TODO Unit) "Can I use custom Juno canisters?" `he` empty @List
+    `ha___` Next `he_` Node `he` Task (TODO Unit) "Get an IC identity with a laptop" `he` empty @List
+    `he___` Last `he_` Node `he` Task (TODO Unit) "Should I compile JS code to WASM?"`he` empty @List
+  `ha_____` Next `he_` Node `he` Task (TODO Unit) "Purchase good round trip tickets" `he` empty @List
+  `ha_____` Next `he_` Node `he` Task (TODO Unit) "Book some room nearby Klong Toei" `he` empty @List
+  `ha_____` Next `he_` Node `he` Task (DONE Unit) "Can I take my longboard with me?" `he` empty @List
+  `ha_____` Next `ha_` Node `he` Task (DONE Unit) "Schedule activities on this week" `ha` List `ha` Exist `ha` Construct
+   `ha____` Next `he_` Node `he` Task (TODO Unit) "Take some snacks from Chiang Mai" `he` empty @List
+   `he____` Last `he_` Node `he` Task (TODO Unit) "Book a yoga session some evening" `he` empty @List
+  `he_____` Last `ha_` Node `he` Task (DONE Unit) "Try to team up with ex coworkers" `ha` List `ha` Exist `ha` Construct
+   `he____` Last `he_` Node `he` Task (TODO Unit) "Discuss my pitching text to them" `he` empty @List
  `he______` Last `ha_` Tree `he` Task (TODO Unit) "Hang out with guys this Saturday" `ho` to @(Scrolling Tree)
-  `ha_____` Next `he_` Node `he` Task (TODO Unit) "Invite him, her, them and others" `he` Empty @List Unit
-  `ha_____` Next `ha_` Node `he` Task (TODO Unit) "Clean the room, pick a boardgame" `ha` List `ha` Some `ha` Construct
-   `ha____` Next `he_` Node `he` Task (DONE Unit) "(5) Oath, Pax Pamir and DerrocAr" `he` Empty @List Unit
-   `he____` Last `he_` Node `he` Task (TODO Unit) "(2-4) Arcs, Brass or Sammu Ramat" `he` Empty @List Unit
-  `he_____` Last `ha_` Node `he` Task (DONE Unit) "Download Switch local coop games" `ha` List `ha` Some `ha` Construct
-   `ha____` Next `he_` Node `he` Task (TODO Unit) "Check if controllers are charged" `he` Empty @List Unit
-   `ha____` Next `he_` Node `he` Task (TODO Unit) "Prioritize on Boomerang Fu first" `he` Empty @List Unit
-   `he____` Last `he_` Node `he` Task (TODO Unit) "Keep Talking and Nobody Explodes" `he` Empty @List Unit
+  `ha_____` Next `he_` Node `he` Task (TODO Unit) "Invite him, her, them and others" `he` empty @List
+  `ha_____` Next `ha_` Node `he` Task (TODO Unit) "Clean the room, pick a boardgame" `ha` List `ha` Exist `ha` Construct
+   `ha____` Next `he_` Node `he` Task (DONE Unit) "(5) Oath, Pax Pamir and DerrocAr" `he` empty @List
+   `he____` Last `he_` Node `he` Task (TODO Unit) "(2-4) Arcs, Brass or Sammu Ramat" `he` empty @List
+  `he_____` Last `ha_` Node `he` Task (DONE Unit) "Download Switch local coop games" `ha` List `ha` Exist `ha` Construct
+   `ha____` Next `he_` Node `he` Task (TODO Unit) "Check if controllers are charged" `he` empty @List
+   `ha____` Next `he_` Node `he` Task (TODO Unit) "Prioritize on Boomerang Fu first" `he` empty @List
+   `he____` Last `he_` Node `he` Task (TODO Unit) "Keep Talking and Nobody Explodes" `he` empty @List
 
 main = unwrap (process `he'he` initial)
 

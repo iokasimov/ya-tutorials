@@ -7,34 +7,34 @@ import Ya.Expo.Terminal
 import "base" System.IO (IO, print)
 
 -- morse_code_tree = Binary
- -- `yiiiiiiii`(Some `ha` Root E `ha` Binary
-  -- `yiiiiii` Some `ha` Node I `ha` Binary
-    -- `yiiii` Some `ha` Node S `ha` Binary
-      -- `yii` (Some `yi` leaf H)
-       -- `lu` (Some `yi` leaf V)
-     -- `yi'lu` Some `ha` Node U `ha` Binary
-      -- `yii` (Some `yi` leaf F)
-       -- `lu` None ()
-   -- `yi'yi'lu` Some `ha` Node A `ha` Binary
-    -- `yiiii` Some `ha` Node R `ha` Binary
-      -- `yii` (Some `yi` leaf L)
-       -- `lu` None ()
-     -- `yi'lu` Some `ha` Node W `ha` Binary
-      -- `yii` (Some `yi` leaf P)
-       -- `lu` (Some `yi` leaf J))
- -- `yi'yi'yi'lu` (Some `ha` Root T `ha` Binary
-  -- `yiiiiii` Some `ha` Node N `ha` Binary
-    -- `yiiii` Some `ha` Node D `ha` Binary
-      -- `yii` (Some `yi` leaf B)
-       -- `lu` (Some `yi` leaf X)
-     -- `yi'lu` Some `ha` Node K `ha` Binary
-      -- `yii` (Some `yi` leaf C)
-       -- `lu` (Some `yi` leaf Y)
-   -- `yi'yi'lu` (Some `ha` Node M `ha` Binary
-    -- `yiiii` Some `ha` Node G `ha` Binary
-     -- `yiii` (Some `yi` leaf Z)
-       -- `lu` (Some `yi` leaf Q)
-     -- `yi'lu` (Some `yi` leaf O)))
+ -- `yiiiiiiii`(Exist `ha` Root E `ha` Binary
+  -- `yiiiiii` Exist `ha` Node I `ha` Binary
+    -- `yiiii` Exist `ha` Node S `ha` Binary
+      -- `yii` (Exist `yi` leaf H)
+       -- `lu` (Exist `yi` leaf V)
+     -- `yi'lu` Exist `ha` Node U `ha` Binary
+      -- `yii` (Exist `yi` leaf F)
+       -- `lu` Empty ()
+   -- `yi'yi'lu` Exist `ha` Node A `ha` Binary
+    -- `yiiii` Exist `ha` Node R `ha` Binary
+      -- `yii` (Exist `yi` leaf L)
+       -- `lu` Empty ()
+     -- `yi'lu` Exist `ha` Node W `ha` Binary
+      -- `yii` (Exist `yi` leaf P)
+       -- `lu` (Exist `yi` leaf J))
+ -- `yi'yi'yi'lu` (Exist `ha` Root T `ha` Binary
+  -- `yiiiiii` Exist `ha` Node N `ha` Binary
+    -- `yiiii` Exist `ha` Node D `ha` Binary
+      -- `yii` (Exist `yi` leaf B)
+       -- `lu` (Exist `yi` leaf X)
+     -- `yi'lu` Exist `ha` Node K `ha` Binary
+      -- `yii` (Exist `yi` leaf C)
+       -- `lu` (Exist `yi` leaf Y)
+   -- `yi'yi'lu` (Exist `ha` Node M `ha` Binary
+    -- `yiiii` Exist `ha` Node G `ha` Binary
+     -- `yiii` (Exist `yi` leaf Z)
+       -- `lu` (Exist `yi` leaf Q)
+     -- `yi'lu` (Exist `yi` leaf O)))
 
 type Morse = () `S` ()
 
