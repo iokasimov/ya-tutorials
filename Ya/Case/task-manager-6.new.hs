@@ -46,7 +46,7 @@ hand cursor = is @Title `hv__` Bullet `hu` "  -  " `la` Cursor `hu` "  -> " `li`
 mark status = is @Title `hv__` TODO `hu` "TODO " `la` DONE `hu` "DONE " `li` status
 
 show = shaft `hv` by Passed `ho` this `ho_'yokl` Prior `ha` Run `ha` output `ho_'yu` Unit
- `lo__'yp` focus `ho` this `ho_'yokl` Forth `ha` Run `ha` output `ho_'yu` Unit `ho_` Await
+ `lo__'yp` at @(Alone _) `ho` this `ho_'yokl` Forth `ha` Run `ha` output `ho_'yu` Unit `ho_` Await
  `lo__'yp` shaft `hv` by Future `ho` this `ho_'yokl` Forth `ha` Run `ha` output `ho_'yu` Unit `ho_` Await
 
 -- (`ha'yo`): (t (tt o) i) -> into (from (a) o) (t (tt a) i)
@@ -58,7 +58,7 @@ start = to @(Scrolling List) `ha` Nonempty @List @Task
  `ha_` Last `ho` Item (by DONE `lu` to @(Sliding List) @List @ASCII "Buy a water gun for Songkran")
 
 -- excerpt = shaft `hv` by Passed `ho` this `ho_'yokl` Prior `ha` Run `ha` print (by Bullet)
---  `lo__'yp` focus `ho` this `ho_'yokl` Forth `ha` Run `ha` print (by Cursor) `ho_` Await
+--  `lo__'yp` at @(Alone _) `ho` this `ho_'yokl` Forth `ha` Run `ha` print (by Cursor) `ho_` Await
 --  `lo__'yp` shaft `hv` by Future `ho` this `ho_'yokl` Forth `ha` Run `ha` print (by Bullet) `ho_` Await
 
 active way title = intro @World Unit

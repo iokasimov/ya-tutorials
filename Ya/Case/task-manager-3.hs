@@ -29,7 +29,7 @@ press k f p = Maybe `hv___` unwrap k `lu'q` p `yi` dim `yiu` f Unit
 draft = intro @(World `JNT` State `T'I` Scrolling List Title) Unit
  `yuk___` Await `hv` prepare `lu'yp` Await `hv` clear
  `yuk___` State `ho` New `hv__` Event `hv` auto `ha_` Scope `ha` shaft `hv` by Passed `yok___` World `ha_'yokl` Prior `ha` Run `ha` print (by Bullet)
- `yuk___` State `ho` New `hv__` Event `hv` auto `ha_` Scope `hv` focus `ho` Scope it `yok___` World `ha_'yokl` Forth `ha` Run `ha` print (by Cursor)
+ `yuk___` State `ho` New `hv__` Event `hv` auto `ha_` Scope `hv` at @(Alone Title) `ho` Scope it `yok___` World `ha_'yokl` Forth `ha` Run `ha` print (by Cursor)
  `yuk___` State `ho` New `hv__` Event `hv` auto `ha_` Scope `ha` shaft `hv` by Future `yok___` World `ha_'yokl` Forth `ha` Run `ha` print (by Bullet)
  `yuk___` Await `hv___` input `yok` Retry `ha_'yok` Check `ha` apply `ha_` sieve
  `yok___` State `ho` New `ha` Event `ha` shift

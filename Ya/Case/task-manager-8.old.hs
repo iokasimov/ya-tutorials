@@ -76,24 +76,24 @@ folded = Glyph `ha` Symbol `ha` Punctuation
 
 titled = is `hu` Underline `la` is `hu` Crossing
 
-block_sl prefix cursor (U_T_I_TT_I (These (T'TT'I (U_T_I_TT_I (These focus (U_T_I_TT_I (These left right))))) (T'TT'I (Reverse (T'TT'I (T'I'II (This ()))))))) = intro @IO
+block_sl prefix cursor (U_T_I_TT_I (These (T'TT'I (U_T_I_TT_I (These at @(Alone _) (U_T_I_TT_I (These left right))))) (T'TT'I (Reverse (T'TT'I (T'I'II (This ()))))))) = intro @IO
  `yuk__`  left `yokl` block_tree prefix Bullet
- `yuk__` focus `yokl` block_tree prefix cursor
+ `yuk__` at @(Alone _) `yokl` block_tree prefix cursor
  `yuk__` right `yokl` block_tree prefix Bullet
  `yuk__` intro @_ @IO Unit
 block_sl prefix cursor (U_T_I_TT_I (These current (T'TT'I (Reverse (T'TT'I (T'I'II (That (R_U_I_T_I (Recursive (U_I_T_II (These x xs))))))))))) =
- let (U_T_I_TT_I (These focus (T'TT'I (U_T_I_TT_I (These rs fs))))) = x in intro
+ let (U_T_I_TT_I (These at @(Alone _) (T'TT'I (U_T_I_TT_I (These rs fs))))) = x in intro
  `yuk__` output (Caret Newline)
- `yuk__` focus `yokl` string prefix Bullet
+ `yuk__` at @(Alone _) `yokl` string prefix Bullet
  `yuk__` rs `yokl` block_tree (tab `he` prefix) Bullet
  `yuk__` block_sl (tab `he` prefix) cursor (U_T_I_TT_I (These current (T'TT'I (Reverse (T'TT'I ((xs `yo`R_U_I_T_I)))))))
  `yuk__` fs `yokl` block_tree (tab `he` prefix) Bullet
  `yuk__` intro @_ @IO Unit
 
-block_tree prefix cursor (R_U_I_T_I (Recursive (U_I_T_II (These focus@(These fold task) subtree)))) =
+block_tree prefix cursor (R_U_I_T_I (Recursive (U_I_T_II (These at @(Alone _)@(These fold task) subtree)))) =
  let pointer = is `hu` prefix `la` is `hu` (prefix `yu` level) `li` cursor in
  let aligner = that `ha` push @List (Caret Space) `ha` that `ha` push @List level in
-      string pointer cursor focus `yu` Unit
+      string pointer cursor at @(Alone _) `yu` Unit
  `lu'yp` 
   (is `hu` ((Forward subtree `yokl` Construct `ho` block_tree (aligner prefix) Bullet) `yu` Unit)
   `la` is `hu` intro

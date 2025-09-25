@@ -50,9 +50,9 @@ block_tree prefix cursor tree =
 
 tab = that `ha` push @List (Caret Space)
 
-block_scrolling_list_tree prefix cursor (U_T_I_TT_I (These focus (U_T_I_TT_I (These left right)))) = intro @IO
+block_scrolling_list_tree prefix cursor (U_T_I_TT_I (These at @(Alone _) (U_T_I_TT_I (These left right)))) = intro @IO
  `yuk__`  left `yokl` block_tree prefix Bullet
- `yuk__` focus `yokl` block_tree prefix cursor
+ `yuk__` at @(Alone _) `yokl` block_tree prefix cursor
  `yuk__` right `yokl` block_tree prefix Bullet
 
 block_project :: Title -> (Unit `ML` Unit) -> Project -> IO Unit

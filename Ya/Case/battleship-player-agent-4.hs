@@ -51,13 +51,13 @@ window' ship = ship `yukl` Forth
  `ha` adjust `hv` (by Expand `lu` by Fore)
 
 match = intro @(Halts `JNT` State Opponent) Unit
- `yuk____` State `ho` Old `hv__` Event `hv` pop @List `ha_` Scope `ha` shaft `hv` by Passed
+ `yuk____` Lease `ha` State `hv__` Event `hv` pop @List `ha_` Scope `ha` shaft `hv` by Passed
  `yok____` Check `ha` out
- `yuk____` State `ho` Old `hv__` Event `hv` pop @List `ha_` Scope `ha` shaft `hv` by Future
+ `yuk____` Lease `ha` State `hv__` Event `hv` pop @List `ha_` Scope `ha` shaft `hv` by Future
  `yok____` Check `ha` out
- `yuk____` State `ho` Old `hv__` Event `hv` get `ha_` Scope `hv` focus
+ `yuk____` Lease `ha` State `hv__` Event `hv` get `ha_` Scope `hv` at @(List Mark)
  `yok____` Check `ha` inner
- `yok____` State `ho` New `ha__` Event `ha` put `ho_'ha` Scope `hv` focus
+ `yok____` Apply `ha` State `ha__` Event `ha` put `ho_'ha` Scope `hv` at @(List Mark)
 
 out = Empty `hu` by Continue
  `la__` Nail `hu` by Interrupt
@@ -76,9 +76,9 @@ mount board = Same `hu` board
  `li` match `he'he'hv` board
 
 chance = intro @(State `T` Sliding List Mark) Unit
- `yuk___` State `ho` New `hv____` Event `hv_` auto `ho'ho` mount
- `yuk___` State `ho` New `hv____` Event `ha` shift `hv` by Future
- `yok___` Retry `ha` Perhaps `ha'he` not
+ `yuk___` Apply `ha` State `hv____` Event `hv_` auto `ho'ho` mount
+ `yuk___` Apply `ha` State `hv____` Event `ha` shift `hv` by Future
+ `yok___` Retry `ha` Stops `ha'he` not
 
 distribute fleet = fleet
  `yokl` Forth `ha` Run

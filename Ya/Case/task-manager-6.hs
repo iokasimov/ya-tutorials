@@ -47,7 +47,7 @@ start = to @(Scrolling List) `ha` Nonempty @List @Task
  `ha_` Last `ho` Item (by DONE `lu` title "Buy a water gun for Songkran")
 
 render dimmed = shaft @List `hv` by Passed `ho` this `ho_'yokl` Prior `ha` Run `ha` print dimmed (by Bullet)
- `lo__'yp` Await `ha__` focus @Alone `ho` this `ho_'yokl` Forth `ha` Run `ha` print (by Reveal) (by Cursor)
+ `lo__'yp` Await `ha__` at @(Alone Task) @(Scrolling List Task) `ho` this `ho_'yokl` Forth `ha` Run `ha` print (by Reveal) (by Cursor)
  `lo__'yp` Await `ha__` shaft @List `hv` by Future `ho` this `ho_'yokl` Forth `ha` Run `ha` print dimmed (by Bullet)
 
 press k f p = Maybe `hv___` k `hv` Unit `lu'q` p `yi` dim `yiu` f Unit
@@ -60,8 +60,8 @@ explore' :: ASCII `AR____` Maybe (Event `T'I` Mode `P` Panel `T'I` Unit)
 explore' = is @(ASCII `M` Glyph `S_` Glyph `M` Letter) `hu` by Wrong
  `la____` press (Lower `ha` J) (Event `ha` shift `ha` Down `ho__'ha` Scope `hv` at @Panel `ho__'ho` is `hu` Unit)
  `lo'ys'la` First `ha` press (Lower `ha` K) (Event `ha` shift `ha` Lift `ho__'ha` Scope `hv` at @Panel `ho__'ho` is `hu` Unit)
- `lo'ys'la` First `ha` press (Upper `ha` T) (Event `ha` relay `ha` TODO `ho__'ha` Scope `hv` at @Panel `ho_` Scope `hv` focus `ho_'he` Scope `hv` at @Mark `ho__'ho` is `hu` Unit)
- `lo'ys'la` First `ha` press (Upper `ha` D) (Event `ha` relay `ha` DONE `ho__'ha` Scope `hv` at @Panel `ho_` Scope `hv` focus `ho_'he` Scope `hv` at @Mark `ho__'ho` is `hu` Unit)
+ `lo'ys'la` First `ha` press (Upper `ha` T) (Event `ha` relay `ha` TODO `ho__'ha` Scope `hv` at @Panel `ho_` Scope `hv` at @(Alone Task) `ho_'he` Scope `hv` at @Mark `ho__'ho` is `hu` Unit)
+ `lo'ys'la` First `ha` press (Upper `ha` D) (Event `ha` relay `ha` DONE `ho__'ha` Scope `hv` at @Panel `ho_` Scope `hv` at @(Alone Task) `ho_'he` Scope `hv` at @Mark `ho__'ho` is `hu` Unit)
  `ha_____` on @Glyph `ho'ho` on @Letter `ho` unwrap @(AR)
 
 pattern Mode x = That x
@@ -104,10 +104,10 @@ draft = intro @(World `JNT` State `T'I` Mode `P` Scrolling List Task) Unit
  `yuk____` Old `ha` State `hv__` Event `hv` auto `ha_` Scope `hv` at @Mode
  `yok____` Run `ha__` command
  -- `yok____` New `ha` State `ha___` Event `ha_` shift `ho'ho` dim `ho__'ha` Scope `hv` at @Panel
- --   `la___` New `ha` State `ha___` Event `ha_` relay `ho'ho` dim `ho__'ha` Scope `hv` at @Panel `ho_` Scope `hv` focus `ho_'he` Scope `hv` at @Mark
+ --   `la___` New `ha` State `ha___` Event `ha_` relay `ho'ho` dim `ho__'ha` Scope `hv` at @Panel `ho_` Scope `hv` at @(Alone _) `ho_'he` Scope `hv` at @Mark
  --   `la___` New `ha` State `ha___` Event `ha_` relay `ho'ho` dim `ho__'ha` Scope `hv` at @Mode
- --  `la____` New `ha` State `ha___` Event `ha_` (\_ -> pop) `ho'ho` dim `ho__'ha` Scope `hv` at @Panel `ho_` Scope `hv` focus `ho_'he` Scope `hv` at @Title
- --   `la___` New `ha` State `ha___` Event `ha_` push `ha` Glyph `ho'ho` dim `ho__'ha` Scope `hv` at @Panel `ho_` Scope `hv` focus `ho_'he` Scope `hv` at @Title
+ --  `la____` New `ha` State `ha___` Event `ha_` (\_ -> pop) `ho'ho` dim `ho__'ha` Scope `hv` at @Panel `ho_` Scope `hv` at @(Alone _) `ho_'he` Scope `hv` at @Title
+ --   `la___` New `ha` State `ha___` Event `ha_` push `ha` Glyph `ho'ho` dim `ho__'ha` Scope `hv` at @Panel `ho_` Scope `hv` at @(Alone _) `ho_'he` Scope `hv` at @Title
  --   `la___` New `ha` State `ha___` Event `ha_` relay `ho'ho` dim `ho__'ha` Scope `hv` at @Mode
  -- `yok____` Again `ha` Once
 

@@ -53,9 +53,9 @@ match = intro @(Halts `JNT` State Opponent) Unit
  `yok____` Check `ha` out
  `yuk____` State `ho` Old `hv__` Event `hv` pop @List `ha_` Scope `ha` shaft `hv` by Future
  `yok____` Check `ha` out
- `yuk____` State `ho` Old `hv__` Event `hv` get `ha_` Scope `hv` focus
+ `yuk____` State `ho` Old `hv__` Event `hv` get `ha_` Scope `hv` at @(List Mark)
  `yok____` Check `ha` inner
- `yok____` State `ho` New `ha__` Event `ha` put `ho_'ha` Scope `hv` focus
+ `yok____` State `ho` New `ha__` Event `ha` put `ho_'ha` Scope `hv` at @(List Mark)
 
 out = Empty `hu` by Continue
  `la__` Nail `hu` by Interrupt

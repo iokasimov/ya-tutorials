@@ -61,11 +61,11 @@ type Application = State Outline `JNT` Halts `JNT` IO
 draft = intro @(State `T'I` Scrolling List Task `JNT` World)
  `yuk___` World `hv__` prepare `lu'yp` clear
  `yuk___` State `ho` Old `hv___` Event `hv` auto `ha_` Scope `ha` shaft `hv` by Passed `yok___` World `ha_'yokl` Prior `ha` Run `ha` print (by Bullet)
- `yuk___` State `ho` Old `hv___` Event `hv` auto `ha_` Scope `hv` focus `ho` Scope it `yok___` World `ha_'yokl` Forth `ha` Run `ha` print (by Cursor)
+ `yuk___` State `ho` Old `hv___` Event `hv` auto `ha_` Scope `hv` at @(Alone _) `ho` Scope it `yok___` World `ha_'yokl` Forth `ha` Run `ha` print (by Cursor)
  `yuk___` State `ho` Old `hv___` Event `hv` auto `ha_` Scope `ha` shaft `hv` by Future `yok___` World `ha_'yokl` Forth `ha` Run `ha` print (by Bullet)
  `yuk___` World `hv___` input `yok` Retry @Command `ha` apply `ha_` on @Glyph `ho'ho` on @Letter `ho` row
  `yok___` State `ho` New `ha___` Event `ha` (scroll `ho'ho` dim)
-  `la___` State `ho` New `ha___` Event `ha` (relay `ho'ho` dim) `ho__'ha` Scope `hv` focus `ho_'he` Scope `hv` at @Mark
+  `la___` State `ho` New `ha___` Event `ha` (relay `ho'ho` dim) `ho__'ha` Scope `hv` at @(Alone _) `ho_'he` Scope `hv` at @Mark
  `yok___` Again `ha` Once
 
 main = draft `he'he'hv` by start

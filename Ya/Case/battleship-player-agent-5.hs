@@ -96,7 +96,7 @@ unstock ship = intro @(Stops Result `JNT` State `T'I` Target `P` Fleet `P` Board
  `yok___` Try `ha__` Error `hu_` Reach @Result `ha` Fault `hv` ship `la` Ok
  `yok___` Try `ha__` Empty `hu_` Reach @Result `hv` by Smash `la` Ok `ha__` at @(Shafted List Ship) `he'ho` this `ho` to @List
  `yok___` New `ha` State `ha__` Event `ha` relay `ho_'ha` Scope `hv` at @Fleet
- `yuk___` New `ha` State `hv___` Event `ha` relay `hv` empty @List `ha__` Scope `hv` at @(Board Cell) `ho_` Scope `hv` focus
+ `yuk___` New `ha` State `hv___` Event `ha` relay `hv` empty @List `ha__` Scope `hv` at @(Board Cell) `ho_` Scope `hv` at @(List Cell)
  `yok___` New `ha` State `ha___` Event `ha` across `ho__'ha` Scope `hv` at @(Board Cell) `ho_` Scope `ha` shaft `hv` by Passed
  `yuk___` New `ha` State `hv___` Event `ha` relay `hv` Empty Unit `ha__` Scope `hv` at @Target
 
@@ -108,15 +108,13 @@ across sunk passed = that @(List Cell) `ha` pop `hv` sunk `yokl` Forth `ha` Run 
 -- Update
 -- Review
 
-window' ship = ship `yukl` Forth
- `ha` New `ha` State `ha` Event
- `ha` adjust `hv` (by Expand `lu` by Fore)
+window' ship = ship `yukl` Forth `ha` New `ha` State `ha` Event `ha` adjust `hv__'he` Expand `lo` Fore
 
 match = intro @(Halts `JNT` State Opponent) Unit
- `yuk___` State `ho` Old `hv__` Event `hv` pop `ha_` Scope `ha` shaft `hv` by Passed `yok___` Check `ha` out
- `yuk___` State `ho` Old `hv__` Event `hv` pop `ha_` Scope `ha` shaft `hv` by Future `yok___` Check `ha` out
- `yuk___` State `ho` Old `hv__` Event `hv` get `ha_` Scope `hv` focus `ho` Scope (as @List) `yok___` Check `ha` inner
- `yok___` State `ho` New `ha__` Event `ha` put `ho_'ha` Scope `hv` focus
+ `yuk___` Lease `ha` State `hv__` Event `hv` pop `ha_` Scope `ha` shaft `hv` by Passed `yok___` Check `ha` out
+ `yuk___` Lease `ha` State `hv__` Event `hv` pop `ha_` Scope `ha` shaft `hv` by Future `yok___` Check `ha` out
+ `yuk___` Lease `ha` State `hv__` Event `hv` get `ha_` Scope `hv` at @(List Mark) `yok___` Check `ha` inner
+ `yok___` Apply `ha` State `ha__` Event `ha` put `ho_'ha` Scope `hv` at @(List Mark)
 
 out = Empty `hu` by Continue
  `la__` Nail `hu` by Interrupt
@@ -188,7 +186,7 @@ main = process `he'he'hv__` by `hv` Empty @Ship `lu` fleet `lu` fresh
  -- `yi__` verge `ho'yu` Unit `la` smash `ho'yu` Unit `la` fault `ho'yu` Unit
  `yi__` smash `ho'yu` Unit `la` fault `ho'yu` Unit
   -- `la_` is @(Equipped _ _) `ho'he` that `ho` that @(Board Cell) `ho` to @List
-   `la` is @(Equipped _ _) `ho'he` that `ho` this `ho` that @Fleet `ho` print `ho'yu` Unit where
+   `la` is @(Along _ _) `ho'he` that `ho` this `ho` that @Fleet `ho` print `ho'yu` Unit where
   -- `ho_'yokl'yokl` Forth `ha` Forth `ha` Run
    -- `ha` (is `hu_`output `hv` by (Glyph `ha` Symbol `ha` Punctuate `ha` Dollar))
   

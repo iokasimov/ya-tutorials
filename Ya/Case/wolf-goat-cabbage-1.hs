@@ -31,10 +31,10 @@ meals (These item food) = food
  `yokl` Forth `ha` Check `ha` eats item
  `yu__` item
 
-check :: Scrolling List Creature `AR__` Stops (Creature `P` Creature) Creature
-check = meals
- `ha__` focus `ho` this @(Alone Creature) `ho'he` is
-   `lo` other `ho` this @(Shafted List Creature)
+-- check :: Scrolling List Creature `AR__` Stops (Creature `P` Creature) Creature
+-- check = meals
+--  `ha__` at @(Alone _) `ho` this @(Alone Creature) `ho'he` is
+--    `lo` other `ho` this @(Shafted List Creature)
 
 -- t a `AR____` into (from (tt a) (ttt o)) (t o)
 
@@ -51,34 +51,36 @@ spaced = push @List `hv_` Glyph `ha` Symbol `ha` Punctuate `hv'he` Space
 
 -- (`kyok`): List a `AR____` into (from (Scrolling List a) (Check o)) (List o)
 
-safe :: List Creature `AR___` List (List Creature)
-safe x = x `kyok` Range @List `ha` Check `ha` pick
+-- safe :: List Creature `AR___` List (List Creature)
+-- safe x = x `kyok` Range @List `ha` Check `ha` pick
 
-pick :: Scrolling List Creature `AR___` Stops `T'I` Creature `P` Creature `T'I` List Creature
-pick x = to @List `ha` this @(Shafted List Creature) `ha` other `hv` x
- `kyokl` Range @List `ha` Forth `ha` Check `ha` check
+-- pick :: Scrolling List Creature `AR___` Stops `T'I` Creature `P` Creature `T'I` List Creature
+-- pick x = to @List `ha` this @(Shafted List Creature) `ha` other `hv` x
+--  `kyokl` Range @List `ha` Forth `ha` Check `ha` check
 
 type Area = Twice `T'TT'I` List
 
-bank = Scope `hv` at @(Area Creature)
- `ho_'he` Scope `ha` rep @Twice `hv'he` This
+-- bank = Scope `hv` at @(Area Creature)
+--  `ho_'he` Scope `ha` rep @Twice `hv'he` This
 
 type Move = Maybe Creature
 
 -- turn :: Quest `JNT` State `T` Area Creature `T__` List Creature
-turn = intro @(Quest `JNT` Stops `T'I` Area Creature `JNT` State `T'I` Area Creature) Unit
- `yuk__` Lease `ha` State `hv__` Event `hv` get `ha_` Scope `hv'he` bank
- `yok__` Apply `ha` safe
+-- turn = intro @(Quest `JNT` Stops `T'I` Area Creature `JNT` State `T'I` Area Creature) Unit
+--  `yuk__` Lease `ha` State `hv__` Event `hv` get `ha_` Scope `hv'he` bank
+--  `yok__` Apply `ha` safe
 
 -- [1,2,3] `yi` Round `ho` to @Flux
 
--- main = draft `yo` render `yokl'yokl` Forth `ha` Forth `ha` Await `ha` output `ha` Glyph `ha` Letter
+main = draft `yo` render `yokl'yokl` Forth `ha` Forth `ha` Await `ha` output -- `ha` Glyph `ha` Letter
 
-main = is @(List Creature)
- `hv__` [by Wolf, by Goat, by Cabbage]
- `kyok` Range @List `ha` Check `ha` check
- `yok_` Apply `ha` that `ha` spaced `ha` render
- `yokl` Forth `ha` Await `ha` output
+-- example = [A Unit `lu` 1 `yi` Along, A Unit `lu` 1 `yi` Along]
+
+-- main = is @(List Creature)
+--  `hv__` [by Wolf, by Goat, by Cabbage]
+--  `kyok` Range @List `ha` Check `ha` check
+--  `yok_` Apply `ha` that `ha` spaced `ha` render
+--  `yokl` Forth `ha` Await `ha` output
 
 -- main = [Wolf Unit, Cabbage Unit] `yi` is @(List Creature)
 --  `kyokl` Range @List `ha` Forth `ha` Check `ha` check
