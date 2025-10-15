@@ -40,7 +40,7 @@ main = that @(List ASCII) `ha__` mismatch `la` missing `la` balance
 
  mismatch (These opened closed) =
   "[ERROR] Mismatched bracket shapes - "
-  `yokl` Prior `ha` New `ha` State `ha` Event `ha` push `he'he'hv___` List
+  `yokl` Prior `ha` New `ha` State `ha` Event `ha` push `he'he'hv___` List `ha` Exist `ha` Build
   `ha__` Item `ha` Glyph `ha` Symbol `ha` Bracket `ha` Opened `hv` opened `ha` Next
   `ha__` Item `ha` Caret `hv` by Space `ha` Next
   `hv__` Item `ha` Glyph `ha` Symbol `ha` Bracket `ha` Closed `hv` closed `ha` Last `hv` Unit

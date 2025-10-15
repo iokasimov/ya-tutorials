@@ -22,7 +22,7 @@ remnant = Empty `hu` Valid Unit
  `ha` this @Shape `ha` top @(Nonempty List)
 
 inspect code = code
- `yokl____` Forth `ha` Run @(Error Imbalance `JNT` State `T` List Shape)
+ `yokl____` Forth `ha` Run @(Stops Imbalance `JNT` State `T` List Shape)
  `ha______` Maybe `ha` dim `ha` on @Glyph
  `ho___'yok` Maybe `ha` dim `ha` on @Symbol `ho` Check
  `ho___'yok` Maybe `ha` dim `ha` on @Bracket `ho` Check

@@ -126,7 +126,7 @@ searchbar = push `ho_'ho'yoi` Exist `ha` Fore `ha_'he` Glyph
  `ha_` (`hd_'q` by Delete) `ha'he` is @Caret
 
 filter title = intro @(State `T'I` Task) Unit
- `yuk__` New `ha` State `hv__` Event `ha` locate `ha` (by Fore `lu`) `ha` Predicate `ha` exact `hv` title `ha_` Scope `hv` at @Description
+ `yuk__` New `ha` State `hv__` Event `ha` spot `ha` (by Fore `lu`) `ha` Predicate `ha` exact `hv` title `ha_` Scope `hv` at @Description
 
 exact sample item = Wrong `hu` by False `la` Valid `hu` by True `li` sample `lu'q` item
 

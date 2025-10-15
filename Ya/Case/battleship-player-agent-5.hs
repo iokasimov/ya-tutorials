@@ -65,7 +65,7 @@ type Opponent = Board Mark
 -- + Empty: If there is `Exist Ship` - we need to remove it from `Fleet`, stop
 
 process = intro @(Stops Result `JNT` State `T'I` Target `P` Fleet `P` Board Cell) Unit
- `yuk__` State `ho` New `hv__` Event `ha` adjust `hv` (by Expand `lu` by Fore) `ha_` Scope `hv` at @(Board Cell)
+ `yuk__` State `ho` New `hv__` Event `ha` adjust `hv` (by Expand `lu` by Right) `ha_` Scope `hv` at @(Board Cell)
  `yok__` Usual `ha__` Idle `hu` (review `yu` Unit) `la` Ship `hu` (pursuit `yu` Unit) `ha__` Last `hu` by Idle `la` this @Tile
  `yok__` Again `ha` Same
 
@@ -92,7 +92,7 @@ review = intro @(Stops Result `JNT` State `T'I` Target `P` Fleet `P` Board Cell)
 -- 4. If after removing ship fleet is empty - terminate with `Smash`
 -- 5. If fleet is not empty - just update `Fleet`
 unstock ship = intro @(Stops Result `JNT` State `T'I` Target `P` Fleet `P` Board Cell) Unit
- `yuk___` New `ha` State `hv__` Event `ha` locate `ha` (by Fore `lu`) `ha` Predicate `ha` exact `ha` Same `hv` ship `ha_` Scope `hv` at @Fleet `ho` Scope (as @(Scrolling List))
+ `yuk___` New `ha` State `hv__` Event `ha` spot `ha` (by Right `lu`) `ha` Match `ha` exact `ha` Same `hv` ship `ha_` Scope `hv` at @Fleet `ho` Scope (as @(Scrolling List))
  `yok___` Try `ha__` Error `hu_` Reach @Result `ha` Fault `hv` ship `la` Ok
  `yok___` Try `ha__` Empty `hu_` Reach @Result `hv` by Smash `la` Ok `ha__` at @(Shafted List Ship) `he'ho` this `ho` to @List
  `yok___` New `ha` State `ha__` Event `ha` relay `ho_'ha` Scope `hv` at @Fleet
@@ -100,7 +100,7 @@ unstock ship = intro @(Stops Result `JNT` State `T'I` Target `P` Fleet `P` Board
  `yok___` New `ha` State `ha___` Event `ha` across `ho__'ha` Scope `hv` at @(Board Cell) `ho_` Scope `ha` shaft `hv` by Passed
  `yuk___` New `ha` State `hv___` Event `ha` relay `hv` Empty Unit `ha__` Scope `hv` at @Target
 
-exact sample item = Wrong `hu` by False `la` Valid `hu` by True `li_` sample `lu'q` item
+exact sample item = Wrong `hu` by False `la` Valid `hu` by True `li_` sample `lu'q` unwrap item
 -- exact sample item = sample `lu'q` item `yi` dim `yiu` Unit `yi_` Boolean
 
 across sunk passed = that @(List Cell) `ha` pop `hv` sunk `yokl` Forth `ha` Run `ha` State `ha` Event `ha` push `he'he'hv___` passed
@@ -108,7 +108,7 @@ across sunk passed = that @(List Cell) `ha` pop `hv` sunk `yokl` Forth `ha` Run 
 -- Update
 -- Review
 
-window' ship = ship `yukl` Forth `ha` New `ha` State `ha` Event `ha` adjust `hv__'he` Expand `lo` Fore
+window' ship = ship `yukl` Forth `ha` New `ha` State `ha` Event `ha` adjust `hv__'he` Expand `lo` Right
 
 match = intro @(Halts `JNT` State Opponent) Unit
  `yuk___` Lease `ha` State `hv__` Event `hv` pop `ha_` Scope `ha` shaft `hv` by Passed `yok___` Check `ha` out
@@ -133,7 +133,7 @@ mount board = Same `hu` board
 
 chance = intro @(State `T` Sliding List Mark) Unit
  `yuk___` State `ho` New `hv__` Event `hv_` get `ho'ho` mount
- `yuk___` State `ho` New `hv__` Event `ha` shift `hv` by Fore
+ `yuk___` State `ho` New `hv__` Event `ha` shift `hv` by Right
  `yok___` Retry `ha` Perhaps `ha'he` not
 
 distribute fleet = fleet

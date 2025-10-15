@@ -4,6 +4,12 @@ import "ya-ascii" Ya.ASCII
 import "ya-literal" Ya.Literal
 import "ya-console" Ya.Console
 
+import "ya-tutorials" Ya.Instances ()
+
+import "base" System.IO (print)
+import "base" GHC.Num (Integer)
+import "base" GHC.IsList (IsList (Item, toList, fromList))
+
 type Creature = Unit `S` Unit `S` Unit
 
 pattern Wolf i = This (This i)
@@ -72,9 +78,20 @@ type Move = Maybe Creature
 
 -- [1,2,3] `yi` Round `ho` to @Flux
 
-main = draft `yo` render `yokl'yokl` Forth `ha` Forth `ha` Await `ha` output -- `ha` Glyph `ha` Letter
+-- main = draft `yo` render `yokl'yokl` Forth `ha` Forth `ha` Await `ha` output -- `ha` Glyph `ha` Letter
 
--- example = [A Unit `lu` 1 `yi` Along, A Unit `lu` 1 `yi` Along]
+-- instance IsList (Construction Optional `T'TT'I` Along k `T'I_` i) where
+--  type Item (Construction Optional `T'TT'I` Along k `T'I_` i) = (k, i)
+--  fromList x = T'TT'I (Construct (worker x)) where
+--   worker ((k,c) : []) = Item (c `lu` k `yi` Along) `ha` Last `hv` Unit
+--   worker ((k,c) : kcs) = Item (c `lu` k `yi` Along) `ha` Next `hv` worker kcs
+
+example :: List `T'TT'I` Along Latin `T'I_` Integer
+example = [(A Unit, 1), (B Unit, 2), (C Unit, 3)]
+
+-- _ :: Item (Nonempty List `T'TT'I` Along Unit `T'I_` Integer)
+
+main = example `yi` key `hv` B Unit `ho` this `ho` print
 
 -- main = is @(List Creature)
 --  `hv__` [by Wolf, by Goat, by Cabbage]

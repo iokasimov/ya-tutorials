@@ -26,7 +26,7 @@ eval binop = intro @(Halts `JNT` State `T` List Integer) Unit
 
 type Machine item = Halts `JNT` State `T` List item
 
-initial = Construct
+initial = Build
  `ha` (Item `hv` Immediate 1) `ha` Next
  `ha` (Item `hv` Immediate 2) `ha` Next
  `ha` (Item `hv` Operation (is @(Integer `P` Integer) `ho'hd` (+))) `ha` Next
