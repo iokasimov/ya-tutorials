@@ -3,7 +3,7 @@ import "ya-world" Ya.World
 import "ya-ascii" Ya.ASCII
 import "ya-console" Ya.Console
 
-type Title = List ASCII
+type Title = Nonempty List ASCII
 
 initial = empty @List @Title
  `yi` push `hv` "Apply to that new position" `ho` that
