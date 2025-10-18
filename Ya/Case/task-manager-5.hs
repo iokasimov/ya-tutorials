@@ -48,9 +48,12 @@ start = to @(Scrolling List) `ha` Nonempty @List @Task
 
 draft = intro @(World `JNT` State `T'I` Scrolling List Task) Unit
  `yuk____` World `hv__` prepare `lu'yp` Await `hv` clear
- `yuk____` State `ho` Old `hv___` Event `hv` auto `ha_` Scope `ha` shaft `hv` by Passed `yok____` World `ha_'yokl` Prior `ha` Run `ha` print (by Bullet)
- `yuk____` State `ho` Old `hv___` Event `hv` auto `ha_` Scope `hv` at @(Alone Task) `yok____` World `ha_'yokl` Forth `ha` Run `ha` print (by Cursor)
- `yuk____` State `ho` Old `hv___` Event `hv` auto `ha_` Scope `ha` shaft `hv` by Future `yok____` World `ha_'yokl` Forth `ha` Run `ha` print (by Bullet)
+ `yuk____` State `ho` Old `hv___` Event `hv` auto `ha__` Scope `hv` at @(Shafted List Task) `ho_` Scope `ha` rep `hv'he` Passed
+ `yok____` World `ha_'yokl` Prior `ha` Run `ha` print (by Bullet)
+ `yuk____` State `ho` Old `hv___` Event `hv` auto `ha__` Scope `hv` at @(Alone Task)
+ `yok____` World `ha_'yokl` Forth `ha` Run `ha` print (by Cursor)
+ `yuk____` State `ho` Old `hv___` Event `hv` auto `ha__` Scope `hv` at @(Shafted List Task) `ho_` Scope `ha` rep `hv'he` Future
+ `yok____` World `ha_'yokl` Forth `ha` Run `ha` print (by Bullet)
  `yuk____` World `hv___` input `yok` Retry @Command `ha` apply `ha_` on @Glyph `ho'ho` on @Letter `ho` unwrap @(AR)
  `yok____` State `ho` New `ha___` Event `ha_` shift `ho'ho` dim @(Optional Task)
   `la____` State `ho` New `ha___` Event `ha_` relay `ho'ho` dim @Mark

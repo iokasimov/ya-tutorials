@@ -11,20 +11,24 @@ pattern Cursor e = That e
 print cursor title = intro @World Unit
  `yuk___` Run `hv____` point `yokl` Forth `ha` Run `ha` output
  `yuk___` Run `hv____` title `yokl` Forth `ha` Run `ha` output
- `yuk___` Run `hv____` output `ha` Caret `hv` by Newline where
+ `yuk___` Run `hv____` output `ha` Caret `hv'he` Newline where
 
  point = is @Title `hv__` Bullet `hu` "  -  " `la` Cursor `hu` "  -> " `hv_` cursor
 
-initial = to @(Scrolling List) `ha` Nonempty @List @Title
- `ha` Item "Apply to that new position" `ha` Next
- `ha` Item "Find a way to fix ligatures" `ha` Next
- `ha` Item "Organize a boardgame session" `ha` Next
- `ha` Item "Buy a water gun for Songkran" `ha` Last
+initial = empty @Maybe
+ `lu` "Apply to that new position" `yi` Exist
+ `lu` "Organize a boardgame session" `yi` Exist
+ `lu` "Buy a water gun for Songkran" `yi` Exist
+ `lu` "Find a way to fix ligatures" `yi` Build
+ `yi` to @(Scrolling List) @(Nonempty List) @Title
 
 draft = intro @(World `JNT` State `T'I` Scrolling List Title) Unit
  `yuk___` World `hv__` prepare `lu'yp` Await `hv` clear
- `yuk___` State `ho` New `hv__` Event `hv` auto `ha_` Scope `ha` shaft `hv` by Passed `yok___` World `ha_'yokl` Prior `ha` Run `ha` print (by Bullet)
- `yuk___` State `ho` New `hv__` Event `hv` auto `ha_` Scope `hv` at @(Alone Title) `ho` Scope it `yok___` World `ha_'yokl` Forth `ha` Run `ha` print (by Cursor)
- `yuk___` State `ho` New `hv__` Event `hv` auto `ha_` Scope `ha` shaft `hv` by Future `yok___` World `ha_'yokl` Forth `ha` Run `ha` print (by Bullet)
+ `yuk___` Apply `ha` State `hv___` Event `hv` get `ha__` Scope `hv` at @(Shafted List Title) `ho_'he` Scope `ha` rep `hv'he` Passed
+ `yok___` World `ha_'yokl` Prior `ha` Run `ha` print (by Bullet)
+ -- `yuk___` State `ho` Apply `hv___` Event `hv` get `ha__` Scope `hv` at @(Alone Title) `ho` Scope it
+ -- `yok___` World `ha_'yokl` Forth `ha` Run `ha` print (by Cursor)
+ -- `yuk___` State `ho` Apply `hv___` Event `hv` get `ha__` Scope `hv` at @(Shafted List Title) `ho_` Scope `ha` rep `hv'he` Future
+ -- `yok___` World `ha_'yokl` Forth `ha` Run `ha` print (by Bullet)
 
-main = draft `he'he'hv` by initial
+main = draft `he'he'hv` initial

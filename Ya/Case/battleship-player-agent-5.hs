@@ -97,7 +97,7 @@ unstock ship = intro @(Stops Result `JNT` State `T'I` Target `P` Fleet `P` Board
  `yok___` Try `ha__` Empty `hu_` Reach @Result `hv` by Smash `la` Ok `ha__` at @(Shafted List Ship) `he'ho` this `ho` to @List
  `yok___` New `ha` State `ha__` Event `ha` relay `ho_'ha` Scope `hv` at @Fleet
  `yuk___` New `ha` State `hv___` Event `ha` relay `hv` empty @List `ha__` Scope `hv` at @(Board Cell) `ho_` Scope `hv` at @(List Cell)
- `yok___` New `ha` State `ha___` Event `ha` across `ho__'ha` Scope `hv` at @(Board Cell) `ho_` Scope `ha` shaft `hv` by Passed
+ `yok___` New `ha` State `ha___` Event `ha` across `ho__'ha` Scope `hv` at @(Board Cell) `ho_` Scope `hv` at @(Shafted List Mark) `ho_` Scope `ha` rep `hv'he` Passed
  `yuk___` New `ha` State `hv___` Event `ha` relay `hv` Empty Unit `ha__` Scope `hv` at @Target
 
 exact sample item = Wrong `hu` by False `la` Valid `hu` by True `li_` sample `lu'q` unwrap item
@@ -111,8 +111,8 @@ across sunk passed = that @(List Cell) `ha` pop `hv` sunk `yokl` Forth `ha` Run 
 window' ship = ship `yukl` Forth `ha` New `ha` State `ha` Event `ha` adjust `hv__'he` Expand `lo` Right
 
 match = intro @(Halts `JNT` State Opponent) Unit
- `yuk___` Lease `ha` State `hv__` Event `hv` pop `ha_` Scope `ha` shaft `hv` by Passed `yok___` Check `ha` out
- `yuk___` Lease `ha` State `hv__` Event `hv` pop `ha_` Scope `ha` shaft `hv` by Future `yok___` Check `ha` out
+ `yuk___` Lease `ha` State `hv__` Event `hv` pop `ha__` Scope `hv` at @(Shafted List Mark) `ho_` Scope `ha` rep `hv'he` Passed `yok___` Check `ha` out
+ `yuk___` Lease `ha` State `hv__` Event `hv` pop `ha__` Scope `hv` at @(Shafted List Mark) `ho_` Scope `ha` rep `hv'he` Future `yok___` Check `ha` out
  `yuk___` Lease `ha` State `hv__` Event `hv` get `ha_` Scope `hv` at @(List Mark) `yok___` Check `ha` inner
  `yok___` Apply `ha` State `ha__` Event `ha` put `ho_'ha` Scope `hv` at @(List Mark)
 

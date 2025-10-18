@@ -46,7 +46,7 @@ start = to @(Scrolling List) `ha` Nonempty @List @Task
  `ha_` Next `ho` Item (by TODO `lu` title "Organize a boardgame session")
  `ha_` Last `ho` Item (by DONE `lu` title "Buy a water gun for Songkran")
 
-render dimmed = shaft @List `hv` by Passed `ho` this `ho_'yokl` Prior `ha` Run `ha` print dimmed (by Bullet)
+render dimmed = shaft @List `hv'he` Passed `ho` this `ho_'yokl` Prior `ha` Run `ha` print dimmed (by Bullet)
  `lo__'yp` Await `ha__` at @(Alone Task) @(Scrolling List Task) `ho` this `ho_'yokl` Forth `ha` Run `ha` print (by Reveal) (by Cursor)
  `lo__'yp` Await `ha__` shaft @List `hv` by Future `ho` this `ho_'yokl` Forth `ha` Run `ha` print dimmed (by Bullet)
 

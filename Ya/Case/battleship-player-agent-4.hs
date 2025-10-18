@@ -51,13 +51,13 @@ window' ship = ship `yukl` Forth
  `ha` adjust `hv` (by Expand `lu` by Fore)
 
 match = intro @(Halts `JNT` State Opponent) Unit
- `yuk____` Lease `ha` State `hv__` Event `hv` pop @List `ha_` Scope `ha` shaft `hv` by Passed
+ `yuk____` Lease `ha` State `hv___` Event `hv` pop @List `ha__` Scope `hv` at @(Shafted List Mark) `ho_` Scope `ha` rep `hv'he` Passed
  `yok____` Check `ha` out
- `yuk____` Lease `ha` State `hv__` Event `hv` pop @List `ha_` Scope `ha` shaft `hv` by Future
+ `yuk____` Lease `ha` State `hv___` Event `hv` pop @List `ha__` Scope `hv` at @(Shafted List Mark) `ho_` Scope `ha` rep `hv'he` Future
  `yok____` Check `ha` out
- `yuk____` Lease `ha` State `hv__` Event `hv` get `ha_` Scope `hv` at @(List Mark)
+ `yuk____` Lease `ha` State `hv___` Event `hv` get `ha_` Scope `hv` at @(List Mark)
  `yok____` Check `ha` inner
- `yok____` Apply `ha` State `ha__` Event `ha` put `ho_'ha` Scope `hv` at @(List Mark)
+ `yok____` Apply `ha` State `ha___` Event `ha` put `ho_'ha` Scope `hv` at @(List Mark)
 
 out = Empty `hu` by Continue
  `la__` Nail `hu` by Interrupt
