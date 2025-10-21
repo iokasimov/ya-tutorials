@@ -56,7 +56,7 @@ draft = intro @(State `T'I` Scrolling List Task `JNT` IO)
    `ho'he` Scope @(Forward List Task) at
  `yok___'yokl` string Bullet
  `yuk___` input `yok___` Retry
- `ha____` match @(Cased Latin) @ASCII
+ `ha____` match @Letter @ASCII
   `ho___` press K (Move `ha` Down) `lo'ys'la` press J (Move `ha` Lift)
     `la_` press T (Mark `ha` TODO) `lo'ys'la` press D (Mark `ha` DONE)
     `la_` is @(Number `ML` Symbol `ML` Caret) `hu` Wrong ()

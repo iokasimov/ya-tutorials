@@ -5,6 +5,14 @@ import "ya-console" Ya.Console
 
 type Title = Nonempty List ASCII
 
+pattern Bullet e = This e
+pattern Cursor e = That e
+
+print = Cursor `hu` "  -> " `lo` is `la_` Bullet `hu` "   - " `lo` is
+ `ho__` is @Title `ha` to `ha` Merge @List @(Nonempty List)
+ `ho__'yokl` Forth `ha` Apply `ha` output
+ `ho__'yuk` Await `ha` output `ha` Caret `hv'he` Newline
+
 initial = empty @Maybe
  `lu` "Apply to that new position" `yi` Exist
  `lu` "Organize a boardgame session" `yi` Exist
@@ -13,8 +21,4 @@ initial = empty @Maybe
  `yi` is @(Nonempty List Title)
  `ho` to @(Scrolling List)
 
-print = is @Title
- `ho_'yokl` Forth `ha` Await `ha` output
- `ho_'yuk` Await `ha` output `ha` Caret `hv'he` Newline
-
-main = initial `yokl` Forth `ha` Apply `ha` print
+main = initial `kyokl` Locus `ha` Forth `ha` Await `ha` print
