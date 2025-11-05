@@ -1,5 +1,6 @@
 import "ya" Ya
 import "ya-ascii" Ya.ASCII
+import "ya-world" Ya.World
 import "ya-console" Ya.Console
 
 type Imbalance = (Shape `P` Shape) `S_` (Shape `S` Shape)
@@ -8,12 +9,12 @@ pattern Mismatch x = This x
 pattern Missing x = That x
 
 deposit bracket = intro @(Stops Imbalance `JNT` State `T` List Shape) Unit
- `yuk__` New `ha` State `ha` Event `hv` push @List bracket
+ `yuk__` Apply `ha` State `ha` Event `hv` push @List bracket
 
 analyze bracket = intro @(Stops Imbalance `JNT` State `T` List Shape) Unit
- `yuk__` New `ha` State `ha` Event `hv` pop @List
- `yok__` Try `ha__` Empty `hu_` Error @Imbalance `ha` Missing `ha` Opened `hv` bracket `la` Valid
- `yok__` Try `ha__` Error @Imbalance `ha` Mismatch `la` Valid `ha_` compare bracket
+ `yuk__` Apply `ha` State `ha` Event `hv` pop @List
+ `yok__` Check `ha__` Empty `hu_` Error @Imbalance `ha` Missing `ha` Opened `hv` bracket `la` Valid
+ `yok__` Check `ha__` Error @Imbalance `ha` Mismatch `la` Valid `ha_` compare bracket
 
 compare closed opened = opened `lu'q` closed
 
@@ -25,9 +26,9 @@ example = Nonempty @List
  `ha` Item (Closed Angle) `ha` Last
 
 main = by example
- `yokl` Forth `ha` Run `ha__` deposit `la` analyze `he'he'hv___` empty @List
+ `yokl` Forth `ha` Apply `ha__` analyze `la` deposit `he'he'hv___` empty @List
  `yok_` Check `ha` remnant `ha'he` that @(List Shape)
  `yi__` Error `hu` "[ERROR] Missing or mismatching bracket!" `ho` is @(List ASCII)
    `la` Valid `hu` "[VALID] Everything is seem to be good."
- `yokl` Forth `ha` Run `ha` output
+ `yokl` Forth `ha` Await `ha` output
 

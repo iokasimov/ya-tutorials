@@ -21,4 +21,4 @@ initial = empty @Maybe
  `yi` is @(Nonempty List Title)
  `ho` to @(Scrolling List)
 
-main = initial `kyokl` Locus `ha` Forth `ha` Await `ha` print
+main = initial `kyokl` Focus `ha` Forth `ha` Await `ha` print

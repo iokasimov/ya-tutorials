@@ -8,7 +8,6 @@ type Title = Nonempty List ASCII
 tap = exact `ha` Glyph `ha` Letter `ha` Lower `hv'he` J `ho'yo` Down
  `lo'ys` exact `ha` Glyph `ha` Letter `ha` Lower `hv'he` K `ho'yo` Lift `ho` Check
 
--- tap' :: ASCII `AR______` Maybe `T'I` Shifter List `S` Shifter List
 -- tap' x = to @Maybe `ha` Stump `ha` Stops `ha` on @Glyph `hv` x
 --  `yok_` Check `ha` to @Maybe `ha` Stump `ha` Stops `ha` on @Letter
 --  `yok_` Check `ha` (exact `ha` Lower `hv'he` J `ho'yo` Down)

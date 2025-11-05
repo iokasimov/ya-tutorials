@@ -86,12 +86,19 @@ type Move = Maybe Creature
 --   worker ((k,c) : []) = Item (c `lu` k `yi` Along) `ha` Last `hv` Unit
 --   worker ((k,c) : kcs) = Item (c `lu` k `yi` Along) `ha` Next `hv` worker kcs
 
-example :: List `T'TT'I` Along Latin `T'I_` Integer
-example = [(A Unit, 1), (B Unit, 2), (C Unit, 3)]
+-- example :: List `T'TT'I` Along Latin `T'I_` Integer
+-- example = [(A Unit, 1), (B Unit, 2), (C Unit, 3)]
 
 -- _ :: Item (Nonempty List `T'TT'I` Along Unit `T'I_` Integer)
 
-main = example `yi` key `hv` B Unit `ho` this `ho` print
+-- main = example `yi` key `hv` B Unit `ho` this `ho` print
+
+example :: Nonempty List `T'I_` Unit `AR` Latin
+example = [A, B, C, D]
+
+main = do
+ example `yokl` Forth `ha` Await `ha` output `ha` Glyph `ha` Letter `ha` Upper `ha` unwrap @AR
+ -- example `kyokl` Forth `ha` Await `ha` output `ha` Glyph `ha` Letter `ha` Upper
 
 -- main = is @(List Creature)
 --  `hv__` [by Wolf, by Goat, by Cabbage]
