@@ -5,10 +5,7 @@ import "ya-console" Ya.Console
 
 type Title = Nonempty List ASCII
 
-pattern Bullet e = This e
-pattern Cursor e = That e
-
-print = Cursor `hu` "  -> " `lo` is `la_` Bullet `hu` "   - " `lo` is
+print = Focus `hu` "  -> " `lo` is `la_` Exist `hu` "   - " `lo` is
  `ho__` is @Title `ha` to `ha` Merge @List @(Nonempty List)
  `ho__'yokl` Forth `ha` Apply `ha` output
  `ho__'yuk` Await `ha` output `ha` Caret `hv'he` Newline

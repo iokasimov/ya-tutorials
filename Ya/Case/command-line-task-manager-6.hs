@@ -5,9 +5,9 @@ import "ya-console" Ya.Console
 
 type Title = Nonempty List ASCII
 
-display records = records
+display x = x
  `kyokl` Focus `ha` Forth `ha` Await
- `ha___` Focus `hu` "  -> " `lo` is `la_` Exist `hu` "   - " `lo` is
+ `ha___` Focus `hu` "  -> " `lo` Same `la_` Exist `hu` "   - " `lo` Same
   `ho__` is @Title `ha` to `ha` Merge @List @(Nonempty List)
   `ho__'yokl` Forth `ha` Apply `ha` output
   `ho__'yuk` Await `ha` output `ha` Caret `hv'he` Newline
@@ -20,4 +20,15 @@ initial = empty @Maybe
  `yi` is @(Nonempty List Title)
  `ho` to @(Scrolling List)
 
-main = display `ha` that @(Scrolling List Title) `hv__` shift `hv'he` Down `hv` initial
+match = exact `ha` Glyph `ha` Letter `ha` Lower `hv'he` J `ho'yo` Down
+ `lo'ys'la` exact `ha` Glyph `ha` Letter `ha` Lower `hv'he` K `ho'yo` Lift `ho` Check
+
+process = intro @(World `JNT` State `T'I` Scrolling List Title) `hv` Unit
+ `yuk_` Await `hv` prepare `lu'yp` Await `hv` clear
+ `yuk_` Lease `ha` State `ha` Event `hv` get
+ `yok_` Await `ha` display
+ `yuk_` Await `hv` input `yok` Retry `ha` match
+ `yok_` Apply `ha` State `ha` Event `ha` shift
+ `yuk_` Again `hv'he` Same
+
+main = process `he'he'hv` initial
