@@ -3,12 +3,15 @@ import "ya-world" Ya.World
 import "ya-ascii" Ya.ASCII
 import "ya-console" Ya.Console
 
-type Title = Nonempty List ASCII
+type String = Nonempty List ASCII
+
+type Cursor = Unit `S` Unit
 
 display records = records
  `kyokl` Focus `ha` Forth `ha` Await
- `ha___` Focus `hu` "  -> " `lo` is `la_` Exist `hu` "   - " `lo` is
-  `ho__` is @Title `ha` to `ha` Merge @List @(Nonempty List)
+ `ha___'he` swap @(Cursor `P` String)
+  `ho__'yoi` Focus `hu` "  -> " `la` Exist `hu` "   - "
+  `ho__` to @(Nonempty List) `ha` Merge @(Nonempty List) @(Nonempty List)
   `ho__'yokl` Forth `ha` Apply `ha` output
   `ho__'yuk` Await `ha` output `ha` Caret `hv'he` Newline
 
@@ -17,7 +20,7 @@ initial = empty @Maybe
  `lu` "Organize a boardgame session" `yi` Exist
  `lu` "Buy a water gun for Songkran" `yi` Exist
  `lu` "Find a way to fix ligatures" `yi` Build
- `yi` is @(Nonempty List Title)
+ `yi` is @(Nonempty List String)
  `ho` to @(Scrolling List)
 
-main = display `ha` that @(Scrolling List Title) `hv__` shift `hv'he` Down `hv` initial
+main = display `ha` that @(Scrolling List String) `hv__` shift `hv'he` Down `hv` initial

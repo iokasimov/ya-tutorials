@@ -3,17 +3,17 @@ import "ya-world" Ya.World
 import "ya-ascii" Ya.ASCII
 import "ya-console" Ya.Console
 
-type Title = Nonempty List ASCII
+type String = Nonempty List ASCII
 
 initial = empty @Maybe
  `lu` "Apply to that new position" `yi` Exist
  `lu` "Organize a boardgame session" `yi` Exist
  `lu` "Buy a water gun for Songkran" `yi` Exist
  `lu` "Find a way to fix ligatures" `yi` Build
- `yi` is @(Nonempty List Title)
+ `yi` is @(Nonempty List String)
  `ho` to @(Scrolling List)
 
-print = is @Title
+print = is @String
  `ho_'yokl` Forth `ha` Await `ha` output
  `ho_'yuk` Await `ha` output `ha` Caret `hv'he` Newline
 

@@ -3,7 +3,7 @@ import "ya-world" Ya.World
 import "ya-ascii" Ya.ASCII
 import "ya-console" Ya.Console
 
-type Title = Nonempty List ASCII
+type String = Nonempty List ASCII
 
 match = exact `ha` Glyph `ha` Letter `ha` Lower `hv'he` J `ho'yo` Down
  `lo'ys'la` exact `ha` Glyph `ha` Letter `ha` Lower `hv'he` K `ho'yo` Lift `ho` Check
