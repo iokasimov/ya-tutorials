@@ -73,7 +73,7 @@ process = intro @(Stops Result `JNT` State `T'I` Target `P` Fleet `P` Board Cell
 pursuit = intro @(Stops Result `JNT` State `T'I` Target `P` Fleet `P` Board Cell) Unit
  `yuk___` State `ho` New `hv___` Event `hv_` hit `ha_` Scope `hv` at @Target
 
--- If there is no bombing target - initialize a new bombing target
+-- If there is no bombing target - startize a new bombing target
 -- If there is a bombing target - add a tile to this bombing target
 hit = auto `ha` Exist @Ship
  `ha__` Empty @Ship `hu_` intro @(Nonempty List) `hv` Unit

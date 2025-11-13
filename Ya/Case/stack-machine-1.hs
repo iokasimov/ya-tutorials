@@ -26,7 +26,7 @@ eval binop = intro @(Halts `JNT` State `T` List Integer) Unit
 
 type Machine item = Halts `JNT` State `T` List item
 
-initial = Build
+start = Build
  `ha` (Item `hv` Immediate 1) `ha` Next
  `ha` (Item `hv` Immediate 2) `ha` Next
  `ha` (Item `hv` Operation (is @(Integer `P` Integer) `ho'hd` (+))) `ha` Next
@@ -34,7 +34,7 @@ initial = Build
  `ha` (Item `hv` Operation (is @(Integer `P` Integer) `ho'hd` (+))) `ha` Last
 
 main = error `la` this `he'ho` trace
- `hv_______` by `hv` initial
+ `hv_______` by `hv` start
  `yokl` Forth `ha` Run
  `ha__` load `la` eval
  `he'he'hv___` empty @List where

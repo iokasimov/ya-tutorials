@@ -26,7 +26,7 @@ line = is @(Cursor `P` (Mark `P` String))
  `yio'yoi` Focus `hu` "  -> " `la` Exist `hu` "   - "
  `yio` to @(Nonempty List) `ha` Merge @(Nonempty List) @(Nonempty List)
 
-initial = empty @Maybe
+start = empty @Maybe
  `lu` (is `hv'he` TODO `lu` "Apply to that new position") `yi` Exist
  `lu` (is `hv'he` TODO `lu` "Organize a boardgame session") `yi` Exist
  `lu` (is `hv'he` DONE `lu` "Buy a water gun for Songkran") `yi` Exist
@@ -45,4 +45,4 @@ process = intro @(World `JNT` Task `I'T` Scrolling List `I'T` State) `hv` Unit
  `yok_` Apply `ha` State `ha` Event `ha` shift
  `yuk_` Again `hv'he` Same
 
-main = process `he'he'hv` initial
+main = process `he'he'hv` start

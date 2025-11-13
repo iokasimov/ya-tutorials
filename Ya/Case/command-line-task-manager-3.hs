@@ -13,7 +13,7 @@ print = is @(Cursor `P` String)
  `ho__'yokl` Forth `ha` Apply `ha` output
  `ho__'yuk` Await `ha` output `ha` Caret `hv'he` Newline
 
-initial = empty @Maybe
+start = empty @Maybe
  `lu` "Apply to that new position" `yi` Exist
  `lu` "Organize a boardgame session" `yi` Exist
  `lu` "Buy a water gun for Songkran" `yi` Exist
@@ -21,4 +21,4 @@ initial = empty @Maybe
  `yi` is @(Nonempty List String)
  `ho` to @(Scrolling List)
 
-main = initial `kyokl` Focus `ha` Forth `ha` Await `ha__'he` print `ha` swap
+main = start `kyokl` Focus `ha` Forth `ha` Await `ha__'he` print `ha` swap

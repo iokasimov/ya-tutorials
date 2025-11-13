@@ -5,7 +5,7 @@ import "ya-console" Ya.Console
 
 type String = Nonempty List ASCII
 
-initial = empty @Maybe
+start = empty @Maybe
  `lu` "Apply to that new position" `yi` Exist
  `lu` "Organize a boardgame session" `yi` Exist
  `lu` "Buy a water gun for Songkran" `yi` Exist
@@ -17,4 +17,4 @@ print = is @String
  `ho_'yokl` Forth `ha` Await `ha` output
  `ho_'yuk` Await `ha` output `ha` Caret `hv'he` Newline
 
-main = initial `yokl` Forth `ha` Apply `ha` print
+main = start `yokl` Forth `ha` Apply `ha` print

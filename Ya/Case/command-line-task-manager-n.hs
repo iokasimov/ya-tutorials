@@ -12,7 +12,7 @@ display x = x
   `ho__'yokl` Forth `ha` Apply `ha` output
   `ho__'yuk` Await `ha` output `ha` Caret `hv'he` Newline
 
-initial = empty @Maybe
+start = empty @Maybe
  `lu` "Apply to that new position" `yi` Exist
  `lu` "Organize a boardgame session" `yi` Exist
  `lu` "Buy a water gun for Songkran" `yi` Exist
@@ -29,4 +29,4 @@ process = intro @(World `JNT` State `T'I` Scrolling List Title) `hv` Unit
  `yok_` Await `ha` display
  `yuk_` Await `hv` input `yok` Retry `ha` match
 
-main = process `he'he'hv` initial
+main = process `he'he'hv` start

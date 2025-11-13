@@ -15,7 +15,7 @@ display records = records
   `ho__'yokl` Forth `ha` Apply `ha` output
   `ho__'yuk` Await `ha` output `ha` Caret `hv'he` Newline
 
-initial = empty @Maybe
+start = empty @Maybe
  `lu` "Apply to that new position" `yi` Exist
  `lu` "Organize a boardgame session" `yi` Exist
  `lu` "Buy a water gun for Songkran" `yi` Exist
@@ -34,4 +34,4 @@ process = intro @(World `JNT` State `T'I` Scrolling List String) `hv` Unit
  `yok_` Apply `ha` State `ha` Event `ha` shift
  `yuk_` Again `hv'he` Same
 
-main = process `he'he'hv` initial
+main = process `he'he'hv` start

@@ -139,7 +139,7 @@ process = intro @Application
   `la_____` Close `ho` to @Application
  `yok_____` Again `ha` Same
 
-initial = Construct `ho` to @(Scrolling List)
+start = Construct `ho` to @(Scrolling List)
  `ha______` Next `ha_` Tree `he` Task (TODO Unit) "Get ready for a Bangkok hackaton" `ho` to @(Scrolling Tree)
   `ha_____` Next `ha_` Node `he` Task (TODO Unit) "Prepare on Chain Fusion hackaton" `ha` List `ha` Exist `ha` Construct
    `ha____` Next `he_` Node `he` Task (DONE Unit) "Ask my wife to help with a pitch" `he` empty @List
@@ -167,4 +167,4 @@ initial = Construct `ho` to @(Scrolling List)
    `ha____` Next `he_` Node `he` Task (TODO Unit) "Prioritize on Boomerang Fu first" `he` empty @List
    `he____` Last `he_` Node `he` Task (TODO Unit) "Keep Talking and Nobody Explodes" `he` empty @List
 
-main = unwrap (process `he'he` initial)
+main = unwrap (process `he'he` start)

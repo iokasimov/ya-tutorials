@@ -103,7 +103,7 @@ draft = intro @Application
   `la___` Close `ho` to @Application
  `yok___` Again `ha` Once
 
-initial = Construct `ho` to @(Scrolling List)
+start = Construct `ho` to @(Scrolling List)
  `ha______` Next `ha_` Tree `he` Task (TODO Unit) "Get ready for a Bangkok hackaton" `ho` to @(Scrolling Tree)
   `ha_____` Next `he_` Node `he` Task (TODO Unit) "Purchase good round trip tickets" `he` empty @List
   `ha_____` Next `he_` Node `he` Task (TODO Unit) "Book some room nearby Klong Toei" `he` empty @List
@@ -123,4 +123,4 @@ initial = Construct `ho` to @(Scrolling List)
    `ha____` Next `he_` Node `he` Task (TODO Unit) "Prioritize on Boomerang Fu first" `he` empty @List
    `he____` Last `he_` Node `he` Task (TODO Unit) "Keep Talking and Nobody Explodes" `he` empty @List
 
-main = unwrap (draft `he'he` initial)
+main = unwrap (draft `he'he` start)
