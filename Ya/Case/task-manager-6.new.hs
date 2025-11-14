@@ -121,7 +121,7 @@ review = is `hu` by Wrong
  `ha______` on @Glyph @ASCII `ho'ho` on @Letter `ho` row
 
 searchbar = push `ho_'ho'yoi` Exist `ha` Fore `ha_'he` Glyph
- `la_` Exist `hu` get `ho'ho'yui` by Empty
+ `la_` Exist `hu` fetch `ho'ho'yui` by Empty
   `la` Exist `hu` pop `ho'ho'yoi'yo` Back
  `ha_` (`hd_'q` by Delete) `ha'he` is @Caret
 
@@ -132,12 +132,12 @@ exact sample item = Wrong `hu` by False `la` Valid `hu` by True `li` sample `lu'
 
 update x = intro @(State `T'I` Interface) Unit
  `yuk____` New `ha` State `hv__` Event `hv` searchbar x `ha_` Scope `hv` at @Title
- -- `yok____` New `ha` State `ha__` Event `ha` get `ha` not `ha_` Scope `hv` at @Mode
+ -- `yok____` New `ha` State `ha__` Event `ha` fetch `ha` not `ha_` Scope `hv` at @Mode
  --  `la____` New `ha` State `ha__` Event `ha` (is :: _) `ha_` Scope `hv` at 
 
 proccess = intro @(State `T'I` Interface `JNT` World) Unit
  `yuk______` World `hv__` prepare `lu'yp` Await `hv` clear
- `yuk______` State `ho` Old `ha` Event `hv` get
+ `yuk______` State `ho` Old `ha` Event `hv` fetch
  `yok______` World `ha` render
  `yuk______` World `hv` input
  `yok______` New `ha` update

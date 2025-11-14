@@ -46,7 +46,7 @@ match = exact `ha` Glyph `ha` Letter `ha` Lower `hv'he` J `ho'yo` (Move `ha` Dow
 
 process = intro @(World `JNT` Task `I'T` Scrolling List `I'T` State) `hv` Unit
  `yuk_____` Await `hv` clear `lu'yp` Await `hv` prepare
- `yuk_____` Lease `ha` State `ha` Event `hv` get
+ `yuk_____` Lease `ha` State `ha` Event `hv` fetch
  `yok_____` Await `ha` print
  `yuk_____` Await `hv` input `yok__` Retry `ha` match
  `yok_____` Apply `ha` State `ha___` Event `ha` shift `ho'hu` Unit
@@ -54,7 +54,5 @@ process = intro @(World `JNT` Task `I'T` Scrolling List `I'T` State) `hv` Unit
    `ho__'ha` Scope `hv` at @(Alone Task)
     `ho_'he` Scope `hv` at @Mark
  `yuk_____` Again `hv'he` Same
-
--- TODO: rename `get` to `fetch`
 
 main = process `he'he'hv` initial

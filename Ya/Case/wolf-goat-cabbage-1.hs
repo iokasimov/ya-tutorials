@@ -73,7 +73,7 @@ type Move = Maybe Creature
 
 -- turn :: Quest `JNT` State `T` Area Creature `T__` List Creature
 -- turn = intro @(Quest `JNT` Stops `T'I` Area Creature `JNT` State `T'I` Area Creature) Unit
---  `yuk__` Lease `ha` State `hv__` Event `hv` get `ha_` Scope `hv'he` bank
+--  `yuk__` Lease `ha` State `hv__` Event `hv` fetch `ha_` Scope `hv'he` bank
 --  `yok__` Apply `ha` safe
 
 -- [1,2,3] `yi` Round `ho` to @Flux

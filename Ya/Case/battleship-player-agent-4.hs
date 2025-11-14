@@ -55,7 +55,7 @@ match = intro @(Halts `JNT` State Opponent) Unit
  `yok____` Check `ha` out
  `yuk____` Lease `ha` State `hv___` Event `hv` pop @List `ha__` Scope `hv` at @(Shafted List Mark) `ho_` Scope `ha` rep `hv'he` Future
  `yok____` Check `ha` out
- `yuk____` Lease `ha` State `hv___` Event `hv` get `ha_` Scope `hv` at @(List Mark)
+ `yuk____` Lease `ha` State `hv___` Event `hv` fetch `ha_` Scope `hv` at @(List Mark)
  `yok____` Check `ha` inner
  `yok____` Apply `ha` State `ha___` Event `ha` put `ho_'ha` Scope `hv` at @(List Mark)
 

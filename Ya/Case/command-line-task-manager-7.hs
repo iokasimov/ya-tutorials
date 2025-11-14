@@ -39,7 +39,7 @@ match = exact `ha` Glyph `ha` Letter `ha` Lower `hv'he` J `ho'yo` Down
 
 process = intro @(World `JNT` Task `I'T` Scrolling List `I'T` State) `hv` Unit
  `yuk_` Await `hv` prepare `lu'yp` Await `hv` clear
- `yuk_` Lease `ha` State `ha` Event `hv` get
+ `yuk_` Lease `ha` State `ha` Event `hv` fetch
  `yok_` Await `ha` display
  `yuk_` Await `hv` input `yok` Retry `ha` match
  `yok_` Apply `ha` State `ha` Event `ha` shift

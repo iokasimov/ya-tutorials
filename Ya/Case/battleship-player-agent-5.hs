@@ -83,7 +83,7 @@ hit = auto `ha` Exist @Ship
  -- , if there is `Empty Ship` - do nothing
  -- , if there is `Exist Ship` - we need to remove it from `Fleet` and skip
 review = intro @(Stops Result `JNT` State `T'I` Target `P` Fleet `P` Board Cell) Unit
- `yuk___` Old `ha` State `hv__` Event `hv` get `ha_` Scope `hv` at @Target
+ `yuk___` Old `ha` State `hv__` Event `hv` fetch `ha_` Scope `hv` at @Target
  `yok___` Run `ha__` Empty `hu_` intro `ha` Empty `hv` Unit `la` unstock
 
 -- 1. Try to find the same ship
@@ -113,7 +113,7 @@ window' ship = ship `yukl` Forth `ha` New `ha` State `ha` Event `ha` adjust `hv_
 match = intro @(Halts `JNT` State Opponent) Unit
  `yuk___` Lease `ha` State `hv__` Event `hv` pop `ha__` Scope `hv` at @(Shafted List Mark) `ho_` Scope `ha` rep `hv'he` Passed `yok___` Check `ha` out
  `yuk___` Lease `ha` State `hv__` Event `hv` pop `ha__` Scope `hv` at @(Shafted List Mark) `ho_` Scope `ha` rep `hv'he` Future `yok___` Check `ha` out
- `yuk___` Lease `ha` State `hv__` Event `hv` get `ha_` Scope `hv` at @(List Mark) `yok___` Check `ha` inner
+ `yuk___` Lease `ha` State `hv__` Event `hv` fetch `ha_` Scope `hv` at @(List Mark) `yok___` Check `ha` inner
  `yok___` Apply `ha` State `ha__` Event `ha` put `ho_'ha` Scope `hv` at @(List Mark)
 
 out = Empty `hu` by Continue
@@ -132,7 +132,7 @@ mount board = Same `hu` board
  `li` match `he'he'hv` board
 
 chance = intro @(State `T` Sliding List Mark) Unit
- `yuk___` State `ho` New `hv__` Event `hv_` get `ho'ho` mount
+ `yuk___` State `ho` New `hv__` Event `hv_` fetch `ho'ho` mount
  `yuk___` State `ho` New `hv__` Event `ha` shift `hv` by Right
  `yok___` Retry `ha` Perhaps `ha'he` not
 
