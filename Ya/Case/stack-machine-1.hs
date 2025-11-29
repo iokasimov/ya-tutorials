@@ -34,7 +34,7 @@ start = Build
  `ha` (Item `hv` Operation (is @(Integer `P` Integer) `ho'hd` (+))) `ha` Last
 
 main = error `la` this `he'ho` trace
- `hv_______` by `hv` start
+ `hv_______` unwrap start
  `yokl` Forth `ha` Run
  `ha__` load `la` eval
  `he'he'hv___` empty @List where
@@ -44,4 +44,4 @@ main = error `la` this `he'ho` trace
  trace x = is @(Nonempty List ASCII) "[OK] Trace: " `yokl` Forth `ha` Raw `ha` output
   `yuk___` Raw `hv____` x `yokl` Forth `ha` Run `ha__` integer
   `ho_'yokl` Forth `ha` Raw `ha` output `ha` Glyph `ha` Digit
-  `ho_'yuk` Raw `ha` output `ha` Caret `hv` by Space
+  `ho_'yuk` Raw `ha` output `ha` Caret `hv'he` Space

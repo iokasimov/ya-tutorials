@@ -5,22 +5,22 @@ import "ya-console" Ya.Console
 
 type String = Nonempty List ASCII
 
-type Mark = Unit `S` Unit
+type Status = Unit `S` Unit
 
 pattern TODO e = This e
 pattern DONE e = That e
 
-type Task = Mark `P` String
+type Task = Status `P` String
 
 type Cursor = Unit `S` Unit
 
-block records = records
+block tasks = tasks
  `kyokl` Focus `ha` Forth `ha` Await
  `ha___'he` line `ha` swap
   `ho__'yokl` Forth `ha` Apply `ha` output
   `ho__'yuk` Await `ha` output `ha` Caret `hv'he` Newline
 
-line = is @(Cursor `P` (Mark `P` String))
+line = is @(Cursor `P` (Status `P` String))
  `yio'yio'yoi` TODO `hu` "TODO " `la` DONE `hu` "DONE "
  `yio'yio` to @(Nonempty List) `ha` Merge @(Nonempty List)
  `yio'yoi` Focus `hu` "  -> " `la` Exist `hu` "   - "

@@ -7,7 +7,7 @@ type String = Nonempty List ASCII
 
 type Cursor = Unit `S` Unit
 
-display records = records
+print tasks = tasks
  `kyokl` Focus `ha` Forth `ha` Await
  `ha___'he` swap @(Cursor `P` String)
   `ho__'yoi` Focus `hu` "  -> " `la` Exist `hu` "   - "
@@ -29,7 +29,7 @@ match = exact `ha` Glyph `ha` Letter `ha` Lower `hv'he` J `ho'yo` Down
 process = intro @(World `JNT` State `T'I` Scrolling List String) `hv` Unit
  `yuk_` Await `hv` prepare `lu'yp` Await `hv` clear
  `yuk_` Lease `ha` State `ha` Event `hv` fetch
- `yok_` Await `ha` display
+ `yok_` Await `ha` print
  `yuk_` Await `hv` input `yok` Retry `ha` match
  `yok_` Apply `ha` State `ha` Event `ha` shift
  `yuk_` Again `hv'he` Same

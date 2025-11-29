@@ -7,7 +7,7 @@ type String = Nonempty List ASCII
 
 type Cursor = Unit `S` Unit
 
-display records = records
+display tasks = tasks
  `kyokl` Focus `ha` Forth `ha` Await
  `ha___'he` swap @(Cursor `P` String)
   `ho__'yoi` Focus `hu` "  -> " `la` Exist `hu` "   - "
