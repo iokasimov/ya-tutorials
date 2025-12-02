@@ -23,4 +23,4 @@ start = empty @Maybe
  `yi` is @(Nonempty List String)
  `ho` to @(Scrolling List)
 
-main = display `ha` that @(Scrolling List String) `hv__` shift `hv'he` Down `hv` start
+main = display `ha` that @(Scrolling List String) `hv__` shift `hv'he` Below `hv` start

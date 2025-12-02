@@ -30,8 +30,8 @@ print cursor (These status task) = intro @IO
 
 type Move = Scroller List
 
-pattern Lift x = This x :: Move
-pattern Down x = That x :: Move
+pattern Above x = This x :: Move
+pattern Below x = That x :: Move
 
 type Command = Move `S` Mark
 
@@ -41,8 +41,8 @@ pattern Mark x = That x :: Command
 press k f p = Maybe `he___` k `lu'q` p `yi` dim `yiu` f Unit
 
 apply = is @(ASCII `MN` Glyph `S_` Glyph `MN` Letter) `hu` Wrong Unit
- `la____` press `hv` Lower J `hv` (Move `ha` Down)
- `lo'ys'la` press `hv` Lower K `hv` (Move `ha` Lift)
+ `la____` press `hv` Lower J `hv` (Move `ha` Below)
+ `lo'ys'la` press `hv` Lower K `hv` (Move `ha` Above)
  `lo'ys'la` press `hv` Upper T `hv` (Mark `ha` TODO)
  `lo'ys'la` press `hv` Upper D `hv` (Mark `ha` DONE)
 

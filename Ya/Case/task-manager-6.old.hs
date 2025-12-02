@@ -20,8 +20,8 @@ type Move = Scroller List `ML` Scroller Tree
 pattern Outline x = This x :: Move
 pattern Project x = That x :: Move
 
-pattern Down x = This x :: Scroller List
-pattern Lift x = That x :: Scroller List
+pattern Below x = This x :: Scroller List
+pattern Above x = That x :: Scroller List
 
 pattern Range x = This x :: Scroller Tree
 pattern Level x = That x :: Scroller Tree
@@ -96,12 +96,12 @@ mark = is @Title `ha__` is `hu` "TODO" `la` is `hu` "DONE"
 
 press k f p = Maybe `he___` k `lu'q` p `yi` dim `yiu` f Unit
 
-apply = press `he` Lower P `he` (Move `ha` Outline `ha` Down)
- `lo'ys'la` press `he` Lower N `he` (Move `ha` Outline `ha` Lift)
- `lo'ys'la` press `he` Lower K `he` (Move `ha` Project `ha` Range `ha` Down)
- `lo'ys'la` press `he` Lower J `he` (Move `ha` Project `ha` Range `ha` Lift)
- `lo'ys'la` press `he` Lower D `he` (Move `ha` Project `ha` Level `ha` Down)
- `lo'ys'la` press `he` Lower U `he` (Move `ha` Project `ha` Level `ha` Lift)
+apply = press `he` Lower P `he` (Move `ha` Outline `ha` Below)
+ `lo'ys'la` press `he` Lower N `he` (Move `ha` Outline `ha` Above)
+ `lo'ys'la` press `he` Lower K `he` (Move `ha` Project `ha` Range `ha` Below)
+ `lo'ys'la` press `he` Lower J `he` (Move `ha` Project `ha` Range `ha` Above)
+ `lo'ys'la` press `he` Lower D `he` (Move `ha` Project `ha` Level `ha` Below)
+ `lo'ys'la` press `he` Lower U `he` (Move `ha` Project `ha` Level `ha` Above)
  `lo'ys'la` press `he` Upper T `he` (Mark `ha` TODO)
  `lo'ys'la` press `he` Upper D `he` (Mark `ha` DONE)
  `lo'ys'la` press `he` Lower Q `he` (Quit)

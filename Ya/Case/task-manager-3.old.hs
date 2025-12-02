@@ -16,8 +16,8 @@ pattern DONE e = That e :: Mark
 
 type Move = Unit `ML` Unit
 
-pattern Down x = This x :: Move
-pattern Lift x = That x :: Move
+pattern Below x = This x :: Move
+pattern Above x = That x :: Move
 
 type Task = Mark `P` Title
 
@@ -57,7 +57,7 @@ draft = intro @(State `T'I` Scrolling List Task `JNT` IO)
  `yok___'yokl` string Bullet
  `yuk___` input `yok___` Retry
  `ha____` match @Letter @ASCII
-  `ho___` press K (Move `ha` Down) `lo'ys'la` press J (Move `ha` Lift)
+  `ho___` press K (Move `ha` Below) `lo'ys'la` press J (Move `ha` Above)
     `la_` press T (Mark `ha` TODO) `lo'ys'la` press D (Mark `ha` DONE)
     `la_` is @(Number `ML` Symbol `ML` Caret) `hu` Wrong ()
  `yok___` State `ha__` Transition `ha_` scroll `ho'ho` (`yui` ())

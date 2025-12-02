@@ -3,7 +3,7 @@ packages: .
 source-repository-package
  type: git
  location: https://github.com/iokasimov/ya.git
- tag: eb6c64b3a0bc4f96cab6c3bf558f0ebe9d015cc3
+ tag: 4febb6cb9d2d0d12f1a5ce52717fcfa91c80756b
 
 source-repository-package
  type: git

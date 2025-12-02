@@ -25,8 +25,8 @@ pattern Cursor e = That e
 
 type Move = Shifter List
 
--- pattern Lift x = This x
--- pattern Down x = That x
+-- pattern Above x = This x
+-- pattern Below x = That x
 
 type Command = Move `S` Mark `S_` ASCII `S` Unit
 
@@ -113,8 +113,8 @@ type Interface = Result `P` Stash `P` Title `P` Mode
 
 review :: ASCII `AR__` Maybe Command
 review = is `hu` by Wrong
-  `la____` press (Lower `ha` J) (Move `ha` Down)
-  `lo'ys'la` First `ha` press (Lower `ha` K) (Move `ha` Lift)
+  `la____` press (Lower `ha` J) (Move `ha` Below)
+  `lo'ys'la` First `ha` press (Lower `ha` K) (Move `ha` Above)
   `lo'ys'la` First `ha` press (Upper `ha` T) (Mark `ha` TODO)
   `lo'ys'la` First `ha` press (Upper `ha` D) (Mark `ha` DONE)
   -- `lo'ys'la` press `hv` Lower F `hv` (Find)

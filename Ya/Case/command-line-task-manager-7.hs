@@ -34,8 +34,8 @@ start = empty @Maybe
  `yi` is @(Nonempty List `T'I` Task)
  `ho` to @(Scrolling List)
 
-match = exact `ha` Glyph `ha` Letter `ha` Lower `hv'he` J `ho'yo` Down
- `lo'ys'la` exact `ha` Glyph `ha` Letter `ha` Lower `hv'he` K `ho'yo` Lift `ho` Check
+match = exact `ha` Glyph `ha` Letter `ha` Lower `hv'he` J `ho'yo` Below
+ `lo'ys'la` exact `ha` Glyph `ha` Letter `ha` Lower `hv'he` K `ho'yo` Above `ho` Check
 
 process = intro @(World `JNT` Task `I'T` Scrolling List `I'T` State) `hv` Unit
  `yuk_` Await `hv` prepare `lu'yp` Await `hv` clear

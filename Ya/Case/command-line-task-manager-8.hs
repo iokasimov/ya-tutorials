@@ -36,11 +36,11 @@ start = empty @Maybe
 
 type Command = Shifter List `S` Status
 
-pattern Move e = This e
+pattern Motion e = This e
 pattern Status e = That e
 
-match = exact `ha` Glyph `ha` Letter `ha` Lower `hv'he` J `ho'yo` (Move `ha` Down)
- `lo'ys'la` exact `ha` Glyph `ha` Letter `ha` Lower `hv'he` K `ho'yo` (Move `ha` Lift) `ho` Check
+match = exact `ha` Glyph `ha` Letter `ha` Lower `hv'he` J `ho'yo` (Motion `ha` Below)
+ `lo'ys'la` exact `ha` Glyph `ha` Letter `ha` Lower `hv'he` K `ho'yo` (Motion `ha` Above) `ho` Check
  `lo'ys'la` exact `ha` Glyph `ha` Letter `ha` Upper `hv'he` T `ho'yo` (Status `ha` TODO) `ho` Check
  `lo'ys'la` exact `ha` Glyph `ha` Letter `ha` Upper `hv'he` D `ho'yo` (Status `ha` DONE) `ho` Check
 

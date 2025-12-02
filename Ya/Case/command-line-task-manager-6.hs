@@ -23,8 +23,8 @@ start = empty @Maybe
  `yi` is @(Nonempty List String)
  `ho` to @(Scrolling List)
 
-match = exact `ha` Glyph `ha` Letter `ha` Lower `hv'he` J `ho'yo` Down
- `lo'ys'la` exact `ha` Glyph `ha` Letter `ha` Lower `hv'he` K `ho'yo` Lift `ho` Check
+match = exact `ha` Glyph `ha` Letter `ha` Lower `hv'he` J `ho'yo` Below
+ `lo'ys'la` exact `ha` Glyph `ha` Letter `ha` Lower `hv'he` K `ho'yo` Above `ho` Check
 
 process = intro @(World `JNT` State `T'I` Scrolling List String) `hv` Unit
  `yuk_` Await `hv` prepare `lu'yp` Await `hv` clear

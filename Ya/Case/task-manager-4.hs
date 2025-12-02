@@ -26,14 +26,14 @@ print cursor (These status task) = intro @World Unit
 
 type Move = Shifter List
 
--- pattern Lift x = This x
--- pattern Down x = That x
+-- pattern Above x = This x
+-- pattern Below x = That x
 
 press k f p = Maybe `hv___` k `hv` Unit `lu'q` p `yi` dim `yiu` f Unit
 
 apply = is @(ASCII `M` Glyph `S_` Glyph `M` Letter) `hu` Wrong Unit
- `la____` (press `hv` (Lower `ha` J) `hv` Down)
- `lo'ys'la` First `ha` (press `hv` (Lower `ha` K) `hv` Lift)
+ `la____` (press `hv` (Lower `ha` J) `hv` Below)
+ `lo'ys'la` First `ha` (press `hv` (Lower `ha` K) `hv` Above)
 
 start = to @(Scrolling List) `ha` Nonempty @List @Task
  `ha` Item (by TODO `lu` "Apply to that new position") `ha` Next

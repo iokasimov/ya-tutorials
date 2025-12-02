@@ -21,8 +21,8 @@ sieve x = intro @Maybe Unit
  `yuk___` Check `ha` Maybe `ha` dim `ha` on @Glyph `hv` x
  `yok___` Check `ha` Maybe `ha` dim `ha` on @Letter
 
-apply = press `hv` (Lower `ha` J) `hv` Down
- `lo'ys'la` press `hv` (Lower `ha` K) `hv` Lift `ho` First
+apply = press `hv` (Lower `ha` J) `hv` Below
+ `lo'ys'la` press `hv` (Lower `ha` K) `hv` Above `ho` First
 
 press k f p = Maybe `hv___` unwrap k `lu'q` p `yi` dim `yiu` f Unit
 

@@ -58,8 +58,8 @@ type Panel = Scrolling List Task
 
 explore' :: ASCII `AR____` Maybe (Event `T'I` Mode `P` Panel `T'I` Unit)
 explore' = is @(ASCII `M` Glyph `S_` Glyph `M` Letter) `hu` by Wrong
- `la____` press (Lower `ha` J) (Event `ha` shift `ha` Down `ho__'ha` Scope `hv` at @Panel `ho__'ho` is `hu` Unit)
- `lo'ys'la` First `ha` press (Lower `ha` K) (Event `ha` shift `ha` Lift `ho__'ha` Scope `hv` at @Panel `ho__'ho` is `hu` Unit)
+ `la____` press (Lower `ha` J) (Event `ha` shift `ha` Below `ho__'ha` Scope `hv` at @Panel `ho__'ho` is `hu` Unit)
+ `lo'ys'la` First `ha` press (Lower `ha` K) (Event `ha` shift `ha` Above `ho__'ha` Scope `hv` at @Panel `ho__'ho` is `hu` Unit)
  `lo'ys'la` First `ha` press (Upper `ha` T) (Event `ha` relay `ha` TODO `ho__'ha` Scope `hv` at @Panel `ho_` Scope `hv` at @(Alone Task) `ho_'he` Scope `hv` at @Mark `ho__'ho` is `hu` Unit)
  `lo'ys'la` First `ha` press (Upper `ha` D) (Event `ha` relay `ha` DONE `ho__'ha` Scope `hv` at @Panel `ho_` Scope `hv` at @(Alone Task) `ho_'he` Scope `hv` at @Mark `ho__'ho` is `hu` Unit)
  `ha_____` on @Glyph `ho'ho` on @Letter `ho` unwrap @(AR)
@@ -77,8 +77,8 @@ pattern Drop x = This (This x)
 pattern Pile x = This (That x)
 
 explore = press (Caret `ha` Newline) (Mode `ha` Focused)
- `lo'ys'la` First `ha` press (Glyph `ha` Letter `ha` Lower `ha` J) (Move `ha` Down)
- `lo'ys'la` First `ha` press (Glyph `ha` Letter `ha` Lower `ha` K) (Move `ha` Lift)
+ `lo'ys'la` First `ha` press (Glyph `ha` Letter `ha` Lower `ha` J) (Move `ha` Below)
+ `lo'ys'la` First `ha` press (Glyph `ha` Letter `ha` Lower `ha` K) (Move `ha` Above)
  `lo'ys'la` First `ha` press (Glyph `ha` Letter `ha` Upper `ha` T) (Mark `ha` TODO)
  `lo'ys'la` First `ha` press (Glyph `ha` Letter `ha` Upper `ha` D) (Mark `ha` DONE)
 

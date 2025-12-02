@@ -35,8 +35,8 @@ mark status = is @Title `hv__` TODO `hu` "TODO " `la` DONE `hu` "DONE " `li` sta
 press k f p = Maybe `hv___` k `hv` Unit `lu'q` p `yi` dim `yiu` f Unit
 
 apply = is @(ASCII `M` Glyph `S_` Glyph `M` Letter) `hu` by Wrong
-  `la____` press `hv` (Lower `ha` J) `hv` (Move `ha` Down)
-  `lo'ys'la` First `ha` press (Lower `ha` K) (Move `ha` Lift)
+  `la____` press `hv` (Lower `ha` J) `hv` (Move `ha` Below)
+  `lo'ys'la` First `ha` press (Lower `ha` K) (Move `ha` Above)
   `lo'ys'la` First `ha` press (Upper `ha` T) (Mark `ha` TODO)
   `lo'ys'la` First `ha` press (Upper `ha` D) (Mark `ha` DONE)
 

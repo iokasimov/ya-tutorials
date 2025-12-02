@@ -16,8 +16,8 @@ pattern DONE e = That e :: Mark
 
 type Move = Unit `ML` Unit
 
-pattern Down x = This x :: Move
-pattern Lift x = That x :: Move
+pattern Below x = This x :: Move
+pattern Above x = That x :: Move
 
 type Quit = Unit
 
@@ -88,8 +88,8 @@ draft = intro @Application
  `yok___'yokl` block_project (empty @List) Bullet
  `yuk___` input `yok__` Retry
   `ha___` match @Letter @ASCII
-   `ho__` press `he` Lower K `he` (Move `ha` Down)
- `lo'ys'la` press `he` Lower J `he` (Move `ha` Lift)
+   `ho__` press `he` Lower K `he` (Move `ha` Below)
+ `lo'ys'la` press `he` Lower J `he` (Move `ha` Above)
  `lo'ys'la` press `he` Lower Q `he` (Quit)
  `lo'ys'la` press `he` Upper T `he` (Mark `ha` TODO)
  `lo'ys'la` press `he` Upper D `he` (Mark `ha` DONE)
