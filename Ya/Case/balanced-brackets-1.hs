@@ -20,8 +20,8 @@ example = Nonempty @List @Parenthesis
  `ha` Item (Closed Unit) `ha` Last
 
 main = unwrap example
- `yokl` Forth `ha` Run `ha__` deposit `la` analyze `he'he'hv___` empty @List
+ `yokl` Forth `ha` Apply `ha__` deposit `la` analyze `he'he'hv___` empty @List
  `yok_` Check `ha` remnant `ha'he` that @(List Unit)
  `yi__` Error `hu` "[ERROR] We missed some bracket, oh my!" `ho` is @(List ASCII)
    `la` Valid `hu` "[VALID] Everything is seem to be good."
- `yokl` Forth `ha` Run `ha` output
+ `yokl` Forth `ha` Apply `ha` output

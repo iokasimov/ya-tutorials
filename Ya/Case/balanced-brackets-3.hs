@@ -22,15 +22,15 @@ remnant = Empty `hu` Valid Unit
  `ha` this @Shape `ha` top @(Nonempty List)
 
 inspect code = code
- `yokl____` Forth `ha` Run @(Stops Imbalance `JNT` State `T` List Shape)
+ `yokl____` Forth `ha` Apply @(Stops Imbalance `JNT` State `T` List Shape)
  `ha______` Maybe `ha` dim `ha` on @Glyph
  `ho___'yok` Maybe `ha` dim `ha` on @Symbol `ho` Check
  `ho___'yok` Maybe `ha` dim `ha` on @Bracket `ho` Check
- `ho___'yokl` Check `ha` Run `ha__` deposit `la` analyze
+ `ho___'yokl` Check `ha` Apply `ha__` deposit `la` analyze
  `he'he'hv_______` empty @List
  `yok_____` Check `ha` remnant `ha'he` that @(List Shape)
 
 main = Error `hu` "[ERROR] Missing or mismatching bracket!"
  `la___` Valid `hu` "[VALID] Everything is seem to be good!" `ho` is @(List ASCII)
  `li___` inspect `ha` is @(Nonempty List ASCII) `hv` "fn main() { println('hello, <world>!') }"
- `yokl_` Forth `ha` Run `ha` output
+ `yokl_` Forth `ha` Apply `ha` output

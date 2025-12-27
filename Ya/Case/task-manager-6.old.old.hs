@@ -20,10 +20,10 @@ pattern Bullet = This Unit
 pattern Cursor = That Unit
 
 print cursor (These status task) = intro @IO
- `yuk___` Run (hand `yokl` Forth `ha` Run `ha` output)
- `yuk___` Run (mark `yokl` Forth `ha` Run `ha` output)
- `yuk___` Run (task `yokl` Forth `ha` Run `ha` output)
- `yuk___` Run (output `he` Caret Newline) where
+ `yuk___` Apply (hand `yokl` Forth `ha` Apply `ha` output)
+ `yuk___` Apply (mark `yokl` Forth `ha` Apply `ha` output)
+ `yuk___` Apply (task `yokl` Forth `ha` Apply `ha` output)
+ `yuk___` Apply (output `he` Caret Newline) where
 
  hand = is @Title `he__` is `hu` "  -  " `la` is `hu` "  -> " `li` cursor
  mark = is @Title `he__` is `hu` "TODO " `la` is `hu` "DONE " `li` status
@@ -60,9 +60,9 @@ type Application = State Outline `JNT` Halts `JNT` IO
 
 draft = intro @(State `T'I` Scrolling List Task `JNT` World)
  `yuk___` World `hv__` prepare `lu'yp` clear
- `yuk___` State `ho` Old `hv___` Event `hv` auto `ha_` Scope `ha` shaft `hv` by Passed `yok___` World `ha_'yokl` Prior `ha` Run `ha` print (by Bullet)
- `yuk___` State `ho` Old `hv___` Event `hv` auto `ha_` Scope `hv` at @(Alone _) `ho` Scope it `yok___` World `ha_'yokl` Forth `ha` Run `ha` print (by Cursor)
- `yuk___` State `ho` Old `hv___` Event `hv` auto `ha_` Scope `ha` shaft `hv` by Future `yok___` World `ha_'yokl` Forth `ha` Run `ha` print (by Bullet)
+ `yuk___` State `ho` Old `hv___` Event `hv` auto `ha_` Scope `ha` shaft `hv` by Passed `yok___` World `ha_'yokl` Prior `ha` Apply `ha` print (by Bullet)
+ `yuk___` State `ho` Old `hv___` Event `hv` auto `ha_` Scope `hv` at @(Alone _) `ho` Scope it `yok___` World `ha_'yokl` Forth `ha` Apply `ha` print (by Cursor)
+ `yuk___` State `ho` Old `hv___` Event `hv` auto `ha_` Scope `ha` shaft `hv` by Future `yok___` World `ha_'yokl` Forth `ha` Apply `ha` print (by Bullet)
  `yuk___` World `hv___` input `yok` Retry @Command `ha` apply `ha_` on @Glyph `ho'ho` on @Letter `ho` row
  `yok___` State `ho` New `ha___` Event `ha` (scroll `ho'ho` dim)
   `la___` State `ho` New `ha___` Event `ha` (relay `ho'ho` dim) `ho__'ha` Scope `hv` at @(Alone _) `ho_'he` Scope `hv` at @Mark

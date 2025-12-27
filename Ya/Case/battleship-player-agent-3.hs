@@ -63,7 +63,7 @@ out = Empty `hu` by Continue
    `la` Mist `hu` by Continue
 
 inner ship = ship
- `yokl` Run `ho` Forth
+ `yokl` Apply `ho` Forth
  `ha__` Bang `ho` Nail `ho` Shot `ho` Valid
    `la` Sunk `ho` Nail `hu` Error Unit
    `la` Miss `ho` Shot `hu` Error Unit
@@ -79,7 +79,7 @@ chance = intro @(State `T` Sliding List Mark) Unit
  `yok___` Retry `ha` Perhaps `ha'he` not
 
 distribute fleet = fleet
- `yokl` Forth `ha` Run
+ `yokl` Forth `ha` Apply
  `ha__` intro @(State _) @(AR)
   `ho_'yok` New `ha` window'
   `ho_'yuk` New `hv` chance
@@ -101,13 +101,13 @@ main = print `ha` that `hv_` distribute fleet `he'he'hv` to known where
 
  print = this `ha'he` at @(Shafted List Mark)
       `ho_` (unwrap @AR `ha` this `ha'he` at @(Reverse List Mark))
-      `ho_'yokl` Prior `ha` Run `ha` render
+      `ho_'yokl` Prior `ha` Apply `ha` render
   `lo_'yp` this `ha'he` at @(List Mark)
-      `ho_'yokl` Forth `ha` Run `ha` render
+      `ho_'yokl` Forth `ha` Apply `ha` render
       `ho_` Await
   `lo_'yp` this `ha'he` at @(Shafted List Mark)
       `ho_` unwrap @AR `ha` this `ha'he` at @(Forward List Mark)
-      `ho_'yokl` Forth `ha` Run `ha` render
+      `ho_'yokl` Forth `ha` Apply `ha` render
       `ho_` Await
 
  render = Bang `hu` Plus `hv` Unit
@@ -115,5 +115,5 @@ main = print `ha` that `hv_` distribute fleet `he'he'hv` to known where
   `la__` Miss `hu` Hyphen `hv` Unit
   `ho___` intro @_ @(AR) `ha` Glyph `ha` Symbol `ha` Punctuate
   `la__` integer `ho_'yo` Glyph `ha` Digit
-  `ho___'yokl` Forth `ha` Run `ha` output
+  `ho___'yokl` Forth `ha` Apply `ha` output
   `ho___'yuk` World `ha` output `ha` Caret `hv` by Space

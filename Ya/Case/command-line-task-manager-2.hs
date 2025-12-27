@@ -10,8 +10,7 @@ start = empty @Maybe
  `lu` "Organize a boardgame session" `yi` Exist
  `lu` "Buy a water gun for Songkran" `yi` Exist
  `lu` "Find a way to fix ligatures" `yi` Build
- `yi` is @(Nonempty List String)
- `ho` to @(Scrolling List)
+ `yi` Adapt @(Nonempty List) `ho` to @(Scrolling List)
 
 print = is @String
  `ho_'yokl` Forth `ha` Await `ha` output

@@ -23,10 +23,10 @@ pattern Move x = This x
 pattern Mark x = That x
 
 print cursor (These status task) = intro @World `hv` Unit
- `yuk___` Run `hv____` hand cursor `yokl` Forth `ha` Run `ha` output
- `yuk___` Run `hv____` mark status `yokl` Forth `ha` Run `ha` output
- `yuk___` Run `hv____` task `yokl` Forth `ha` Run `ha` output
- `yuk___` Run `hv____` output `ha` Caret `hv` by Newline
+ `yuk___` Apply `hv____` hand cursor `yokl` Forth `ha` Apply `ha` output
+ `yuk___` Apply `hv____` mark status `yokl` Forth `ha` Apply `ha` output
+ `yuk___` Apply `hv____` task `yokl` Forth `ha` Apply `ha` output
+ `yuk___` Apply `hv____` output `ha` Caret `hv` by Newline
 
 hand cursor = is @Title `hv__` Bullet `hu` "  -  " `la` Cursor `hu` "  -> " `li` cursor
 
@@ -49,11 +49,11 @@ start = to @(Scrolling List) `ha` Nonempty @List @Task
 draft = intro @(World `JNT` State `T'I` Scrolling List Task) Unit
  `yuk____` World `hv__` prepare `lu'yp` Await `hv` clear
  `yuk____` State `ho` Old `hv___` Event `hv` auto `ha__` Scope `hv` at @(Shafted List Task) `ho_` Scope `ha` rep `hv'he` Passed
- `yok____` World `ha_'yokl` Prior `ha` Run `ha` print (by Bullet)
+ `yok____` World `ha_'yokl` Prior `ha` Apply `ha` print (by Bullet)
  `yuk____` State `ho` Old `hv___` Event `hv` auto `ha__` Scope `hv` at @(Alone Task)
- `yok____` World `ha_'yokl` Forth `ha` Run `ha` print (by Cursor)
+ `yok____` World `ha_'yokl` Forth `ha` Apply `ha` print (by Cursor)
  `yuk____` State `ho` Old `hv___` Event `hv` auto `ha__` Scope `hv` at @(Shafted List Task) `ho_` Scope `ha` rep `hv'he` Future
- `yok____` World `ha_'yokl` Forth `ha` Run `ha` print (by Bullet)
+ `yok____` World `ha_'yokl` Forth `ha` Apply `ha` print (by Bullet)
  `yuk____` World `hv___` input `yok` Retry @Command `ha` apply `ha_` on @Glyph `ho'ho` on @Letter `ho` unwrap @(AR)
  `yok____` State `ho` New `ha___` Event `ha_` shift `ho'ho` dim @(Optional Task)
   `la____` State `ho` New `ha___` Event `ha_` relay `ho'ho` dim @Mark

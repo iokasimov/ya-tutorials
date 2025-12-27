@@ -26,8 +26,8 @@ remnant = Empty `hu` by Valid
   `la` Error @Imbalance `ha` Missing `ha` Closed `ha` this @Shape `ha` top @(Nonempty List)
 
 inspect code = code
- `yokl__` Forth `ha` Run @(Stops Imbalance `JNT` State `T` List Shape)
- `ha____'yokl` Try `ha` Run `ha__` deposit `la` analyze
+ `yokl__` Forth `ha` Apply @(Stops Imbalance `JNT` State `T` List Shape)
+ `ha____'yokl` Try `ha` Apply `ha__` deposit `la` analyze
  `ha____` on @Glyph `ho` dim `ho` Maybe
  `ho_'yok` on @Symbol `ho` dim `ho` Maybe `ho` Try
  `ho_'yok` on @Bracket `ho` dim `ho` Maybe `ho` Try
@@ -36,7 +36,7 @@ inspect code = code
 
 main = that @(List ASCII) `ha__` mismatch `la` missing `la` balance
  `li___` inspect `ha` is @(Nonempty List ASCII) `hv` "fn main() { println('hello, <world>!') }"
- `yokl_` Forth `ha` Run `ha` output where
+ `yokl_` Forth `ha` Apply `ha` output where
 
  mismatch (These opened closed) =
   "[ERROR] Mismatched bracket shapes - "

@@ -9,7 +9,7 @@ type Cursor = Unit `S` Unit
 
 print = is @(Cursor `P` String)
  `ho__'yoi` Focus `hu` "  -> " `la` Exist `hu` "   - "
- `ho__` to @(Nonempty List) `ha` Merge @(Nonempty List) @(Nonempty List)
+ `ho__` to @(Nonempty List) `ha` Merge @(Nonempty List) @(Nonempty List) `ha` Clasp
  `ho__'yokl` Forth `ha` Apply `ha` output
  `ho__'yuk` Await `ha` output `ha` Caret `hv'he` Newline
 
@@ -18,7 +18,6 @@ start = empty @Maybe
  `lu` "Organize a boardgame session" `yi` Exist
  `lu` "Buy a water gun for Songkran" `yi` Exist
  `lu` "Find a way to fix ligatures" `yi` Build
- `yi` is @(Nonempty List String)
- `ho` to @(Scrolling List)
+ `yi` Adapt @(Nonempty List) `ho` to @(Scrolling List)
 
 main = start `kyokl` Focus `ha` Forth `ha` Await `ha__'he` print `ha` swap

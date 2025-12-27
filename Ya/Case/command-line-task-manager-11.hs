@@ -38,7 +38,7 @@ match = exact `ha` Glyph `ha` Letter `ha` Lower `hv'he` J `ho'yo` (Motion `ha` A
  `lo'ys'la` exact `ha` Glyph `ha` Letter `ha` Upper `hv'he` D `ho'yo` (Status `ha` DONE) `ho` Check
 
 print tasks = tasks
- `kyo` Focus `yi_` to @Tree
+ `kyo` Focus `yi_` Adapt `ho` to @Tree
  `kyokl` Depth `ha` Forth `ha` Await
  `ha___` line
   `ho__'yokl` Forth `ha` Apply `ha` output
@@ -49,24 +49,23 @@ type Indent = List Unit
 indent level = level
  `yok_` Plane @List
  `ha__'yo` Glyph `ha` Symbol `ha` Punctuate
- `ha__` to @List @Twice
+ `ha__` Adapt @Twice `ho` to @List
  `ha__` Space `lo` Space
 
 -- line :: Status `I'T` Along String `I'T` Along Cursor `I'T` Along Indent `AR__` List ASCII
 line = at `ho` this @Indent `ho` indent
    `lo_` is `hu` " -> " `la` is `hu` "  - "
    `ha_` at `ho` this @Cursor
-  `ho__` to @List `ha` Merge @List @List
+  `ho__` to @List `ha` Merge @List @List `ha` Clasp
    `lo_` is `hu` "IDEA " `la` is `hu` "TODO " `la` is `hu` "DONE "
    `ha_` at `ho` this @Status
-  `ho__` to @List `ha` Merge @List @List
-   `lo_` at `ho` this @String `ho` to @List
-  `ho__` to @List `ha` Merge @List
+  `ho__` to @List `ha` Merge @List @List `ha` Clasp
+   `lo_` at `ho` this @String `ho` Adapt `ho` to @List
+  `ho__` to @List `ha` Merge @List `ha` Clasp
 
 process = intro @(World `JNT` Task `I'T` Scrolling Tree `I'T` State) `hv` Unit
  `yuk_____` Await `hv` clear `lu'yp` Await `hv` prepare
  `yuk_____` Lease `ha` State `ha` Event `hv` fetch
- -- `yok_____` Await `ha` print `ha` to @Tree
  `yok_____` Await `ha` print
  `yuk_____` Await `hv` input `yok__` Retry `ha` match
  `yok_____` Apply `ha` State `ha___` Event `ha` shift `ho'hu` Unit
@@ -74,4 +73,4 @@ process = intro @(World `JNT` Task `I'T` Scrolling Tree `I'T` State) `hv` Unit
    `ho__'ha` Scope `hv` at @(Tree Task) `ho_` Scope `hv` top @Tree `ho_` Scope `hv` at @Status
  `yuk_____` Again `hv'he` Same
 
-main = process `he'he'hv_` to @(Scrolling Tree) `hv` start
+main = process `he'he'hv_` Adapt @Tree `ho` to @(Scrolling Tree) `hv` start

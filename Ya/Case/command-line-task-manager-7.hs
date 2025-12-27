@@ -22,9 +22,9 @@ block tasks = tasks
 
 line = is @(Cursor `P` (Status `P` String))
  `yio'yio'yoi` TODO `hu` "TODO " `la` DONE `hu` "DONE "
- `yio'yio` to @(Nonempty List) `ha` Merge @(Nonempty List)
+ `yio'yio` to @(Nonempty List) `ha` Merge @(Nonempty List) `ha` Clasp
  `yio'yoi` Focus `hu` "  -> " `la` Exist `hu` "   - "
- `yio` to @(Nonempty List) `ha` Merge @(Nonempty List)
+ `yio` to @(Nonempty List) `ha` Merge @(Nonempty List) `ha` Clasp
 
 start = empty @Maybe
  `lu` (unwrap TODO `lu` "Apply to that new position") `yi` Exist
@@ -32,7 +32,7 @@ start = empty @Maybe
  `lu` (unwrap DONE `lu` "Buy a water gun for Songkran") `yi` Exist
  `lu` (unwrap TODO `lu` "Find a way to fix ligatures") `yi` Build
  `yi` is @(Nonempty List `T'I` Task)
- `ho` to @(Scrolling List)
+ `ho` Adapt @(Nonempty List) `ho` to @(Scrolling List)
 
 match = exact `ha` Glyph `ha` Letter `ha` Lower `hv'he` J `ho'yo` Below
  `lo'ys'la` exact `ha` Glyph `ha` Letter `ha` Lower `hv'he` K `ho'yo` Above `ho` Check

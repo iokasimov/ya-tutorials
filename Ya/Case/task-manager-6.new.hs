@@ -36,18 +36,18 @@ pattern Heap x = That (This x)
 pattern Away x = That (That x)
 
 print cursor (These status task) = intro @World Unit
- `yuk___` Run `hv____` hand cursor `yokl` Forth `ha` Run `ha` output
- `yuk___` Run `hv____` mark status `yokl` Forth `ha` Run `ha` output
- `yuk___` Run `hv____` show task -- `yokl` Forth `ha` Run `ha` output
- `yuk___` Run `hv____` output `ha` Caret `hv` by Newline
+ `yuk___` Apply `hv____` hand cursor `yokl` Forth `ha` Apply `ha` output
+ `yuk___` Apply `hv____` mark status `yokl` Forth `ha` Apply `ha` output
+ `yuk___` Apply `hv____` show task -- `yokl` Forth `ha` Apply `ha` output
+ `yuk___` Apply `hv____` output `ha` Caret `hv` by Newline
 
 hand cursor = is @Title `hv__` Bullet `hu` "  -  " `la` Cursor `hu` "  -> " `li` cursor
 
 mark status = is @Title `hv__` TODO `hu` "TODO " `la` DONE `hu` "DONE " `li` status
 
-show = shaft `hv` by Passed `ho` this `ho_'yokl` Prior `ha` Run `ha` output `ho_'yu` Unit
- `lo__'yp` at @(Alone _) `ho` this `ho_'yokl` Forth `ha` Run `ha` output `ho_'yu` Unit `ho_` Await
- `lo__'yp` shaft `hv` by Future `ho` this `ho_'yokl` Forth `ha` Run `ha` output `ho_'yu` Unit `ho_` Await
+show = shaft `hv` by Passed `ho` this `ho_'yokl` Prior `ha` Apply `ha` output `ho_'yu` Unit
+ `lo__'yp` at @(Alone _) `ho` this `ho_'yokl` Forth `ha` Apply `ha` output `ho_'yu` Unit `ho_` Await
+ `lo__'yp` shaft `hv` by Future `ho` this `ho_'yokl` Forth `ha` Apply `ha` output `ho_'yu` Unit `ho_` Await
 
 -- (`ha'yo`): (t (tt o) i) -> into (from (a) o) (t (tt a) i)
 
@@ -57,19 +57,19 @@ start = to @(Scrolling List) `ha` Nonempty @List @Task
  `ha_` Next `ho` Item (by TODO `lu` to @(Sliding List) @List @ASCII "Organize a boardgame session")
  `ha_` Last `ho` Item (by DONE `lu` to @(Sliding List) @List @ASCII "Buy a water gun for Songkran")
 
--- excerpt = shaft `hv` by Passed `ho` this `ho_'yokl` Prior `ha` Run `ha` print (by Bullet)
---  `lo__'yp` at @(Alone _) `ho` this `ho_'yokl` Forth `ha` Run `ha` print (by Cursor) `ho_` Await
---  `lo__'yp` shaft `hv` by Future `ho` this `ho_'yokl` Forth `ha` Run `ha` print (by Bullet) `ho_` Await
+-- excerpt = shaft `hv` by Passed `ho` this `ho_'yokl` Prior `ha` Apply `ha` print (by Bullet)
+--  `lo__'yp` at @(Alone _) `ho` this `ho_'yokl` Forth `ha` Apply `ha` print (by Cursor) `ho_` Await
+--  `lo__'yp` shaft `hv` by Future `ho` this `ho_'yokl` Forth `ha` Apply `ha` print (by Bullet) `ho_` Await
 
 active way title = intro @World Unit
  `yuk___` World `ha` styled `ha` Emphasize `hv` by On
  `yuk___` World `ha` styled `ha` Underline `hv` by On
- `yuk___` World (is @Title `hv` title `yokl` way `ha` Run `ha` output)
+ `yuk___` World (is @Title `hv` title `yokl` way `ha` Apply `ha` output)
  `yuk___` World `ha` styled `ha` Emphasize `hv` by Off
  `yuk___` World `ha` styled `ha` Underline `hv` by Off
 
 inactive way title = intro @World Unit
- `yuk___` World (is @Title `hv` title `yokl` way `ha` Run `ha` output)
+ `yuk___` World (is @Title `hv` title `yokl` way `ha` Apply `ha` output)
 
 indicate (These (This _) title) =
  output `ha` Caret `hv` by Space
@@ -91,7 +91,7 @@ indicate (These (That _) title) =
 render = is `hu_` output `ha` Caret `hv` by Newline
  `lo___'yp` (this `ha` at @Mode `lo` this `ha` at @Title) `ho_` indicate `ho_` Await
  `lo___'yp` is `hu_` output `ha` Caret `hv` by Newline `ho_` Await
- -- `lo___'yp` this `ho` this `ho` this `ho_'yokl` Run `ha` World `ha` excerpt `ho_'yu` Unit `ho_` Await
+ -- `lo___'yp` this `ho` this `ho` this `ho_'yokl` Apply `ha` World `ha` excerpt `ho_'yu` Unit `ho_` Await
 
 -- search :: ASCII `AR__` Command
 -- search = Heap `ha'he` Glyph

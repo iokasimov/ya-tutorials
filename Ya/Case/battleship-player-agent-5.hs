@@ -84,7 +84,7 @@ hit = auto `ha` Exist @Ship
  -- , if there is `Exist Ship` - we need to remove it from `Fleet` and skip
 review = intro @(Stops Result `JNT` State `T'I` Target `P` Fleet `P` Board Cell) Unit
  `yuk___` Old `ha` State `hv__` Event `hv` fetch `ha_` Scope `hv` at @Target
- `yok___` Run `ha__` Empty `hu_` intro `ha` Empty `hv` Unit `la` unstock
+ `yok___` Apply `ha__` Empty `hu_` intro `ha` Empty `hv` Unit `la` unstock
 
 -- 1. Try to find the same ship
 -- 2. If ship is found - remove from `Fleet`
@@ -103,7 +103,7 @@ unstock ship = intro @(Stops Result `JNT` State `T'I` Target `P` Fleet `P` Board
 exact sample item = Wrong `hu` by False `la` Valid `hu` by True `li_` sample `lu'q` unwrap item
 -- exact sample item = sample `lu'q` item `yi` dim `yiu` Unit `yi_` Boolean
 
-across sunk passed = that @(List Cell) `ha` pop `hv` sunk `yokl` Forth `ha` Run `ha` State `ha` Event `ha` push `he'he'hv___` passed
+across sunk passed = that @(List Cell) `ha` pop `hv` sunk `yokl` Forth `ha` Apply `ha` State `ha` Event `ha` push `he'he'hv___` passed
 
 -- Update
 -- Review
@@ -121,7 +121,7 @@ out = Empty `hu` by Continue
    `la` Miss `hu` by Continue
    `la` Mist `hu` by Continue
 
-inner ship = ship `yokl` Run `ho` Forth
+inner ship = ship `yokl` Apply `ho` Forth
  `ha__` Bang `ho` Nail `ho` Shot `ho` Valid
    `la` Sunk `ho` Nail `hu` Error Unit
    `la` Miss `ho` Shot `hu` Error Unit
@@ -137,7 +137,7 @@ chance = intro @(State `T` Sliding List Mark) Unit
  `yok___` Retry `ha` Perhaps `ha'he` not
 
 distribute fleet = fleet
- `yokl` Forth `ha` Run
+ `yokl` Forth `ha` Apply
  `ha__` intro @(State _) @(AR)
   `ho_'yok` New `ha` window'
   `ho_'yuk` New `hv` chance
@@ -165,32 +165,32 @@ fresh = to @List `hv` by enemy
  `lu'yp` Align `hv` (to @List `hv` guess)
  `yi` to @(Sliding List)
 
-title x = is @(List ASCII) x `yokl` Run `ha` World `ha` output
+title x = is @(List ASCII) x `yokl` Apply `ha` World `ha` output
 
-print x = x `yokl_` Run `ha` Run `ha___` is @Ship
- `ho__'yukl` Run `ha` Run `ha` output `ha` Glyph `ha` Symbol `ha` Punctuate `hv` by Hash
+print x = x `yokl_` Apply `ha` Apply `ha___` is @Ship
+ `ho__'yukl` Apply `ha` Apply `ha` output `ha` Glyph `ha` Symbol `ha` Punctuate `hv` by Hash
  `ho__'yuk` World `ha` output `ha` Caret `hv` by Space
 
 smash _ = intro @World Unit
- `yuk__` World `hv_` (is @(List ASCII) `hv` "You won, you defeated all ships!" `yokl` Forth `ha` Run `ha` output)
- -- `yuk__` World `hv_` (fleet `yokl'yokl` Forth `ha` Forth `ha` Run `ha` output `ha` (is `hu_`by (Glyph `ha` Symbol `ha` Punctuate `ha` Dollar)))
+ `yuk__` World `hv_` (is @(List ASCII) `hv` "You won, you defeated all ships!" `yokl` Forth `ha` Apply `ha` output)
+ -- `yuk__` World `hv_` (fleet `yokl'yokl` Forth `ha` Forth `ha` Apply `ha` output `ha` (is `hu_`by (Glyph `ha` Symbol `ha` Punctuate `ha` Dollar)))
  `yuk__` World `hv` intro @World Unit
 
-fault ship = is @(List ASCII) `hv` "One ship has not been found..." `yokl` Forth `ha` Run `ha` output
- `yuk____` World `hv____` ship `yukl` Forth `ha` Run `ha` output `ha` Glyph `ha` Symbol `ha` Punctuate `ha` Dollar `hv` Unit
- -- `yuk__` ship `yukl` Forth `ha` Run `ha` output `ha` Glyph `ha` Symbol `ha` Punctuate `ha` Dollar `hv` Unit
+fault ship = is @(List ASCII) `hv` "One ship has not been found..." `yokl` Forth `ha` Apply `ha` output
+ `yuk____` World `hv____` ship `yukl` Forth `ha` Apply `ha` output `ha` Glyph `ha` Symbol `ha` Punctuate `ha` Dollar `hv` Unit
+ -- `yuk__` ship `yukl` Forth `ha` Apply `ha` output `ha` Glyph `ha` Symbol `ha` Punctuate `ha` Dollar `hv` Unit
 
--- verge _ = is @(List ASCII) `hv` "Highly likely you lost this battle..." `yokl` Forth `ha` Run `ha` output
+-- verge _ = is @(List ASCII) `hv` "Highly likely you lost this battle..." `yokl` Forth `ha` Apply `ha` output
 
 main = process `he'he'hv__` by `hv` Empty @Ship `lu` fleet `lu` fresh
  -- `yi__` verge `ho'yu` Unit `la` smash `ho'yu` Unit `la` fault `ho'yu` Unit
  `yi__` smash `ho'yu` Unit `la` fault `ho'yu` Unit
   -- `la_` is @(Equipped _ _) `ho'he` that `ho` that @(Board Cell) `ho` to @List
    `la` is @(Along _ _) `ho'he` that `ho` this `ho` that @Fleet `ho` print `ho'yu` Unit where
-  -- `ho_'yokl'yokl` Forth `ha` Forth `ha` Run
+  -- `ho_'yokl'yokl` Forth `ha` Forth `ha` Apply
    -- `ha` (is `hu_`output `hv` by (Glyph `ha` Symbol `ha` Punctuate `ha` Dollar))
   
-  -- `ho_'yokl` Forth `ha` Run `ha` render `ho_'yu` Unit where
+  -- `ho_'yokl` Forth `ha` Apply `ha` render `ho_'yu` Unit where
 
 {-
  mark = intro `ha` Glyph `ha` Symbol `ha` Punctuate

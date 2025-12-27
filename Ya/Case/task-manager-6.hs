@@ -22,10 +22,10 @@ pattern Dimmed e = That e
 
 print hidden cursor (These status task) = intro @World `hv` Unit
  `yuk___` World `ha` styled `ha` Darkling `ha__` Off `la` On `hv__` hidden
- `yuk___` Run `hv____` hand cursor `yokl` Forth `ha` Run `ha` output
- `yuk___` Run `hv____` mark status `yokl` Forth `ha` Run `ha` output
- `yuk___` Run `hv____` is @Title task `yokl` Prior `ha` Run `ha` output
- `yuk___` Run `hv____` output `ha` Caret `hv` by Newline
+ `yuk___` Apply `hv____` hand cursor `yokl` Forth `ha` Apply `ha` output
+ `yuk___` Apply `hv____` mark status `yokl` Forth `ha` Apply `ha` output
+ `yuk___` Apply `hv____` is @Title task `yokl` Prior `ha` Apply `ha` output
+ `yuk___` Apply `hv____` output `ha` Caret `hv` by Newline
  `yuk___` World `ha` styled `ha` Darkling `hv` by Off
 
 hand cursor = is @Title `hv__` Bullet `hu` "   * " `la` Cursor `hu` "  -> " `li` cursor
@@ -46,9 +46,9 @@ start = to @(Scrolling List) `ha` Nonempty @List @Task
  `ha_` Next `ho` Item (by TODO `lu` title "Organize a boardgame session")
  `ha_` Last `ho` Item (by DONE `lu` title "Buy a water gun for Songkran")
 
-render dimmed = shaft @List `hv'he` Passed `ho` this `ho_'yokl` Prior `ha` Run `ha` print dimmed (by Bullet)
- `lo__'yp` Await `ha__` at @(Alone Task) @(Scrolling List Task) `ho` this `ho_'yokl` Forth `ha` Run `ha` print (by Reveal) (by Cursor)
- `lo__'yp` Await `ha__` shaft @List `hv` by Future `ho` this `ho_'yokl` Forth `ha` Run `ha` print dimmed (by Bullet)
+render dimmed = shaft @List `hv'he` Passed `ho` this `ho_'yokl` Prior `ha` Apply `ha` print dimmed (by Bullet)
+ `lo__'yp` Await `ha__` at @(Alone Task) @(Scrolling List Task) `ho` this `ho_'yokl` Forth `ha` Apply `ha` print (by Reveal) (by Cursor)
+ `lo__'yp` Await `ha__` shaft @List `hv` by Future `ho` this `ho_'yokl` Forth `ha` Apply `ha` print dimmed (by Bullet)
 
 press k f p = Maybe `hv___` k `hv` Unit `lu'q` p `yi` dim `yiu` f Unit
 
@@ -98,11 +98,11 @@ pattern Explore e = This e
 pattern Focused e = That e
 
 draft = intro @(World `JNT` State `T'I` Mode `P` Scrolling List Task) Unit
- `yuk____` Run `hv__` prepare `lu'yp` Await `hv` clear
+ `yuk____` Apply `hv__` prepare `lu'yp` Await `hv` clear
  `yuk____` Old `ha` State `hv__` Event `hv` auto
- `yok____` Run `ha'hd` render
+ `yok____` Apply `ha'hd` render
  `yuk____` Old `ha` State `hv__` Event `hv` auto `ha_` Scope `hv` at @Mode
- `yok____` Run `ha__` command
+ `yok____` Apply `ha__` command
  -- `yok____` New `ha` State `ha___` Event `ha_` shift `ho'ho` dim `ho__'ha` Scope `hv` at @Panel
  --   `la___` New `ha` State `ha___` Event `ha_` relay `ho'ho` dim `ho__'ha` Scope `hv` at @Panel `ho_` Scope `hv` at @(Alone _) `ho_'he` Scope `hv` at @Mark
  --   `la___` New `ha` State `ha___` Event `ha_` relay `ho'ho` dim `ho__'ha` Scope `hv` at @Mode

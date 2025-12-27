@@ -29,7 +29,7 @@ type Indent = List Unit
 indent level = level
  `yok_` Plane @List
  `ha__'yo` Glyph `ha` Symbol `ha` Punctuate
- `ha__` to @List @Twice
+ `ha__` Adapt @Twice `ho` to @List
  `ha__` Space `lo` Space
 
 main = start
@@ -38,7 +38,7 @@ main = start
    `lo_` is `hu` "TODO " `la` is `hu` "DONE "
    `ha_` at `ho` this @Status
   `ho__` to @List `ha` Merge @List @List
-   `lo_` at `ho` this @String `ho` to @List
+   `lo_` at `ho` this @String `ho` Adapt `ho` to @List
   `ho__` to @List `ha` Merge @List
   `ho__'yokl` Forth `ha` Await `ha` output
   `ho__'yuk` Await `ha` output `ha` Caret `hv'he` Newline

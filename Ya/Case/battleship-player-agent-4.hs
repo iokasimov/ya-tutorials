@@ -65,7 +65,7 @@ out = Empty `hu` by Continue
    `la` Mist `hu` by Continue
 
 inner ship = ship
- `yokl` Run `ho` Forth
+ `yokl` Apply `ho` Forth
  `ha__` Bang `ho` Nail `ho` Shot `ho` Valid
    `la` Sunk `ho` Nail `hu` Error Unit
    `la` Miss `ho` Shot `hu` Error Unit
@@ -81,7 +81,7 @@ chance = intro @(State `T` Sliding List Mark) Unit
  `yok___` Retry `ha` Stops `ha'he` not
 
 distribute fleet = fleet
- `yokl` Forth `ha` Run
+ `yokl` Forth `ha` Apply
  `ha__` intro @(State _) @(AR)
   `ho_'yok` New `ha` window'
   `ho_'yuk` New `hv` chance

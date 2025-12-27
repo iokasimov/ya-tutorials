@@ -22,9 +22,9 @@ print tasks = tasks
 
 line = is @(Cursor `P` (Status `P` String))
  `yio'yio'yoi` TODO `hu` "TODO " `la` DONE `hu` "DONE "
- `yio'yio` to @(Nonempty List) `ha` Merge @(Nonempty List) @(Nonempty List)
+ `yio'yio` to @(Nonempty List) `ha` Merge @(Nonempty List) @(Nonempty List) `ha` Clasp
  `yio'yoi` Focus `hu` "  -> " `la` Exist `hu` "   - "
- `yio` to @(Nonempty List) `ha` Merge @(Nonempty List) @(Nonempty List)
+ `yio` to @(Nonempty List) `ha` Merge @(Nonempty List) @(Nonempty List) `ha` Clasp
 
 start = empty @Maybe
  `lu` (is `hv'he` TODO `lu` "Apply to that new position") `yi` Exist
@@ -32,7 +32,7 @@ start = empty @Maybe
  `lu` (is `hv'he` DONE `lu` "Buy a water gun for Songkran") `yi` Exist
  `lu` (is `hv'he` TODO `lu` "Find a way to fix ligatures") `yi` Build
  `yi` is @(Nonempty List `T'I` Task)
- `ho` to @(Scrolling List)
+ `ho` Adapt `ho` to @(Scrolling List)
 
 type Command = Shifter List `S` Status
 
