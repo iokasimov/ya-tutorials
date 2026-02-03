@@ -8,17 +8,17 @@ pattern Mismatch x = This x
 pattern Missing x = That x
 
 deposit bracket = intro @(Stops Imbalance `JNT` State `T` List Shape) Unit
- `yuk__` New `ha` State `ha` Event `hv` push @List bracket
+ `yuk__` New `ha` State `ha` Event `hc` push @List bracket
 
 analyze bracket = intro @(Stops Imbalance `JNT` State `T` List Shape) Unit
- `yuk__` New `ha` State `ha` Event `hv` pop @List
- `yok__` Try `ha__` Empty `hu_` Error @Imbalance `ha` Missing `ha` Opened `hv` bracket `la` Valid @Shape
- `yok__` Try `ha__` Error @Imbalance `ha` Mismatch `la` Valid @Shape `ha__` compare bracket
+ `yuk__` New `ha` State `ha` Event `hc` pop @List
+ `yok__` Try `ha__` Empty `hu_` Error @Imbalance `ha` Missing `ha` Opened `hc` bracket `has_` Valid @Shape
+ `yok__` Try `ha__` Error @Imbalance `ha` Mismatch `has_` Valid @Shape `ha__` compare bracket
 
-compare closed opened = opened `lu'q` closed
+compare closed opened = opened `hjd'q` closed
 
 remnant = Empty `hu` Valid Unit
- `la` Error @Imbalance `ha` Missing `ha` Closed
+ `has_` Error @Imbalance `ha` Missing `ha` Closed
  `ha` this @Shape `ha` top @(Nonempty List)
 
 inspect code = code
@@ -26,11 +26,11 @@ inspect code = code
  `ha______` Maybe `ha` dim `ha` on @Glyph
  `ho___'yok` Maybe `ha` dim `ha` on @Symbol `ho` Check
  `ho___'yok` Maybe `ha` dim `ha` on @Bracket `ho` Check
- `ho___'yokl` Check `ha` Apply `ha__` deposit `la` analyze
- `he'he'hv_______` empty @List
- `yok_____` Check `ha` remnant `ha'he` that @(List Shape)
+ `ho___'yokl` Check `ha` Apply `ha__` deposit `has_` analyze
+ `st'st'hv_______` empty @List
+ `yok_____` Check `ha` remnant `ha'st` that @(List Shape)
 
 main = Error `hu` "[ERROR] Missing or mismatching bracket!"
  `la___` Valid `hu` "[VALID] Everything is seem to be good!" `ho` is @(List ASCII)
- `li___` inspect `ha` is @(Nonempty List ASCII) `hv` "fn main() { println('hello, <world>!') }"
+ `li___` inspect `ha` is @(Nonempty List ASCII) `hc` "fn main() { println('hello, <world>!') }"
  `yokl_` Forth `ha` Apply `ha` output

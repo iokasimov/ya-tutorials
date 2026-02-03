@@ -12,10 +12,10 @@ trap left right origin all =
 
 gap = is `ho'hd'hd` trap
 
-tap = is `ho'yokl` (Forth `ha` New `ha` State `ha` Event `ha_` gap `ho'ho` fetch) `ho'he'he'hv` 0 `ho` this
- `ha__` is `ho'yokl` (Forth `ha` New `ha` State `ha` Event `ha_` max `ho'ho` fetch) `ho'he'he'hv` 0 `ho` this
- `lo'yp` is `ho'yokl` (Prior `ha` New `ha` State `ha` Event `ha_` max `ho'ho` fetch) `ho'he'he'hv` 0 `ho` this `ho` Align
- `lo'yp` Align `ha` is @(Nonempty List Integer)
+tap = is `ho'yokl` (Forth `ha` New `ha` State `ha` Event `ha_` gap `ho'ho` fetch) `ho'st'st'hv` 0 `ho` this
+ `ha__` is `ho'yokl` (Forth `ha` New `ha` State `ha` Event `ha_` max `ho'ho` fetch) `ho'st'st'hv` 0 `ho` this
+ `hop_'yp` is `ho'yokl` (Prior `ha` New `ha` State `ha` Event `ha_` max `ho'ho` fetch) `ho'st'st'hv` 0 `ho` this `ho` Align
+ `hop_'yp` Align `ha` is @(Nonempty List Integer)
 
 main = tap `ha` Nonempty @List
  `ha` Item 2 `ha` Next
@@ -26,5 +26,5 @@ main = tap `ha` Nonempty @List
  `ha` Item 4 `ha` Next
  `ha` Item 7 `ha` Next
  `ha` Item 7 `ha` Next
- `ha` Item 6 `ha` Last `hv` Unit
+ `ha` Item 6 `ha` Last `hc` Unit
  `yokl_` Forth `ha` Apply `ha` print

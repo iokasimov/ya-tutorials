@@ -9,17 +9,17 @@ type Cursor = Unit `S` Unit
 
 display tasks = tasks
  `kyokl` Focus `ha` Forth `ha` Await
- `ha___'he` swap @(Cursor `P` String)
-  `ho__'yoi` Focus `hu` "  -> " `la` Exist `hu` "   - "
+ `ha___'st` swap @(Cursor `P` String)
+  `ho__'yoi` Focus `hu` "  -> " `has` Exist `hu` "   - "
   `ho__` to @(Nonempty List) `ha` Merge @(Nonempty List) @(Nonempty List) `ha` Clasp
   `ho__'yokl` Forth `ha` Apply `ha` output
-  `ho__'yuk` Await `ha` output `ha` Caret `hv'he` Newline
+  `ho__'yuk` Await `ha` output `ha` Caret `hc'st` Newline
 
-start = empty @Maybe
- `lu` "Apply to that new position" `yi` Exist
- `lu` "Organize a boardgame session" `yi` Exist
- `lu` "Buy a water gun for Songkran" `yi` Exist
- `lu` "Find a way to fix ligatures" `yi` Build
- `yi` Adapt @(Nonempty List) `ho` to @(Scrolling List)
+start = Adapt @(Nonempty List) `ho` to @(Scrolling List)
+ `ha___` Build `ha` (`hjd` "Apply to that new position")
+ `ha___` Exist `ha` (`hjd` "Organize a boardgame session")
+ `ha___` Exist `ha` (`hjd` "Buy a water gun for Songkran")
+ `ha___` Exist `ha` (`hjd` "Find a way to fix ligatures")
+ `hc___'st` Empty
 
-main = display `ha` that @(Scrolling List String) `hv__` shift `hv'he` Below `hv` start
+main = display `ha` that @(Scrolling List String) `hc__` shift `hc'st` Below `hc` start

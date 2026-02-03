@@ -6,22 +6,22 @@ import "ya-console" Ya.Console
 type Parenthesis = Unit `S` Unit
 
 deposit bracket = intro @(Halts `JNT` State `T` List _) Unit
- `yuk__` New `ha` State `ha` Event `hv` push @List bracket
+ `yuk__` New `ha` State `ha` Event `hc` push @List bracket
 
 analyze _______ = intro @(Halts `JNT` State `T` List _) Unit
- `yuk__` New `ha` State `ha` Event `hv` pop @List
- `yok__` Try `ha__` Empty `hu` unwrap Error `la` Exist `hu` unwrap Valid
+ `yuk__` New `ha` State `ha` Event `hc` pop @List
+ `yok__` Try `ha__` Empty `hu` super Error `has_` Exist `hu` super Valid
 
-remnant = Empty `hu` unwrap Valid
- `la` Nonempty @List `he'hu` unwrap Error
+remnant = Empty `hu` super Valid
+ `has_` Nonempty @List `st'hu` super Error
 
 example = Nonempty @List @Parenthesis
  `ha` Item (Opened Unit) `ha` Next
  `ha` Item (Closed Unit) `ha` Last
 
-main = unwrap example
- `yokl` Forth `ha` Apply `ha__` deposit `la` analyze `he'he'hv___` empty @List
- `yok_` Check `ha` remnant `ha'he` that @(List Unit)
+main = super example
+ `yokl` Forth `ha` Apply `ha__` deposit `has_` analyze `hc___` empty @List
+ `yok_` Check `ha` remnant `ha'st` that @(List Unit)
  `yi__` Error `hu` "[ERROR] We missed some bracket, oh my!" `ho` is @(List ASCII)
-   `la` Valid `hu` "[VALID] Everything is seem to be good."
+   `has_` Valid `hu` "[VALID] Everything is seem to be good."
  `yokl` Forth `ha` Apply `ha` output

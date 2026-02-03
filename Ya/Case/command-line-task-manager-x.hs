@@ -16,21 +16,21 @@ type Cursor = Unit `S` Unit
 
 print tasks = tasks
  `kyokl` Focus `ha` Forth `ha` Await
- `ha___'he` line `ha` swap
+ `ha___'st` line `ha` swap
   `ho__'yokl` Forth `ha` Apply `ha` output
-  `ho__'yuk` Await `ha` output `ha` Caret `hv'he` Newline
+  `ho__'yuk` Await `ha` output `ha` Caret `hc'st` Newline
 
 line = is @(Cursor `P` (Status `P` String))
- `yio'yio'yoi` TODO `hu` "TODO " `la` DONE `hu` "DONE "
+ `yio'yio'yoi` TODO `hu` "TODO " `has_` DONE `hu` "DONE "
  `yio'yio` to @(Nonempty List) `ha` Merge @(Nonempty List) @(Nonempty List)
- `yio'yoi` Focus `hu` "  -> " `la` Exist `hu` "   - "
+ `yio'yoi` Focus `hu` "  -> " `has_` Exist `hu` "   - "
  `yio` to @(Nonempty List) `ha` Merge @(Nonempty List) @(Nonempty List)
 
 start = empty @Maybe
- `lu` (is `hv'he` TODO `lu` "Apply to that new position") `yi` Exist
- `lu` (is `hv'he` TODO `lu` "Organize a boardgame session") `yi` Exist
- `lu` (is `hv'he` DONE `lu` "Buy a water gun for Songkran") `yi` Exist
- `lu` (is `hv'he` TODO `lu` "Find a way to fix ligatures") `yi` Build
+ `hjd` (is `hc'st` TODO `hjd` "Apply to that new position") `yi` Exist
+ `hjd` (is `hc'st` TODO `hjd` "Organize a boardgame session") `yi` Exist
+ `hjd` (is `hc'st` DONE `hjd` "Buy a water gun for Songkran") `yi` Exist
+ `hjd` (is `hc'st` TODO `hjd` "Find a way to fix ligatures") `yi` Build
  `yi` is @(Nonempty List `T'I` Task)
  `ho` to @(Scrolling List)
  `ho` to @(Scrolling Tree)
@@ -40,20 +40,20 @@ type Command = Shifter List `S` Status
 pattern Motion e = This e
 pattern Status e = That e
 
-match = exact `ha` Glyph `ha` Letter `ha` Lower `hv'he` J `ho'yo` (Motion `ha` Below)
- `lo'ys'la` exact `ha` Glyph `ha` Letter `ha` Lower `hv'he` K `ho'yo` (Motion `ha` Above) `ho` Check
- `lo'ys'la` exact `ha` Glyph `ha` Letter `ha` Upper `hv'he` T `ho'yo` (Status `ha` TODO) `ho` Check
- `lo'ys'la` exact `ha` Glyph `ha` Letter `ha` Upper `hv'he` D `ho'yo` (Status `ha` DONE) `ho` Check
+match = exact `ha` Glyph `ha` Letter `ha` Lower `hc'st` J `ho'yo` (Motion `ha` Below)
+ `hop_'ys'has` exact `ha` Glyph `ha` Letter `ha` Lower `hc'st` K `ho'yo` (Motion `ha` Above) `ho` Check
+ `hop_'ys'has` exact `ha` Glyph `ha` Letter `ha` Upper `hc'st` T `ho'yo` (Status `ha` TODO) `ho` Check
+ `hop_'ys'has` exact `ha` Glyph `ha` Letter `ha` Upper `hc'st` D `ho'yo` (Status `ha` DONE) `ho` Check
 
-process = intro @(World `JNT` Task `I'T` Scrolling Tree `I'T` State) `hv` Unit
- `yuk_____` Await `hv` clear `lu'yp` Await `hv` prepare
- -- `yuk_____` Lease `ha` State `ha` Event `hv` fetch
+process = intro @(World `JNT` Task `I'T` Scrolling Tree `I'T` State) `hc` Unit
+ `yuk_____` Await `hc` clear `hjd'yp` Await `hc` prepare
+ -- `yuk_____` Lease `ha` State `ha` Event `hc` fetch
  -- `yok_____` Await `ha` print
- -- `yuk_____` Await `hv` input `yok__` Retry `ha` match
+ -- `yuk_____` Await `hc` input `yok__` Retry `ha` match
  -- `yok_____` Apply `ha` State `ha___` Event `ha` shift `ho'hu` Unit
- --   `la____` Apply `ha` State `ha___` Event `ha` relay `ho'hu` Unit
- --   `ho__'ha` Scope `hv` at @(Alone Task)
- --    `ho_'he` Scope `hv` at @Status
- -- `yuk_____` Again `hv'he` Same
+ --   `has_____` Apply `ha` State `ha___` Event `ha` relay `ho'hu` Unit
+ --   `ho__'ha` Scope `hc` at @(Alone Task)
+ --    `ho_'st` Scope `hc` at @Status
+ -- `yuk_____` Again `hc'st` Same
 
-main = process `he'he'hv` start
+main = process `hc` start

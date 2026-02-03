@@ -37,53 +37,53 @@ fleet = Nonempty @List @Ship
  `ha_` Item `ha` Nonempty @List
   `ha` Item Unit `ha` Next
   `ha` Item Unit `ha` Next
-  `ha` Item Unit `ha` Last `hv` Unit
+  `ha` Item Unit `ha` Last `hc` Unit
  `ha_` Next
  `ha_` Item `ha` Nonempty @List
   `ha` Item Unit `ha` Next
-  `ha` Item Unit `ha` Last `hv` Unit
+  `ha` Item Unit `ha` Last `hc` Unit
  `ha_` Last `hv_` Unit
 
 window' ship = ship `yukl` Forth
  `ha` New `ha` State `ha` Event
- `ha` adjust `hv` (by Expand `lu` by Fore)
+ `ha` adjust `hc` (by Expand `hjd` by Fore)
 
 match = intro @(Halts `JNT` State Opponent) Unit
- `yuk____` State `ho` Old `hv__` Event `hv` pop @List `ha_` Scope `ha` shaft `hv` by Passed
+ `yuk____` State `ho` Old `hv__` Event `hc` pop @List `ha_` Scope `ha` shaft `hc` by Passed
  `yok____` Check `ha` out
- `yuk____` State `ho` Old `hv__` Event `hv` pop @List `ha_` Scope `ha` shaft `hv` by Future
+ `yuk____` State `ho` Old `hv__` Event `hc` pop @List `ha_` Scope `ha` shaft `hc` by Future
  `yok____` Check `ha` out
- `yuk____` State `ho` Old `hv__` Event `hv` fetch `ha_` Scope `hv` at @(List Mark)
+ `yuk____` State `ho` Old `hv__` Event `hc` fetch `ha_` Scope `hc` at @(List Mark)
  `yok____` Check `ha` inner
- `yok____` State `ho` New `ha__` Event `ha` put `ho_'ha` Scope `hv` at @(List Mark)
+ `yok____` State `ho` New `ha__` Event `ha` put `ho_'ha` Scope `hc` at @(List Mark)
 
 out = Empty `hu` by Continue
  `la__` Nail `hu` by Interrupt
-   `la` Miss `hu` by Continue
-   `la` Mist `hu` by Continue
+   `has_` Miss `hu` by Continue
+   `has_` Mist `hu` by Continue
 
 inner ship = ship
  `yokl` Apply `ho` Forth
  `ha__` Bang `ho` Nail `ho` Shot `ho` Valid
-   `la` Sunk `ho` Nail `hu` Error Unit
-   `la` Miss `ho` Shot `hu` Error Unit
-   `la` (+1) `ho` Mist `ho` Valid
+   `has_` Sunk `ho` Nail `hu` Error Unit
+   `has_` Miss `ho` Shot `hu` Error Unit
+   `has_` (+1) `ho` Mist `ho` Valid
 
 mount board = Same `hu` board
- `la` is `ho'he` that @Opponent
- `li` match `he'he'hv` board
+ `has_` is `ho'st` that @Opponent
+ `li` match `hc` board
 
 chance = intro @(State `T` Sliding List Mark) Unit
  `yuk___` State `ho` New `hv____` Event `hv_` auto `ho'ho` mount
- `yuk___` State `ho` New `hv____` Event `ha` shift `hv` by Future
- `yok___` Retry `ha` Perhaps `ha'he` not
+ `yuk___` State `ho` New `hv____` Event `ha` shift `hc` by Future
+ `yok___` Retry `ha` Perhaps `ha'st` not
 
 distribute fleet = fleet
  `yokl` Forth `ha` Apply
  `ha__` intro @(State _) @(AR)
   `ho_'yok` New `ha` window'
-  `ho_'yuk` New `hv` chance
-  `ho_'yuk` New `ha` State `ha` Event `ha` rewind `hv` by Back
+  `ho_'yuk` New `hc` chance
+  `ho_'yuk` New `ha` State `ha` Event `ha` rewind `hc` by Back
 
 known = Nonempty @List
  `ha` Item (Mist 0) `ha` Next
@@ -92,28 +92,28 @@ known = Nonempty @List
  `ha` Item (Mist 0) `ha` Next
  `ha` Item (Mist 0) `ha` Next
  `ha` Item (Mist 0) `ha` Next
- `ha` Item (Shot `ha` Nail `hv` by Bang) `ha` Next
- `ha` Item (Shot `ha` Nail `hv` by Bang) `ha` Next
+ `ha` Item (Shot `ha` Nail `hc` by Bang) `ha` Next
+ `ha` Item (Shot `ha` Nail `hc` by Bang) `ha` Next
  `ha` Item (Mist 0) `ha` Next
- `ha` Item (Mist 0) `ha` Last `hv` Unit
+ `ha` Item (Mist 0) `ha` Last `hc` Unit
 
-main = print `ha` that `hv_` distribute fleet `he'he'hv` to known where
+main = print `ha` that `hv_` distribute fleet `hc` to known where
 
- print = this `ha'he` at @(Shafted List Mark)
-      `ho_` (unwrap @AR `ha` this `ha'he` at @(Reverse List Mark))
+ print = this `ha'st` at @(Shafted List Mark)
+      `ho_` (super @AR `ha` this `ha'st` at @(Reverse List Mark))
       `ho_'yokl` Prior `ha` Apply `ha` render
-  `lo_'yp` this `ha'he` at @(List Mark)
+  `lo_'yp` this `ha'st` at @(List Mark)
       `ho_'yokl` Forth `ha` Apply `ha` render
       `ho_` Await
-  `lo_'yp` this `ha'he` at @(Shafted List Mark)
-      `ho_` unwrap @AR `ha` this `ha'he` at @(Forward List Mark)
+  `lo_'yp` this `ha'st` at @(Shafted List Mark)
+      `ho_` super @AR `ha` this `ha'st` at @(Forward List Mark)
       `ho_'yokl` Forth `ha` Apply `ha` render
       `ho_` Await
 
- render = Bang `hu` Plus `hv` Unit
-  `la__` Sunk `hu` Hash `hv` Unit
-  `la__` Miss `hu` Hyphen `hv` Unit
+ render = Bang `hu` Plus `hc` Unit
+  `la__` Sunk `hu` Hash `hc` Unit
+  `la__` Miss `hu` Hyphen `hc` Unit
   `ho___` intro @_ @(AR) `ha` Glyph `ha` Symbol `ha` Punctuate
   `la__` integer `ho_'yo` Glyph `ha` Digit
   `ho___'yokl` Forth `ha` Apply `ha` output
-  `ho___'yuk` World `ha` output `ha` Caret `hv` by Space
+  `ho___'yuk` World `ha` output `ha` Caret `hc` by Space

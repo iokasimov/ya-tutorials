@@ -1,26 +1,31 @@
 packages: .
 
-source-repository-package
- type: git
- location: https://github.com/iokasimov/ya.git
- tag: 4febb6cb9d2d0d12f1a5ce52717fcfa91c80756b
+ ./../ya/ya.cabal
+ ./../ya-world/ya-world.cabal
+ ./../ya-literal/ya-literal.cabal
+ ./../ya-console/ya-console.cabal
+
+-- source-repository-package
+ -- type: git
+ -- location: https://github.com/iokasimov/ya.git
+ -- tag: d55e5cfac18ee0e3d65be57b1ecbe175c2d9ab1f
 
 source-repository-package
  type: git
  location: https://github.com/iokasimov/ya-ascii.git
  tag: 0916b48dc231debeccaa8006823463237ddb0d84
 
-source-repository-package
- type: git
- location: https://github.com/iokasimov/ya-world.git
- tag: 139abf26a924940085bccee7106a97aaf23fd00a
+-- source-repository-package
+ -- type: git
+ -- location: https://github.com/iokasimov/ya-world.git
+ -- tag: 1b92c7cb2d379925e8fb381e4f00f32ff1cd0c11
 
-source-repository-package
- type: git
- location: https://github.com/iokasimov/ya-console.git
- tag: dbfc542456a78c29626b39f73c08bfb2a2da5aa7
+-- source-repository-package
+ -- type: git
+ -- location: https://github.com/iokasimov/ya-console.git
+ -- tag: 113206d6a7bd83cb32fb00649682d77adbed50ec
 
-source-repository-package
- type: git
- location: https://github.com/iokasimov/ya-literal.git
- tag: 5bae87454ffb16b4335c942a9ce7d4a29d62b97f
+-- source-repository-package
+ -- type: git
+ -- location: https://github.com/iokasimov/ya-literal.git
+ -- tag: 94ad346dc4c4bb3617aa9a6dfc772949adc685fa

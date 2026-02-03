@@ -30,15 +30,15 @@ destroyer = Nonempty @List
  `ha` Item Unit `ha` Last
 
 fleet = Nonempty @List @Ship
- `ha_` Item `hv` by submarine `ha` Next
- `ha_` Item `hv` by destroyer `ha` Last
+ `ha_` Item `hc` by submarine `ha` Next
+ `ha_` Item `hc` by destroyer `ha` Last
 
 title = is @(List ASCII) "SHIPS: " `yokl` Forth `ha` World `ha` output
 
 print x = x `yokl_` Forth `ha` World `ha___` is @Ship
- `ho__'yukl` Forth `ha` World `ha` output `ha` Glyph `ha` Symbol `ha` Punctuate `hv` by Hash
- `ho__'yuk` World `ha` output `ha` Caret `hv` by Space
+ `ho__'yukl` Forth `ha` World `ha` output `ha` Glyph `ha` Symbol `ha` Punctuate `hc` by Hash
+ `ho__'yuk` World `ha` output `ha` Caret `hc` by Space
 
 main = intro @World Unit
- `yuk__` World `hv` title
- `yuk__` World `ha` print `hv` by fleet
+ `yuk__` World `hc` title
+ `yuk__` World `ha` print `hc` by fleet

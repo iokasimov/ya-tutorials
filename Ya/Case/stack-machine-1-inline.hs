@@ -34,10 +34,10 @@ main = print "typechecked"
 --  `yi'yokl` way @Fore @(State `TI` List Int `JT` Halts)
 --   `haaaaaaa` intro @Int `hoo'yok` push @List `ho` State @(List Int)
 --    `yi'yi'rf` pop @List `hu` State `hu` try
---      `lu'dp` pop @List `hu` State `hu` try
+--      `hjd'dp` pop @List `hu` State `hu` try
 --      `yokl'a` push @List `ho` State @(List Int)
 --   ) `yiiiz'_yi` Empty @List ()
---   `huuuuuu` (unwrap @Arrow `hoooo`
+--   `huuuuuu` (super @Arrow `hoooo`
 --     but "[ERROR] No operands!" `ho` putStr
 --     `yi'rf` pass `haaa` but "[OK] Traced: " `ho` putStr)
 --     `cn'dp` (`yokl` Fore `haaa` show `ho` putStr `ho'yuk` putChar ' ')

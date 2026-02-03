@@ -37,35 +37,35 @@ fleet = Nonempty @List @Ship
  `ha_` Item `ha` Nonempty @List
   `ha` Item Unit `ha` Next
   `ha` Item Unit `ha` Next
-  `ha` Item Unit `ha` Last `hv` Unit
+  `ha` Item Unit `ha` Last `hc` Unit
  `ha_` Next
  `ha_` Item `ha` Nonempty @List
   `ha` Item Unit `ha` Next
-  `ha` Item Unit `ha` Last `hv` Unit
+  `ha` Item Unit `ha` Last `hc` Unit
  `ha_` Last `hv_` Unit
 
-window' ship = ship `yukl` Forth `ha` New `ha` State `ha` Event `ha` adjust `hv__'he` Expand `lo` Fore
+window' ship = ship `yukl` Forth `ha` New `ha` State `ha` Event `ha` adjust `hv__'st` Expand `lo` Fore
 
 match ship = ship
  `yokl` Apply `ho` Forth
  `ha__` Bang `ho` Nail `ho` Shot `ho` Valid
-   `la` Sunk `ho` Nail `ho` Shot `ho` Error
-   `la` Miss `ho` Shot `ho` Error
-   `la` (+1) `ho` Mist `ho` Valid
+   `has_` Sunk `ho` Nail `ho` Shot `ho` Error
+   `has_` Miss `ho` Shot `ho` Error
+   `has_` (+1) `ho` Mist `ho` Valid
 
-mount ship = Same `hu` ship `la` is `li` match ship
+mount ship = Same `hu` ship `has_` is `li` match ship
 
 chance = intro @(State `T'I` Sliding List Mark) Unit
- `yuk___` State `ho` New `hv__` Event `hv_` mount `ho` auto `ha_'he` Scope `hv` at @(List Mark)
- `yuk___` State `ho` New `hv__` Event `hv_` shift `hv` by Future
- `yok___` Retry `ha` Perhaps `ha'he` not
+ `yuk___` State `ho` New `hv__` Event `hv_` mount `ho` auto `ha_'st` Scope `hc` at @(List Mark)
+ `yuk___` State `ho` New `hv__` Event `hv_` shift `hc` by Future
+ `yok___` Retry `ha` Perhaps `ha'st` not
 
 distribute fleet = fleet
  `yokl` Forth `ha` Apply
  `ha__` intro @(State _) @(AR)
   `ho_'yok` New `ha` window'
-  `ho_'yuk` New `hv` chance
-  `ho_'yuk` New `ha` State `ha` Event `ha` rewind `hv` by Back
+  `ho_'yuk` New `hc` chance
+  `ho_'yuk` New `ha` State `ha` Event `ha` rewind `hc` by Back
 
 known = Nonempty @List
  `ha` Item (Mist 0) `ha` Next
@@ -77,23 +77,23 @@ known = Nonempty @List
  `ha` Item (Mist 0) `ha` Next
  `ha` Item (Mist 0) `ha` Next
  `ha` Item (Mist 0) `ha` Next
- `ha` Item (Mist 0) `ha` Last `hv` Unit
+ `ha` Item (Mist 0) `ha` Last `hc` Unit
 
-main = print `ha` that `hv_` distribute fleet `he'he'hv` to known where
+main = print `ha` that `hv_` distribute fleet `hc` to known where
 
- print = this `ha'he` at @(Shafted List Mark)
-      `ho_` (unwrap @AR `ha` this `ha'he` at @(Reverse List Mark))
+ print = this `ha'st` at @(Shafted List Mark)
+      `ho_` (super @AR `ha` this `ha'st` at @(Reverse List Mark))
       `ho_'yokl` Prior `ha` Apply `ha` render
-  `lo_'yp` this `ha'he` at @(List Mark)
+  `lo_'yp` this `ha'st` at @(List Mark)
       `ho_'yokl` Forth `ha` Apply `ha` render `ho_` Await
-  `lo_'yp` this `ha'he` at @(Shafted List Mark)
-      `ho_` unwrap @AR `ha` this `ha'he` at @(Forward List Mark)
+  `lo_'yp` this `ha'st` at @(Shafted List Mark)
+      `ho_` super @AR `ha` this `ha'st` at @(Forward List Mark)
       `ho_'yokl` Forth `ha` Apply `ha` render `ho_` Await
 
- render = Bang `hu` Plus `hv` Unit
-  `la__` Sunk `hu` Hash `hv` Unit
-  `la__` Miss `hu` Hyphen `hv` Unit
+ render = Bang `hu` Plus `hc` Unit
+  `la__` Sunk `hu` Hash `hc` Unit
+  `la__` Miss `hu` Hyphen `hc` Unit
   `ho___` intro @_ @(AR) `ha` Glyph `ha` Symbol `ha` Punctuate
   `la__` integer `ho_'yo` Glyph `ha` Digit
   `ho___'yokl` Forth `ha` Apply `ha` output
-  `ho___'yuk` World `ha` output `ha` Caret `hv` by Space
+  `ho___'yuk` World `ha` output `ha` Caret `hc` by Space
