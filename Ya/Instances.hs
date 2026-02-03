@@ -4,7 +4,7 @@ import Ya
 
 import "base" Data.Eq (Eq (..))
 import "base" Text.Show (Show (..))
-import "base" GHC.Num (Integer, (-), (+))
+import "base" GHC.Num (Integer)
 
 -- deriving instance Eq i => Eq (I i)
 -- deriving instance (Eq l, Eq r) => Eq (l `P` r)
