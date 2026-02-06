@@ -24,11 +24,11 @@ print tasks = tasks
 
 line = is @(Cursor `P` (Status `P` String))
  `yio'yio'yoi` TODO `hu` "TODO " `has` DONE `hu` "DONE "
- `yio'yio` to @(Nonempty List) `ha` Merge @(Nonempty List) @(Nonempty List) `ha` Clasp
+ `yio'yio` morph @(Nonempty List) `ha` Merge @(Nonempty List) @(Nonempty List) `ha` Clasp
  `yio'yoi` Focus `hu` "  -> " `has` Exist `hu` "   - "
- `yio` to @(Nonempty List) `ha` Merge @(Nonempty List) @(Nonempty List) `ha` Clasp
+ `yio` morph @(Nonempty List) `ha` Merge @(Nonempty List) @(Nonempty List) `ha` Clasp
 
-start = Adapt @(Nonempty List) `ho` to @(Scrolling List)
+start = Adapt @(Nonempty List) `ho` morph @(Scrolling List)
  `ha___` Build `ha` (`hjd_` TODO `st'hjd` "Apply to that new position")
  `ha___` Exist `ha` (`hjd_` TODO `st'hjd` "Organize a boardgame session")
  `ha___` Exist `ha` (`hjd_` DONE `st'hjd` "Buy a water gun for Songkran")
@@ -50,8 +50,8 @@ draft = Unit `ryu` Enter @(World `JNT` State Table)
  `yuk___` Await `hc` input `yok__` Retry `ha_'yok` Check `ha` match
  `yok___` Apply `ha` State `ha___` Event `ha` shift `ho'hu` Unit
   `has___` Apply `ha` State `ha___` Event `ha` relay `ho'hu` Unit
-   `ho__'ha` Scope `hc` at @(Alone Task)
-    `ho_'st` Scope `hc` at @Status
+   `ho__'ha` Scope `hc` field @(Alone Task)
+    `ho_'st` Scope `hc` field @Status
  `yuk___` Again `hc'st` Same
 
 main = draft `hc` start

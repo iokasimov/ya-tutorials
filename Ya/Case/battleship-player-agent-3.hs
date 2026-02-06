@@ -53,9 +53,9 @@ match = intro @(Halts `JNT` State Opponent) Unit
  `yok____` Check `ha` out
  `yuk____` State `ho` Old `hv__` Event `hc` pop @List `ha_` Scope `ha` shaft `hc` by Future
  `yok____` Check `ha` out
- `yuk____` State `ho` Old `hv__` Event `hc` fetch `ha_` Scope `hc` at @(List Mark)
+ `yuk____` State `ho` Old `hv__` Event `hc` fetch `ha_` Scope `hc` field @(List Mark)
  `yok____` Check `ha` inner
- `yok____` State `ho` New `ha__` Event `ha` put `ho_'ha` Scope `hc` at @(List Mark)
+ `yok____` State `ho` New `ha__` Event `ha` put `ho_'ha` Scope `hc` field @(List Mark)
 
 out = Empty `hu` by Continue
  `la__` Nail `hu` by Interrupt
@@ -99,14 +99,14 @@ known = Nonempty @List
 
 main = print `ha` that `hv_` distribute fleet `hc` to known where
 
- print = this `ha'st` at @(Shafted List Mark)
-      `ho_` (super @AR `ha` this `ha'st` at @(Reverse List Mark))
+ print = this `ha'st` field @(Shafted List Mark)
+      `ho_` (super @AR `ha` this `ha'st` field @(Reverse List Mark))
       `ho_'yokl` Prior `ha` Apply `ha` render
-  `lo_'yp` this `ha'st` at @(List Mark)
+  `lo_'yp` this `ha'st` field @(List Mark)
       `ho_'yokl` Forth `ha` Apply `ha` render
       `ho_` Await
-  `lo_'yp` this `ha'st` at @(Shafted List Mark)
-      `ho_` super @AR `ha` this `ha'st` at @(Forward List Mark)
+  `lo_'yp` this `ha'st` field @(Shafted List Mark)
+      `ho_` super @AR `ha` this `ha'st` field @(Forward List Mark)
       `ho_'yokl` Forth `ha` Apply `ha` render
       `ho_` Await
 

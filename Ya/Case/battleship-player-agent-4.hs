@@ -51,13 +51,13 @@ window' ship = ship `yukl` Forth
  `ha` adjust `hc` (by Expand `hjd` by Fore)
 
 match = intro @(Halts `JNT` State Opponent) Unit
- `yuk____` Lease `ha` State `hv___` Event `hc` pop @List `ha__` Scope `hc` at @(Shafted List Mark) `ho_` Scope `ha` rep `hc'st` Passed
+ `yuk____` Lease `ha` State `hv___` Event `hc` pop @List `ha__` Scope `hc` field @(Shafted List Mark) `ho_` Scope `ha` rep `hc'st` Passed
  `yok____` Check `ha` out
- `yuk____` Lease `ha` State `hv___` Event `hc` pop @List `ha__` Scope `hc` at @(Shafted List Mark) `ho_` Scope `ha` rep `hc'st` Future
+ `yuk____` Lease `ha` State `hv___` Event `hc` pop @List `ha__` Scope `hc` field @(Shafted List Mark) `ho_` Scope `ha` rep `hc'st` Future
  `yok____` Check `ha` out
- `yuk____` Lease `ha` State `hv___` Event `hc` fetch `ha_` Scope `hc` at @(List Mark)
+ `yuk____` Lease `ha` State `hv___` Event `hc` fetch `ha_` Scope `hc` field @(List Mark)
  `yok____` Check `ha` inner
- `yok____` Apply `ha` State `ha___` Event `ha` put `ho_'ha` Scope `hc` at @(List Mark)
+ `yok____` Apply `ha` State `ha___` Event `ha` put `ho_'ha` Scope `hc` field @(List Mark)
 
 out = Empty `hu` by Continue
  `la__` Nail `hu` by Interrupt
@@ -105,7 +105,7 @@ type Cell = Tile `P` Mark
 
 guess = that `hv_` distribute fleet `hc` to known
 
-main = to @List enemy `hjd'yp` Align `hc` to @List guess
+main = morph @List enemy `hjd'yp` Align `hc` morph @List guess
  `yokl` Forth `ha` World `ha` render where
 
  mark = intro `ha` Glyph `ha` Symbol `ha` Punctuate

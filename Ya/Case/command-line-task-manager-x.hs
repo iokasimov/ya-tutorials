@@ -22,9 +22,9 @@ print tasks = tasks
 
 line = is @(Cursor `P` (Status `P` String))
  `yio'yio'yoi` TODO `hu` "TODO " `has_` DONE `hu` "DONE "
- `yio'yio` to @(Nonempty List) `ha` Merge @(Nonempty List) @(Nonempty List)
+ `yio'yio` morph @(Nonempty List) `ha` Merge @(Nonempty List) @(Nonempty List)
  `yio'yoi` Focus `hu` "  -> " `has_` Exist `hu` "   - "
- `yio` to @(Nonempty List) `ha` Merge @(Nonempty List) @(Nonempty List)
+ `yio` morph @(Nonempty List) `ha` Merge @(Nonempty List) @(Nonempty List)
 
 start = empty @Maybe
  `hjd` (is `hc'st` TODO `hjd` "Apply to that new position") `yi` Exist
@@ -32,8 +32,8 @@ start = empty @Maybe
  `hjd` (is `hc'st` DONE `hjd` "Buy a water gun for Songkran") `yi` Exist
  `hjd` (is `hc'st` TODO `hjd` "Find a way to fix ligatures") `yi` Build
  `yi` is @(Nonempty List `T'I` Task)
- `ho` to @(Scrolling List)
- `ho` to @(Scrolling Tree)
+ `ho` morph @(Scrolling List)
+ `ho` morph @(Scrolling Tree)
 
 type Command = Shifter List `S` Status
 
@@ -52,8 +52,8 @@ process = intro @(World `JNT` Task `I'T` Scrolling Tree `I'T` State) `hc` Unit
  -- `yuk_____` Await `hc` input `yok__` Retry `ha` match
  -- `yok_____` Apply `ha` State `ha___` Event `ha` shift `ho'hu` Unit
  --   `has_____` Apply `ha` State `ha___` Event `ha` relay `ho'hu` Unit
- --   `ho__'ha` Scope `hc` at @(Alone Task)
- --    `ho_'st` Scope `hc` at @Status
+ --   `ho__'ha` Scope `hc` field @(Alone Task)
+ --    `ho_'st` Scope `hc` field @Status
  -- `yuk_____` Again `hc'st` Same
 
 main = process `hc` start

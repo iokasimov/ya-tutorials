@@ -1,14 +1,14 @@
 packages: .
-
--- ./../ya/ya.cabal
--- ./../ya-world/ya-world.cabal
--- ./../ya-literal/ya-literal.cabal
--- ./../ya-console/ya-console.cabal
+ -- ./../ya/ya.cabal
+ -- ./../ya-ascii/ya-ascii.cabal
+ -- ./../ya-world/ya-world.cabal
+ -- ./../ya-literal/ya-literal.cabal
+ -- ./../ya-console/ya-console.cabal
 
 source-repository-package
  type: git
  location: https://github.com/iokasimov/ya.git
- tag: a6d78a317d9de7bbbe721294df4cb34877966812
+ tag: 778eaa31fcfce1abfa300d69bb87a1fc11b6217a
 
 source-repository-package
  type: git

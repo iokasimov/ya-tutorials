@@ -5,7 +5,7 @@ import "ya-console" Ya.Console
 
 type String = Nonempty List ASCII
 
-start = Adapt @(Nonempty List) `ho` to @(Scrolling List)
+start = Adapt @(Nonempty List) `ho` morph @(Scrolling List)
  `ha___` Build `ha` (`hjd` "Apply to that new position")
  `ha___` Exist `ha` (`hjd` "Organize a boardgame session")
  `ha___` Exist `ha` (`hjd` "Buy a water gun for Songkran")

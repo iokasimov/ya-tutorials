@@ -56,7 +56,7 @@ match ship = ship
 mount ship = Same `hu` ship `has_` is `li` match ship
 
 chance = intro @(State `T'I` Sliding List Mark) Unit
- `yuk___` State `ho` New `hv__` Event `hv_` mount `ho` auto `ha_'st` Scope `hc` at @(List Mark)
+ `yuk___` State `ho` New `hv__` Event `hv_` mount `ho` auto `ha_'st` Scope `hc` field @(List Mark)
  `yuk___` State `ho` New `hv__` Event `hv_` shift `hc` by Future
  `yok___` Retry `ha` Perhaps `ha'st` not
 
@@ -81,13 +81,13 @@ known = Nonempty @List
 
 main = print `ha` that `hv_` distribute fleet `hc` to known where
 
- print = this `ha'st` at @(Shafted List Mark)
-      `ho_` (super @AR `ha` this `ha'st` at @(Reverse List Mark))
+ print = this `ha'st` field @(Shafted List Mark)
+      `ho_` (super @AR `ha` this `ha'st` field @(Reverse List Mark))
       `ho_'yokl` Prior `ha` Apply `ha` render
-  `lo_'yp` this `ha'st` at @(List Mark)
+  `lo_'yp` this `ha'st` field @(List Mark)
       `ho_'yokl` Forth `ha` Apply `ha` render `ho_` Await
-  `lo_'yp` this `ha'st` at @(Shafted List Mark)
-      `ho_` super @AR `ha` this `ha'st` at @(Forward List Mark)
+  `lo_'yp` this `ha'st` field @(Shafted List Mark)
+      `ho_` super @AR `ha` this `ha'st` field @(Forward List Mark)
       `ho_'yokl` Forth `ha` Apply `ha` render `ho_` Await
 
  render = Bang `hu` Plus `hc` Unit

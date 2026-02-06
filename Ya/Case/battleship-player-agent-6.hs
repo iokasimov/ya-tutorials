@@ -54,9 +54,9 @@ pattern Mist e = That e :: Mark
 type Board = Nonempty List `T'I` Mark `P` Tile
 
 sunk x = intro @(State `T` Scrolling List Ship `JNT` Stops `T` Shafted List Ship) Unit
- `yuk____` New `ha` State `hv__` Event `hv_` auto `ho'yoi` (`hjd'q` Same x) `ha_'st` Scope `hc` at @(Focused Ship)
+ `yuk____` New `ha` State `hv__` Event `hv_` auto `ho'yoi` (`hjd'q` Same x) `ha_'st` Scope `hc` field @(Focused Ship)
  `yok____` New `ha` State `hv__` Event `hv_` scroll `hc` by Next `ho'yoi` Continue
-  `lv____` New `ha` State `hv__` Event `hv_` auto `ho'yoi` Interrupt `ha_'st` Scope `hc` at @(Shafted List Ship)
+  `lv____` New `ha` State `hv__` Event `hv_` auto `ho'yoi` Interrupt `ha_'st` Scope `hc` field @(Shafted List Ship)
  -- TODO: can we replace it with `Retry`?
  `yok____` Try `ha` is @(Stops `T` Shafted List Ship `T` _)
  `yok____` Again `ha` Once
@@ -77,11 +77,11 @@ check tile = tile
    `has_` (+1) `ho` Mist `ho` Valid
 
 chance = intro @(State `T'I` Sliding List Mark) Unit
- `yuk___` State `ho` New `hv__` Event `hc` match `ha_'st` Scope `hc` at @(List Mark)
+ `yuk___` State `ho` New `hv__` Event `hc` match `ha_'st` Scope `hc` field @(List Mark)
  `yuk___` State `ho` New `hv__` Event `ha` slide `hc` by Future
  `yok___` Retry `ha` Perhaps `ha` not
 
-rewind = State `ha` Event `hv_` auto `ho'ho` to @(Sliding List) `ha` to @List
+rewind = State `ha` Event `hv_` auto `ho'ho` morph @(Sliding List) `ha` morph @List
 
 distribute fleet = fleet
  `yokl` Forth `ha` Apply
@@ -93,15 +93,15 @@ distribute fleet = fleet
 main = print `ha` that `hv_` distribute fleet `hc` to known
 
 -- TODO: replace this expression with a `Mapping` instance
-print = this `ha'st` at @(Shafted List Mark)
-      `ho_` (super @AR `ha` this `ha'st` at @(Reverse List Mark))
+print = this `ha'st` field @(Shafted List Mark)
+      `ho_` (super @AR `ha` this `ha'st` field @(Reverse List Mark))
       `ho_'yokl` Prior `ha` Apply `ha` render
  -- `lo_'yp` is `hu_` output `ha` Glyph `ha` Symbol `ha` Bracket `hc` Opened Square
- `lo_'yp` this `ha'st` at @(List Mark)
+ `lo_'yp` this `ha'st` field @(List Mark)
       `ho_'yokl` Forth `ha` Apply `ha` render
  -- `lo_'yp` is `hu_` output `ha` Glyph `ha` Symbol `ha` Bracket `hc` Closed Square
- `lo_'yp` this `ha'st` at @(Shafted List Mark)
-      `ho_` super @AR `ha` this `ha'st` at @(Forward List Mark)
+ `lo_'yp` this `ha'st` field @(Shafted List Mark)
+      `ho_` super @AR `ha` this `ha'st` field @(Forward List Mark)
       `ho_'yokl` Forth `ha` Apply `ha` render
 
 render = Miss `hu` Hyphen `hc` Unit
@@ -120,14 +120,14 @@ render = Miss `hu` Hyphen `hc` Unit
  -- `yokl_` is -- intro @(State `T'I` Sliding List Mark `JNT` World)
  -- `ho__'yukl` Forth `ha` New `ha` State `ha` Event `ha` adjust @List `hc` it Fore
   -- `ho__'yok` New `ha` extent
-  -- `ho__'yuk` (State `ho` New `hv__` Event `hc` fits `ha_'st` Scope `hc` at @(List Mark))
+  -- `ho__'yuk` (State `ho` New `hv__` Event `hc` fits `ha_'st` Scope `hc` field @(List Mark))
   -- `ho__'yuk` Apply `ha` title `hc` "Probs: "
   -- `ho__'yuk` Apply `hc` frame
   -- `ho__'yuk` New `hc` rewind
   -- `ho__'yuk` Apply `ha` title `hc` "Reset: "
   -- `ho__'yuk` Apply `hc` frame
  -- `ho__` Forth `ha` Apply
- -- `st'st'hv_____` to @(Sliding List) `hc` known where
+ -- `st'st'hv_____` morph @(Sliding List) `hc` known where
 
  -- `yuk_____` World (is @(List _) "Enemy: " `yokl` Forth `ha` Apply `ha` output)
  -- `yuk_____` World (enemy `yokl_` Forth `ha` Apply -- `ha` output
@@ -157,7 +157,7 @@ render = Miss `hu` Hyphen `hc` Unit
 
 -- main = print known
 
--- main = print `ha` this `ha`at @(List Mark) `ha` super @AR `ha`that `ha` adjust (Fore Unit) `ha` to @(Sliding List) `hc` known
+-- main = print `ha` this `ha`field @(List Mark) `ha` super @AR `ha`that `ha` adjust (Fore Unit) `ha` morph @(Sliding List) `hc` known
 
 -- main = enemy `yokl` Forth `ha` Apply `ha` print `ha_` These `st` Capacity 0
 

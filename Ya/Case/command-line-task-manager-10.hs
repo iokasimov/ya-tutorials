@@ -29,15 +29,15 @@ type Indent = List Unit
 indent level = level
  `yok_` Plane @List
  `ha__'yo` Glyph `ha` Symbol `ha` Punctuate
- `ha__` Adapt @Twice `ho` to @List
+ `ha__` Adapt @Twice `ho` morph @List
  `ha__` Space `hop` Space
 
 main = start
  `kyokl_` Depth `ha` Forth `ha` Await 
- `ha____` at `ho` this @Indent `ho` indent
-   `hop_` is `hu` "TODO " `has` is `hu` "DONE " `ha_` at `ho` this @Status
-   `ho__` to @List `ha` Merge @List @List
-   `hop_` at `ho` this @String `ho` Adapt `ho` to @List
-   `ho__` to @List `ha` Merge @List
+ `ha____` field `ho` this @Indent `ho` indent
+   `hop_` is `hu` "TODO " `has` is `hu` "DONE " `ha_` field `ho` this @Status
+   `ho__` morph @List `ha` Merge @List @List
+   `hop_` field `ho` this @String `ho` Adapt `ho` morph @List
+   `ho__` morph @List `ha` Merge @List
   `ho___'yokl` Forth `ha` Await `ha` output
   `ho___'yuk` Await `ha` output `ha` Caret `hc'st` Newline

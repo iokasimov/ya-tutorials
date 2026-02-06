@@ -24,11 +24,11 @@ block tasks = tasks
 
 line = is @(Cursor `P` (Status `P` String))
  `yio'yio'yoi` TODO `hu` "TODO " `has` DONE `hu` "DONE "
- `yio'yio` to @(Nonempty List) `ha` Merge @(Nonempty List) `ha` Clasp
+ `yio'yio` morph @(Nonempty List) `ha` Merge @(Nonempty List) `ha` Clasp
  `yio'yoi` Focus `hu` "  -> " `has` Exist `hu` "   - "
- `yio` to @(Nonempty List) `ha` Merge @(Nonempty List) `ha` Clasp
+ `yio` morph @(Nonempty List) `ha` Merge @(Nonempty List) `ha` Clasp
 
-start = Adapt @(Nonempty List) `ho` to @(Scrolling List)
+start = Adapt @(Nonempty List) `ho` morph @(Scrolling List)
  `ha___` Build `ha` (`hjd_` TODO `st'hjd` "Apply to that new position")
  `ha___` Exist `ha` (`hjd_` TODO `st'hjd` "Organize a boardgame session")
  `ha___` Exist `ha` (`hjd_` DONE `st'hjd` "Buy a water gun for Songkran")

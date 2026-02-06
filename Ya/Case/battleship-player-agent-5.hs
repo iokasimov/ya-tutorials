@@ -65,13 +65,13 @@ type Opponent = Board Mark
 -- + Empty: If there is `Exist Ship` - we need to remove it from `Fleet`, stop
 
 process = intro @(Stops Result `JNT` State `T'I` Target `P` Fleet `P` Board Cell) Unit
- `yuk__` State `ho` New `hv__` Event `ha` adjust `hc` (by Expand `hjd` by Right) `ha_` Scope `hc` at @(Board Cell)
+ `yuk__` State `ho` New `hv__` Event `ha` adjust `hc` (by Expand `hjd` by Right) `ha_` Scope `hc` field @(Board Cell)
  `yok__` Usual `ha__` Idle `hu` (review `yu` Unit) `has_` Ship `hu` (pursuit `yu` Unit) `ha__` Last `hu` by Idle `has_` this @Tile
  `yok__` Again `ha` Same
 
 -- + If there is `Ship` tile
 pursuit = intro @(Stops Result `JNT` State `T'I` Target `P` Fleet `P` Board Cell) Unit
- `yuk___` State `ho` New `hv___` Event `hv_` hit `ha_` Scope `hc` at @Target
+ `yuk___` State `ho` New `hv___` Event `hv_` hit `ha_` Scope `hc` field @Target
 
 -- If there is no bombing target - startize a new bombing target
 -- If there is a bombing target - add a tile to this bombing target
@@ -83,7 +83,7 @@ hit = auto `ha` Exist @Ship
  -- , if there is `Empty Ship` - do nothing
  -- , if there is `Exist Ship` - we need to remove it from `Fleet` and skip
 review = intro @(Stops Result `JNT` State `T'I` Target `P` Fleet `P` Board Cell) Unit
- `yuk___` Old `ha` State `hv__` Event `hc` fetch `ha_` Scope `hc` at @Target
+ `yuk___` Old `ha` State `hv__` Event `hc` fetch `ha_` Scope `hc` field @Target
  `yok___` Apply `ha__` Empty `hu_` intro `ha` Empty `hc` Unit `has_` unstock
 
 -- 1. Try to find the same ship
@@ -92,13 +92,13 @@ review = intro @(Stops Result `JNT` State `T'I` Target `P` Fleet `P` Board Cell)
 -- 4. If after removing ship fleet is empty - terminate with `Smash`
 -- 5. If fleet is not empty - just update `Fleet`
 unstock ship = intro @(Stops Result `JNT` State `T'I` Target `P` Fleet `P` Board Cell) Unit
- `yuk___` New `ha` State `hv__` Event `ha` spot `ha` (by Right `hjd`) `ha` Match `ha` exact `ha` Same `hc` ship `ha_` Scope `hc` at @Fleet `ho` Scope (as @(Scrolling List))
+ `yuk___` New `ha` State `hv__` Event `ha` spot `ha` (by Right `hjd`) `ha` Match `ha` exact `ha` Same `hc` ship `ha_` Scope `hc` field @Fleet `ho` Scope (as @(Scrolling List))
  `yok___` Try `ha__` Error `hu_` Reach @Result `ha` Fault `hc` ship `has_` Ok
- `yok___` Try `ha__` Empty `hu_` Reach @Result `hc` by Smash `has_` Ok `ha__` at @(Shafted List Ship) `st'ho` this `ho` to @List
- `yok___` New `ha` State `ha__` Event `ha` relay `ho_'ha` Scope `hc` at @Fleet
- `yuk___` New `ha` State `hv___` Event `ha` relay `hc` empty @List `ha__` Scope `hc` at @(Board Cell) `ho_` Scope `hc` at @(List Cell)
- `yok___` New `ha` State `ha___` Event `ha` across `ho__'ha` Scope `hc` at @(Board Cell) `ho_` Scope `hc` at @(Shafted List Mark) `ho_` Scope `ha` rep `hc'st` Passed
- `yuk___` New `ha` State `hv___` Event `ha` relay `hc` Empty Unit `ha__` Scope `hc` at @Target
+ `yok___` Try `ha__` Empty `hu_` Reach @Result `hc` by Smash `has_` Ok `ha__` field @(Shafted List Ship) `st'ho` this `ho` morph @List
+ `yok___` New `ha` State `ha__` Event `ha` relay `ho_'ha` Scope `hc` field @Fleet
+ `yuk___` New `ha` State `hv___` Event `ha` relay `hc` empty @List `ha__` Scope `hc` field @(Board Cell) `ho_` Scope `hc` field @(List Cell)
+ `yok___` New `ha` State `ha___` Event `ha` across `ho__'ha` Scope `hc` field @(Board Cell) `ho_` Scope `hc` field @(Shafted List Mark) `ho_` Scope `ha` rep `hc'st` Passed
+ `yuk___` New `ha` State `hv___` Event `ha` relay `hc` Empty Unit `ha__` Scope `hc` field @Target
 
 exact sample item = Wrong `hu` by False `has_` Valid `hu` by True `li_` sample `hjd'q` super item
 -- exact sample item = sample `hjd'q` item `yi` dim `yiu` Unit `yi_` Boolean
@@ -111,10 +111,10 @@ across sunk passed = that @(List Cell) `ha` pop `hc` sunk `yokl` Forth `ha` Appl
 window' ship = ship `yukl` Forth `ha` New `ha` State `ha` Event `ha` adjust `hv__'st` Expand `lo` Right
 
 match = intro @(Halts `JNT` State Opponent) Unit
- `yuk___` Lease `ha` State `hv__` Event `hc` pop `ha__` Scope `hc` at @(Shafted List Mark) `ho_` Scope `ha` rep `hc'st` Passed `yok___` Check `ha` out
- `yuk___` Lease `ha` State `hv__` Event `hc` pop `ha__` Scope `hc` at @(Shafted List Mark) `ho_` Scope `ha` rep `hc'st` Future `yok___` Check `ha` out
- `yuk___` Lease `ha` State `hv__` Event `hc` fetch `ha_` Scope `hc` at @(List Mark) `yok___` Check `ha` inner
- `yok___` Apply `ha` State `ha__` Event `ha` put `ho_'ha` Scope `hc` at @(List Mark)
+ `yuk___` Lease `ha` State `hv__` Event `hc` pop `ha__` Scope `hc` field @(Shafted List Mark) `ho_` Scope `ha` rep `hc'st` Passed `yok___` Check `ha` out
+ `yuk___` Lease `ha` State `hv__` Event `hc` pop `ha__` Scope `hc` field @(Shafted List Mark) `ho_` Scope `ha` rep `hc'st` Future `yok___` Check `ha` out
+ `yuk___` Lease `ha` State `hv__` Event `hc` fetch `ha_` Scope `hc` field @(List Mark) `yok___` Check `ha` inner
+ `yok___` Apply `ha` State `ha__` Event `ha` put `ho_'ha` Scope `hc` field @(List Mark)
 
 out = Empty `hu` by Continue
  `la__` Nail `hu` by Interrupt
@@ -161,9 +161,9 @@ guess = that @(Board Mark) `hv_` distribute fleet `hc` to known
 
 shoot (These x _) = x `hjd_` by Miss `lv` Nail `hc` by Bang `ho_` Shot `li` x
 
-fresh = to @List `hc` by enemy
- `hjd'yp` Align `hc` (to @List `hc` guess)
- `yi` to @(Sliding List)
+fresh = morph @List `hc` by enemy
+ `hjd'yp` Align `hc` (morph @List `hc` guess)
+ `yi` morph @(Sliding List)
 
 title x = is @(List ASCII) x `yokl` Apply `ha` World `ha` output
 
@@ -185,7 +185,7 @@ fault ship = is @(List ASCII) `hc` "One ship has not been found..." `yokl` Forth
 main = process `st'st'hv__` by `hc` Empty @Ship `hjd` fleet `hjd` fresh
  -- `yi__` verge `ho'yu` Unit `has_` smash `ho'yu` Unit `has_` fault `ho'yu` Unit
  `yi__` smash `ho'yu` Unit `has_` fault `ho'yu` Unit
-  -- `la_` is @(Equipped _ _) `ho'st` that `ho` that @(Board Cell) `ho` to @List
+  -- `la_` is @(Equipped _ _) `ho'st` that `ho` that @(Board Cell) `ho` morph @List
    `has_` is @(Along _ _) `ho'st` that `ho` this `ho` that @Fleet `ho` print `ho'yu` Unit where
   -- `ho_'yokl'yokl` Forth `ha` Forth `ha` Apply
    -- `ha` (is `hu_`output `hc` by (Glyph `ha` Symbol `ha` Punctuate `ha` Dollar))

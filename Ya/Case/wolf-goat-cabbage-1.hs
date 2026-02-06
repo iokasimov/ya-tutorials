@@ -39,7 +39,7 @@ meals (These item food) = food
 
 -- check :: Scrolling List Creature `AR__` Stops (Creature `P` Creature) Creature
 -- check = meals
---  `ha__` at @(Alone _) `ho` this @(Alone Creature) `ho'st` is
+--  `ha__` field @(Alone _) `ho` this @(Alone Creature) `ho'st` is
 --    `lo` other `ho` this @(Shafted List Creature)
 
 -- t a `AR____` into (from (tt a) (ttt o)) (t o)
@@ -47,8 +47,8 @@ meals (These item food) = food
 -- List a `AR____` into (from (Scrolling List a) (ttt o)) (t o)
 
 eaten (These item victim) = render item
- `hjd` " has eaten " `yi` Merge @List @List `ho` to @List
- `hjd` render victim `yi` Merge @List @List `ho` to @List
+ `hjd` " has eaten " `yi` Merge @List @List `ho` morph @List
+ `hjd` render victim `yi` Merge @List @List `ho` morph @List
 
 beach :: List Creature `AR__` List ASCII
 beach x = x `yok_` Apply `ha` that `ha` spaced `ha` render
@@ -61,12 +61,12 @@ spaced = push @List `hv_` Glyph `ha` Symbol `ha` Punctuate `hc'st` Space
 -- safe x = x `kyok` Range @List `ha` Check `ha` pick
 
 -- pick :: Scrolling List Creature `AR___` Stops `T'I` Creature `P` Creature `T'I` List Creature
--- pick x = to @List `ha` this @(Shafted List Creature) `ha` other `hc` x
+-- pick x = morph @List `ha` this @(Shafted List Creature) `ha` other `hc` x
 --  `kyokl` Range @List `ha` Forth `ha` Check `ha` check
 
 type Area = Twice `T'TT'I` List
 
--- bank = Scope `hc` at @(Area Creature)
+-- bank = Scope `hc` field @(Area Creature)
 --  `ho_'st` Scope `ha` rep @Twice `hc'st` This
 
 type Move = Maybe Creature
@@ -76,7 +76,7 @@ type Move = Maybe Creature
 --  `yuk__` Lease `ha` State `hv__` Event `hc` fetch `ha_` Scope `hc'st` bank
 --  `yok__` Apply `ha` safe
 
--- [1,2,3] `yi` Round `ho` to @Flux
+-- [1,2,3] `yi` Round `ho` morph @Flux
 
 -- main = draft `yo` render `yokl'yokl` Forth `ha` Forth `ha` Await `ha` output -- `ha` Glyph `ha` Letter
 
