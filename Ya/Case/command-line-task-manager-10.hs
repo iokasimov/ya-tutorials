@@ -13,16 +13,16 @@ pattern DONE e = That e
 type Task = Status `P` String
 
 start = that `ha` sub @Tree @List @Task
-    `hc___` TODO `st'hjd` "Apply to that new position" `ryu` Enter @Tree
- `hc______` push `ho'ho` that
-      `hc_` (DONE `st'hjd` "Find their HR on Linkedin and ask on it" `ryu` Enter @Tree)
+    `har__` TODO `st'hjd` "Apply to that new position" `ryu` Enter @Tree
+ `har_____` push `ho'ho` that
+      `har` (DONE `st'hjd` "Find their HR on Linkedin and ask on it" `ryu` Enter @Tree)
     `ha___` push `ho'ho` that
-     `hc__` that `ha` sub @Tree
-      `hc_` (TODO `st'hjd` "Check their open source contributions" `ryu` Enter @Tree)
-      `hc_` (TODO `st'hjd` "Bail if you see AI slop there" `ryu` Enter @Tree `ryu` Enter @List)
+     `har_` that `ha` sub @Tree
+      `har` (TODO `st'hjd` "Check their open source contributions" `ryu` Enter @Tree)
+      `har` (TODO `st'hjd` "Bail if you see AI slop there" `ryu` Enter @Tree `ryu` Enter @List)
     `ha___` push `ho'ho` that
-      `hc_` (TODO `st'hjd` "Try to find people who work there" `ryu` Enter @Tree)
-  `hc_____` empty @List
+      `har` (TODO `st'hjd` "Try to find people who work there" `ryu` Enter @Tree)
+  `har____` empty @List
 
 type Indent = List Unit
 
@@ -40,4 +40,4 @@ main = start
    `hop_` field `ho` this @String `ho` Adapt `ho` morph @List
    `ho__` morph @List `ha` Merge @List
   `ho___'yokl` Forth `ha` Await `ha` output
-  `ho___'yuk` Await `ha` output `ha` Caret `hc'st` Newline
+  `ho___'yuk` Await `ha` output `ha` Caret `har'st` Newline

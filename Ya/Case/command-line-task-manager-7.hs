@@ -20,7 +20,7 @@ block tasks = tasks
  `kyokl` Focus `ha` Forth `ha` Await
  `ha___'st` line `ha` swap
   `ho__'yokl` Forth `ha` Apply `ha` output
-  `ho__'yuk` Await `ha` output `ha` Caret `hc'st` Newline
+  `ho__'yuk` Await `ha` output `ha` Caret `har'st` Newline
 
 line = is @(Cursor `P` (Status `P` String))
  `yio'yio'yoi` TODO `hu` "TODO " `has` DONE `hu` "DONE "
@@ -33,17 +33,16 @@ start = Adapt @(Nonempty List) `ho` morph @(Scrolling List)
  `ha___` Exist `ha` (`hjd_` TODO `st'hjd` "Organize a boardgame session")
  `ha___` Exist `ha` (`hjd_` DONE `st'hjd` "Buy a water gun for Songkran")
  `ha___` Exist `ha` (`hjd_` TODO `st'hjd` "Find a way to fix ligatures")
- `hc___'st` Empty
+ `har__'st` Empty
 
-match = exact `ha` Glyph `ha` Letter `ha` Lower `hc'st` J `ho'yo` Below `ho` Enter
- `hop'ys'has` exact `ha` Glyph `ha` Letter `ha` Lower `hc'st` K `ho'yo` Above `ho` Check
+process = Unit `ryu` Enter @(World `JNT` State Table)
+ `yuk______` Await `har` clear `hjd_'yp` Await `har` prepare
+ `yuk______` Lease `ha_` State `ha` Event `har` fetch
+ `yok______` Await `ha_` block
+ `yuk______` Await `har` input `yok___` Retry
+  `ha___'yok` Check `ha_` morph `ha` Stump `ha` Stops `ha'hjd'eq` (Glyph `ha` Letter `ha` Lower `har'st` J) `ho'yu` (is `har'st` Below)
+   `hop_'ys'has` Check `ha_` morph `ha` Stump `ha` Stops `ha'hjd'eq` (Glyph `ha` Letter `ha` Lower `har'st` K) `ho'yu` (is `har'st` Above)
+ `yok______` Apply `ha_` State `ha` Event `ha` shift
+ `yuk______` Again `har'st` Same
 
-draft = Unit `ryu` Enter @(World `JNT` State Table)
- `yuk___` Await `hc` clear `hjd'yp` Await `hc` prepare
- `yuk___` Lease `ha` State `ha` Event `hc` fetch
- `yok___` Await `ha` block
- `yuk___` Await `hc` input `yok` Retry `ha_'yok` Check `ha` match
- `yok___` Apply `ha` State `ha` Event `ha` shift
- `yuk___` Again `hc'st` Same
-
-main = draft `hc` start
+main = process `bt'har` start

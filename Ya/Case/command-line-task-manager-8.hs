@@ -20,7 +20,7 @@ print tasks = tasks
  `kyokl` Focus `ha` Forth `ha` Await
  `ha___'st` line `ha` swap
   `ho__'yokl` Forth `ha` Apply `ha` output
-  `ho__'yuk` Await `ha` output `ha` Caret `hc'st` Newline
+  `ho__'yuk` Await `ha` output `ha` Caret `har'st` Newline
 
 line = is @(Cursor `P` (Status `P` String))
  `yio'yio'yoi` TODO `hu` "TODO " `has` DONE `hu` "DONE "
@@ -33,25 +33,25 @@ start = Adapt @(Nonempty List) `ho` morph @(Scrolling List)
  `ha___` Exist `ha` (`hjd_` TODO `st'hjd` "Organize a boardgame session")
  `ha___` Exist `ha` (`hjd_` DONE `st'hjd` "Buy a water gun for Songkran")
  `ha___` Exist `ha` (`hjd_` TODO `st'hjd` "Find a way to fix ligatures")
- `hc___'st` Empty
+ `har___'st` Empty
 
 pattern Motion e = This e
 pattern Status e = That e
 
-match = exact `ha` Glyph `ha` Letter `ha` Lower `hc'st` J `ho'yo` (Motion `ha` Below)
- `hop'ys'has` exact `ha` Glyph `ha` Letter `ha` Lower `hc'st` K `ho'yo` (Motion `ha` Above) `ho` Check
- `hop'ys'has` exact `ha` Glyph `ha` Letter `ha` Upper `hc'st` T `ho'yo` (Status `ha` TODO) `ho` Check
- `hop'ys'has` exact `ha` Glyph `ha` Letter `ha` Upper `hc'st` D `ho'yo` (Status `ha` DONE) `ho` Check
+match = Enter `ha_` morph `ha` Stump `ha` Stops `ha'hjd'eq` (Glyph `ha` Letter `ha` Lower `har'st` J) `ho'yu` (Motion `har'st` Below)
+ `hop_'ys'has` Check `ha_` morph `ha` Stump `ha` Stops `ha'hjd'eq` (Glyph `ha` Letter `ha` Lower `har'st` K) `ho'yu` (Motion `har'st` Above)
+ `hop_'ys'has` Check `ha_` morph `ha` Stump `ha` Stops `ha'hjd'eq` (Glyph `ha` Letter `ha` Upper `har'st` T) `ho'yu` (Status `har'st` TODO)
+ `hop_'ys'has` Check `ha_` morph `ha` Stump `ha` Stops `ha'hjd'eq` (Glyph `ha` Letter `ha` Upper `har'st` D) `ho'yu` (Status `har'st` DONE)
 
-draft = Unit `ryu` Enter @(World `JNT` State Table)
- `yuk___` Await `hc` clear `hjd'yp` Await `hc` prepare
- `yuk___` Lease `ha` State `ha` Event `hc` fetch
- `yok___` Await `ha` print
- `yuk___` Await `hc` input `yok__` Retry `ha_'yok` Check `ha` match
- `yok___` Apply `ha` State `ha___` Event `ha` shift `ho'hu` Unit
-  `has___` Apply `ha` State `ha___` Event `ha` relay `ho'hu` Unit
-   `ho__'ha` Scope `hc` field @(Alone Task)
-    `ho_'st` Scope `hc` field @Status
- `yuk___` Again `hc'st` Same
+process = Unit `ryu` Enter @(World `JNT` State Table)
+ `yuk____` Await `har` clear `hjd_'yp` Await `har` prepare
+ `yuk____` Lease `ha` State `ha` Event `har` fetch
+ `yok____` Await `ha` print
+ `yuk____` Await `har` input `yok__` Retry `ha_'yok` Check `ha` match
+ `yok____` Apply `ha` State `ha___` Event `ha` shift `ho'hu` Unit
+  `has____` Apply `ha` State `ha____` Event `ha` relay `ho'hu` Unit
+ `ho___'ha` Scope `har` field @(Alone Task)
+  `ho__'st` Scope `har` field @Status
+ `yuk____` Again `har'st` Same
 
-main = draft `hc` start
+main = process `bt'har` start

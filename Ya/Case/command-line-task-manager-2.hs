@@ -10,10 +10,10 @@ start = Adapt @(Nonempty List) `ho` morph @(Scrolling List)
  `ha___` Exist `ha` (`hjd` "Organize a boardgame session")
  `ha___` Exist `ha` (`hjd` "Buy a water gun for Songkran")
  `ha___` Exist `ha` (`hjd` "Find a way to fix ligatures")
- `hc___'st` Empty
+ `har__'st` Empty
 
 print = is @String
- `ho_'yokl` Forth `ha` Await `ha` output
- `ho_'yuk` Await `ha` output `ha` Caret `hc'st` Newline
+ `ho__'yokl` Forth `ha` Await `ha` output
+ `ho__'yuk` Await `ha` output `ha` Caret `har'st` Newline
 
 main = start `yokl` Forth `ha` Apply `ha` print

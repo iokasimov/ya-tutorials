@@ -16,33 +16,33 @@ type Task = Along String Status
 type Cursor = Unit `S` Unit
 
 start = that `ha` sub @Tree @List @Task
-    `hc___` TODO `st'hjd` "Apply to that new position" `ryu` Enter @Tree
- `hc______` push `ho'ho` that
-      `hc_` (DONE `st'hjd` "Find their HR on Linkedin and ask on it" `ryu` Enter @Tree)
+    `har__` TODO `st'hjd` "Apply to that new position" `ryu` Enter @Tree
+ `har_____` push `ho'ho` that
+      `har` (DONE `st'hjd` "Find their HR on Linkedin and ask on it" `ryu` Enter @Tree)
     `ha___` push `ho'ho` that
-     `hc__` that `ha` sub @Tree
-      `hc_` (TODO `st'hjd` "Check their open source contributions" `ryu` Enter @Tree)
-      `hc_` (TODO `st'hjd` "Bail if you see AI slop there" `ryu` Enter @Tree `ryu` Enter @List)
+     `har_` that `ha` sub @Tree
+      `har` (TODO `st'hjd` "Check their open source contributions" `ryu` Enter @Tree)
+      `har` (TODO `st'hjd` "Bail if you see AI slop there" `ryu` Enter @Tree `ryu` Enter @List)
     `ha___` push `ho'ho` that
-      `hc_` (IDEA `st'hjd` "Try to find people who work there" `ryu` Enter @Tree)
-  `hc_____` empty @List
+      `har` (IDEA `st'hjd` "Try to find people who work there" `ryu` Enter @Tree)
+  `har____` empty @List
 
 pattern Motion e = This e
 pattern Status e = That e
 
-match = exact `ha` Glyph `ha` Letter `ha` Lower `hc'st` J `ho'yo` (Motion `ha` Aside `ha` Below)
- `hop'ys'has` exact `ha` Glyph `ha` Letter `ha` Lower `hc'st` K `ho'yo` (Motion `ha` Aside `ha` Above) `ho` Check
- `hop'ys'has` exact `ha` Glyph `ha` Letter `ha` Lower `hc'st` L `ho'yo` (Motion `ha` Pitch `ha` Below) `ho` Check
- `hop'ys'has` exact `ha` Glyph `ha` Letter `ha` Lower `hc'st` H `ho'yo` (Motion `ha` Pitch `ha` Above) `ho` Check
- `hop'ys'has` exact `ha` Glyph `ha` Letter `ha` Upper `hc'st` T `ho'yo` (Status `ha` TODO) `ho` Check
- `hop'ys'has` exact `ha` Glyph `ha` Letter `ha` Upper `hc'st` D `ho'yo` (Status `ha` DONE) `ho` Check
+match = (exact `ha` Glyph `ha` Letter `ha` Lower `har'st` J) `ho'yo` (Motion `ha` Aside `ha` Below)
+ `hop'ys'has` (exact `ha` Glyph `ha` Letter `ha` Lower `har'st` K) `ho'yo` (Motion `ha` Aside `ha` Above) `ho` Check
+ `hop'ys'has` (exact `ha` Glyph `ha` Letter `ha` Lower `har'st` L) `ho'yo` (Motion `ha` Pitch `ha` Below) `ho` Check
+ `hop'ys'has` (exact `ha` Glyph `ha` Letter `ha` Lower `har'st` H) `ho'yo` (Motion `ha` Pitch `ha` Above) `ho` Check
+ `hop'ys'has` (exact `ha` Glyph `ha` Letter `ha` Upper `har'st` T) `ho'yo` (Status `ha` TODO) `ho` Check
+ `hop'ys'has` (exact `ha` Glyph `ha` Letter `ha` Upper `har'st` D) `ho'yo` (Status `ha` DONE) `ho` Check
 
 print tasks =
  Adapt @(Scrolling Tree) `ho` morph @Tree
- `hc___` tasks `kyo` Focus
+ `har__` tasks `kyo` Focus
  `kyokl` Depth `ha` Forth `ha` Await `ha___` line
   `ho__'yokl` Forth `ha` Apply `ha` output
-  `ho__'yuk` Await `ha` output `ha` Caret `hc'st` Newline
+  `ho__'yuk` Await `ha` output `ha` Caret `har'st` Newline
 
 type Indent = List Unit
 
@@ -54,23 +54,23 @@ indent level = level
 
 -- line :: Status `I'T` Along String `I'T` Along Cursor `I'T` Along Indent `AR__` List ASCII
 line = field `ho` this @Indent `ho` indent
-   `hop_` is `hu` " -> " `has` is `hu` "  - " `ha_` field `ho` this @Cursor
-  `ho__` morph @List `ha` Merge @List @List `ha` Clasp
-   `hop_` is `hu` "IDEA " `has` is `hu` "TODO " `has` is `hu` "DONE " `ha_` field `ho` this @Status
-  `ho__` morph @List `ha` Merge @List @List `ha` Clasp
-   `hop_` field `ho` this @String `ho` Adapt `ho` morph @List
-  `ho__` morph @List `ha` Merge @List `ha` Clasp
+  `hop_` is `hu` " -> " `has` is `hu` "  - " `ha_` field `ho` this @Cursor
+ `ho__` morph @List `ha` Merge @List @List `ha` Clasp
+  `hop_` is `hu` "IDEA " `has` is `hu` "TODO " `has` is `hu` "DONE " `ha_` field `ho` this @Status
+ `ho__` morph @List `ha` Merge @List @List `ha` Clasp
+  `hop_` field `ho` this @String `ho` Adapt `ho` morph @List
+ `ho__` morph @List `ha` Merge @List `ha` Clasp
 
-draft = Unit `_ryu` Enter @(World `JNT` Task `I'T` Scrolling Tree `I'T` State)
- `yuk____` Await `hc_` clear `hjd'yp` Await `hc` prepare
- `yuk____` Lease `ha_` State `ha` Event `hc_` fetch
+process = Unit `ryu` Enter @(World `JNT` State `T'I` Scrolling Tree `T` Task)
+ `yuk____` Await `har` clear `hjd_'yp` Await `har` prepare
+ `yuk____` Lease `ha_` State `ha` Event `har` fetch
  `yok____` Await `ha_` print
- `yuk____` Await `hc_` input `yok___` Retry `ha_'yok` Check `ha` match
+ `yuk____` Await `har` input `yok___` Retry `ha_'yok` Check `ha` match
  `yok____` Apply `ha_` State `ha____` Event `ha` shift `ho'hu` Unit
   `has____` Apply `ha_` State `ha____` Event `ha` relay `ho'hu` Unit 
- `ho___'ha` Scope `hc_` point @Tree `ha` Locus @Tree
-    `ho__` Scope `hc_` point @Alone `ha` Root @Tree
-    `ho__` Scope `hc_` field @Status
- `yuk____` Again `hc'st` Same
+ `ho___'ha` Scope `har` point @Tree `ha` Locus @Tree
+    `ho__` Scope `har` point @Alone `ha` Root @Tree
+    `ho__` Scope `har` field @Status @(Alone Task)
+ `yuk____` Again `har'st` Same
 
-main = draft `hc_` Adapt @Tree `ho` morph @(Scrolling Tree) `hc` start
+main = process `bt'har_` Adapt @Tree `ho` morph @(Scrolling Tree) `har` start
