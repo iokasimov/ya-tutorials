@@ -50,7 +50,7 @@ indent level = level
  `yok_` Plane @List
  `ha__'yo` Glyph `ha` Symbol `ha` Punctuate
  `ha__` Adapt @Twice `ho` morph @List
- `ha__` Space `hop` Space
+ `ha__` Space `hop'tb` Space
 
 -- line :: Status `I'T` Along String `I'T` Along Cursor `I'T` Along Indent `AR__` List ASCII
 line = field `ho` this @Indent `ho` indent
