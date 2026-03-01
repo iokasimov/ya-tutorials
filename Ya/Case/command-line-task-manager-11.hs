@@ -16,15 +16,15 @@ type Task = Along String Status
 type Cursor = Unit `S` Unit
 
 start = that `ha` sub @Tree @List @Task
-    `har__` TODO `st'hjd` "Apply to that new position" `ryu` Enter @Tree
+    `har__` TODO `st'hjd'tb` "Apply to that new position" `ryu` Enter @Tree
  `har_____` push `ho'ho` that
-      `har` (DONE `st'hjd` "Find their HR on Linkedin and ask on it" `ryu` Enter @Tree)
+      `har` (is @Task `har_` DONE `st'hjd'tb` "Find their HR on Linkedin and ask on it" `ryu` Enter @Tree)
     `ha___` push `ho'ho` that
      `har_` that `ha` sub @Tree
-      `har` (TODO `st'hjd` "Check their open source contributions" `ryu` Enter @Tree)
-      `har` (TODO `st'hjd` "Bail if you see AI slop there" `ryu` Enter @Tree `ryu` Enter @List)
+      `har` (is @Task `har_` TODO `st'hjd'tb` "Check their open source contributions" `ryu` Enter @Tree)
+      `har` (is @Task `har_` TODO `st'hjd'tb` "Bail if you see AI slop there" `ryu` Enter @Tree `ryu` Enter @List)
     `ha___` push `ho'ho` that
-      `har` (IDEA `st'hjd` "Try to find people who work there" `ryu` Enter @Tree)
+      `har` (is @Task `har_` IDEA `st'hjd'tb` "Try to find people who work there" `ryu` Enter @Tree)
   `har____` empty @List
 
 pattern Motion e = This e

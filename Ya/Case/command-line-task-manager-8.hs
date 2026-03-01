@@ -29,10 +29,10 @@ line = is @(Cursor `P` (Status `P` String))
  `yio` morph @(Nonempty List) `ha` Merge @(Nonempty List) @(Nonempty List) `ha` Clasp
 
 start = Adapt @(Nonempty List) `ho` morph @(Scrolling List)
- `ha___` Build `ha` (`hjd_` TODO `st'hjd` "Apply to that new position")
- `ha___` Exist `ha` (`hjd_` TODO `st'hjd` "Organize a boardgame session")
- `ha___` Exist `ha` (`hjd_` DONE `st'hjd` "Buy a water gun for Songkran")
- `ha___` Exist `ha` (`hjd_` TODO `st'hjd` "Find a way to fix ligatures")
+ `ha___` Build `ha` (`hjd__'tb` is @Task `har_` TODO `st'hjd` "Apply to that new position")
+ `ha___` Exist `ha` (`hjd__'tb` is @Task `har_` TODO `st'hjd` "Organize a boardgame session")
+ `ha___` Exist `ha` (`hjd__'tb` is @Task `har_` DONE `st'hjd` "Buy a water gun for Songkran")
+ `ha___` Exist `ha` (`hjd__'tb` is @Task `har_` TODO `st'hjd` "Find a way to fix ligatures")
  `har___'st` Empty
 
 pattern Motion e = This e

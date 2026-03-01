@@ -13,7 +13,7 @@ pattern DONE e = That e
 type Task = Status `P` String
 
 start = that `ha` sub @Tree @List @Task
-    `har__` TODO `st'hjd` "Apply to that new position" `ryu` Enter @Tree
+    `har__` TODO `st'hjd` "Apply to that new position" `ryu` Enter @Tree @Task
  `har_____` push `ho'ho` that
       `har` (DONE `st'hjd` "Find their HR on Linkedin and ask on it" `ryu` Enter @Tree)
     `ha___` push `ho'ho` that
@@ -21,7 +21,7 @@ start = that `ha` sub @Tree @List @Task
       `har` (TODO `st'hjd` "Check their open source contributions" `ryu` Enter @Tree)
       `har` (TODO `st'hjd` "Bail if you see AI slop there" `ryu` Enter @Tree `ryu` Enter @List)
     `ha___` push `ho'ho` that
-      `har` (TODO `st'hjd` "Try to find people who work there" `ryu` Enter @Tree)
+      `har` (TODO `st'hjd_` "Try to find people who work there" `ryu` Enter @Tree @Task)
   `har____` empty @List
 
 type Indent = List Unit
@@ -33,7 +33,7 @@ indent level = level
  `ha__` Space `hop` Space
 
 main = start
- `kyokl_` Depth `ha` Forth `ha` Await 
+ `kyokl_` Depth `ha` Forth `ha` Await
  `ha____` field `ho` this @Indent `ho` indent
    `hop_` is `hu` "TODO " `has` is `hu` "DONE " `ha_` field `ho` this @Status
    `ho__` morph @List `ha` Merge @List @List

@@ -93,8 +93,8 @@ review = intro @(Stops Result `JNT` State `T'I` Target `P` Fleet `P` Board Cell)
 -- 5. If fleet is not empty - just update `Fleet`
 unstock ship = intro @(Stops Result `JNT` State `T'I` Target `P` Fleet `P` Board Cell) Unit
  `yuk___` New `ha` State `hv__` Event `ha` spot `ha` (by Right `hjd`) `ha` Match `ha` exact `ha` Same `hc` ship `ha_` Scope `hc` field @Fleet `ho` Scope (as @(Scrolling List))
- `yok___` Try `ha__` Error `hu_` Reach @Result `ha` Fault `hc` ship `has_` Ok
- `yok___` Try `ha__` Empty `hu_` Reach @Result `hc` by Smash `has_` Ok `ha__` field @(Shafted List Ship) `st'ho` this `ho` morph @List
+ `yok___` Try `ha__` Error `hu_` Break @Result `ha` Fault `hc` ship `has_` Ok
+ `yok___` Try `ha__` Empty `hu_` Break @Result `hc` by Smash `has_` Ok `ha__` field @(Shafted List Ship) `st'ho` this `ho` morph @List
  `yok___` New `ha` State `ha__` Event `ha` relay `ho_'ha` Scope `hc` field @Fleet
  `yuk___` New `ha` State `hv___` Event `ha` relay `hc` empty @List `ha__` Scope `hc` field @(Board Cell) `ho_` Scope `hc` field @(List Cell)
  `yok___` New `ha` State `ha___` Event `ha` across `ho__'ha` Scope `hc` field @(Board Cell) `ho_` Scope `hc` field @(Shafted List Mark) `ho_` Scope `ha` rep `hc'st` Passed

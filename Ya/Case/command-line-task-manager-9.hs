@@ -5,11 +5,11 @@ import "ya-console" Ya.Console
 
 type String = Nonempty List ASCII
 
-start = that `ha` sub @Tree `har__` "Apply to that new position" `ryu` Enter @Tree
- `har____` push `ho'ho` that `har__` "Find their HR on Linkedin and ask on it" `ryu` Enter @Tree
-  `ha____` push `ho'ho` that `har__` "Bail if you see AI slop there" `ryu` Enter @Tree
-   `st'ryu` Enter @List `hjd_` "Check their open source contributions"
-  `ha____` push `ho'ho` that `har__` "Try to find people who work there" `ryu` Enter @Tree
+start = that `ha` sub @Tree `har__` "Apply to that new position" `ryu` Enter @Tree @String
+ `har____` push `ho'ho` that `har__` "Find their HR on Linkedin and ask on it" `ryu` Enter @Tree @String
+  `ha____` push `ho'ho` that `har__` "Bail if you see AI slop there" `ryu` Enter @Tree @String
+   `st'ryu` Enter @List `hjd_'tb` is @String `har` "Check their open source contributions"
+  `ha____` push `ho'ho` that `har__` "Try to find people who work there" `ryu` Enter @Tree @String
   `har___` empty @List
 
 -- example :: Tree `T'I` String

@@ -18,10 +18,10 @@ print tasks = is @Table `har` tasks
   `ho__'yuk` Await `ha` output `ha` Caret `har'st` Newline
 
 start = Adapt @(Nonempty List) `ho` morph @(Scrolling List)
- `ha___` Build `ha` (`hjd` "Apply to that new position")
- `ha___` Exist `ha` (`hjd` "Organize a boardgame session")
- `ha___` Exist `ha` (`hjd` "Buy a water gun for Songkran")
- `ha___` Exist `ha` (`hjd` "Find a way to fix ligatures")
+ `ha___` Build `ha` (`hjd'tb` "Apply to that new position")
+ `ha___` Exist `ha` (`hjd'tb` "Organize a boardgame session")
+ `ha___` Exist `ha` (`hjd'tb` "Buy a water gun for Songkran")
+ `ha___` Exist `ha` (`hjd'tb` "Find a way to fix ligatures")
  `har__'st` Empty
 
 
