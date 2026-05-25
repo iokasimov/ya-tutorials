@@ -10,12 +10,12 @@ type Cursor = Unit `S` Unit
 display tasks = tasks
  `kyokl` Focus `ha` Forth `ha` Await
  `ha___'st` swap @(Cursor `P` String)
-  `ho__'yoi` Focus `hu` "  -> " `has` Exist `hu` "   - "
-  `ho__` morph @(Nonempty List) `ha` Merge @(Nonempty List) @(Nonempty List) `ha` Clasp
+  `ho__'yoi` Focus `ho'ut` "  -> " `has` Exist `ho'ut` "   - "
+  `ho__` derive `ha` Merge @(Nonempty List) @(Nonempty List) @(Nonempty List) `ha` Clasp
   `ho__'yokl` Forth `ha` Apply `ha` output
-  `ho__'yuk` Await `ha` output `ha` Caret `har'st` Newline
+  `ho__'yok'ut` Await `ha` output `ha` Caret `har'st` Newline
 
-start = Adapt @(Nonempty List) `ho` morph @(Scrolling List)
+start = Adapt @(Nonempty List) `ho` derive
  `ha___` Build `ha` (`hjd_'tb` "Apply to that new position")
  `ha___` Exist `ha` (`hjd_'tb` "Organize a boardgame session")
  `ha___` Exist `ha` (`hjd_'tb` "Buy a water gun for Songkran")

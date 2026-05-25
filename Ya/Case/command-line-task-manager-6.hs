@@ -9,30 +9,34 @@ type Cursor = Unit `S` Unit
 
 type Table = Scrolling List String
 
-print tasks = is @Table `har` tasks
+display tasks = is @Table `har` tasks
  `kyokl` Focus `ha` Forth `ha` Await
- `ha___'st` swap @(Cursor `P` String)
-  `ho__'yoi` Focus `hu` "  -> " `has` Exist `hu` "   - "
-  `ho__` morph @(Nonempty List) `ha` Merge @(Nonempty List) @(Nonempty List) `ha` Clasp
+ `ha___` Focus `ho'ut` " --> "
+    `has` Exist `ho'ut` "   * "
+   `ha_` this `ha` field @Cursor
+   `hop_` this `ha` field @String
+  `ho__` derive `ha` Merge @(Nonempty List) @_ @(Nonempty List) `ha` Clasp
   `ho__'yokl` Forth `ha` Apply `ha` output
-  `ho__'yuk` Await `ha` output `ha` Caret `har'st` Newline
+  `ho__'yok'ut` Await `ha` output `ha` Caret `har'st` Newline
 
-start = Adapt @(Nonempty List) `ho` morph @(Scrolling List)
- `ha___` Build `ha` (`hjd'tb` "Apply to that new position")
- `ha___` Exist `ha` (`hjd'tb` "Organize a boardgame session")
- `ha___` Exist `ha` (`hjd'tb` "Buy a water gun for Songkran")
- `ha___` Exist `ha` (`hjd'tb` "Find a way to fix ligatures")
- `har__'st` Empty
+-- command = First `ha` Stops `ha__'hjd'eq` Glyph `ha` Letter `ha` Lower `har'st` K
 
+process = Pass `ryo` Enter @(World `JNT` State Table)
+ `yok_____'ut` Await `har` clear `hjd_'yp` Await `har` prepare
+ `yok_____'ut` Lease `ha` State `ha` Event `har` Pull @Table
+   `yok_____` Await `ha` display
+ `yok_____'ut` Await `har` input `yok____` Retry
+  `ha____'yok` First `ha` derive `ha` Stump `ha` Stops `ha__'hjd'eq` Glyph `ha` Letter `ha` Lower `ha'st` J
+     `hop__'ys` First `ha` derive `ha` Stump `ha` Stops `ha__'hjd'eq` Glyph `ha` Letter `ha` Lower `ha'st` K
+   `yok_____` Allot `ha` State `ha` Event
+    `ha_____` Ok `ho_'ut` happen `ha` Shift `ha` Forth @Maybe
+      `has___` Ok `ho_'ut` happen `ha` Shift `ha` Aback @Maybe
+ `yok_____'ut` Again `har'st` Pass
 
-draft = Unit `ryu` Enter @(World `JNT` State Table)
- `yuk______` Await `har` clear `hjd_'yp` Await `har` prepare
- `yuk______` Lease `ha_` State `ha` Event `har` fetch
- `yok______` Await `ha_` print
- `yuk______` Await `har` input `yok___` Retry
-  `ha___'yok` Check `ha_` morph `ha` Stump `ha` Stops `ha'hjd'eq` (Glyph `ha` Letter `ha` Lower `har'st` J) `ho'yu` (is `har'st` Below)
-   `hop_'ys'has` Check `ha_` morph `ha` Stump `ha` Stops `ha'hjd'eq` (Glyph `ha` Letter `ha` Lower `har'st` K) `ho'yu` (is `har'st` Above)
- `yok______` Apply `ha_` State `ha` Event `ha` shift
- `yuk______` Again `har'st` Same
+example = Only `ho'ut` "Apply to that new position"
+ `has______` Only `ho'ut` "Organize a boardgame session"
+  `has_____` Only `ho'ut` "Buy a water gun for Songkran"
+   `has____` Only `ho'ut` "Find a way to fix ligatures"
+ `_____ryo` derive @(Nonempty List) @(Scrolling List) `ha` Adapt
 
-main = draft `bt'har` start
+main = process `bt'har` example

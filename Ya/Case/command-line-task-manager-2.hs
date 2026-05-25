@@ -5,7 +5,7 @@ import "ya-console" Ya.Console
 
 type String = Nonempty List ASCII
 
-start = Adapt @(Nonempty List) `ho` morph @(Scrolling List)
+start = Adapt @(Nonempty List) @(Scrolling List) `ho` derive
  `ha___` Build `ha` (`hjd'tb` "Apply to that new position")
  `ha___` Exist `ha` (`hjd'tb` "Organize a boardgame session")
  `ha___` Exist `ha` (`hjd'tb` "Buy a water gun for Songkran")
@@ -14,6 +14,6 @@ start = Adapt @(Nonempty List) `ho` morph @(Scrolling List)
 
 print = is @String
  `ho__'yokl` Forth `ha` Await `ha` output
- `ho__'yuk` Await `ha` output `ha` Caret `har'st` Newline
+ `ho__'yok'ut` Await `ha` output `ha` Caret `har'st` Newline
 
 main = start `yokl` Forth `ha` Apply `ha` print

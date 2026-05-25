@@ -24,11 +24,11 @@ block tasks = tasks
 
 line = is @(Cursor `P` (Status `P` String))
  `yio'yio'yoi` TODO `hu` "TODO " `has` DONE `hu` "DONE "
- `yio'yio` morph @(Nonempty List) `ha` Merge @(Nonempty List) `ha` Clasp
+ `yio'yio` mutate `ha` Merge @(Nonempty List) `ha` Clasp
  `yio'yoi` Focus `hu` "  -> " `has` Exist `hu` "   - "
- `yio` morph @(Nonempty List) `ha` Merge @(Nonempty List) `ha` Clasp
+ `yio` mutate `ha` Merge @(Nonempty List) `ha` Clasp
 
-start = Adapt @(Nonempty List) `ho` morph @(Scrolling List)
+start = Adapt @(Nonempty List) `ho` mutate
  `ha___` Build `ha` (`hjd__'tb` is @Task `har_` TODO `st'hjd` "Apply to that new position")
  `ha___` Exist `ha` (`hjd__'tb` is @Task `har_` TODO `st'hjd` "Organize a boardgame session")
  `ha___` Exist `ha` (`hjd__'tb` is @Task `har_` DONE `st'hjd` "Buy a water gun for Songkran")
@@ -40,8 +40,8 @@ process = Unit `ryu` Enter @(World `JNT` State Table)
  `yuk______` Lease `ha_` State `ha` Event `har` fetch
  `yok______` Await `ha_` block
  `yuk______` Await `har` input `yok___` Retry
-  `ha___'yok` Check `ha_` morph `ha` Stump `ha` Stops `ha'hjd'eq` (Glyph `ha` Letter `ha` Lower `har'st` J) `ho'yu` (is `har'st` Below)
-   `hop_'ys'has` Check `ha_` morph `ha` Stump `ha` Stops `ha'hjd'eq` (Glyph `ha` Letter `ha` Lower `har'st` K) `ho'yu` (is `har'st` Above)
+  `ha___'yok` Check `ha_` mutate `ha` Stump `ha` Stops `ha'hjd'eq` (Glyph `ha` Letter `ha` Lower `har'st` J) `ho'yu` (is `har'st` Below)
+   `hop_'ys'has` Check `ha_` mutate `ha` Stump `ha` Stops `ha'hjd'eq` (Glyph `ha` Letter `ha` Lower `har'st` K) `ho'yu` (is `har'st` Above)
  `yok______` Apply `ha_` State `ha` Event `ha` shift
  `yuk______` Again `har'st` Same
 

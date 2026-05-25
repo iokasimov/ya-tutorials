@@ -38,39 +38,39 @@ match = (exact `ha` Glyph `ha` Letter `ha` Lower `har'st` J) `ho'yo` (Motion `ha
  `hop'ys'has` (exact `ha` Glyph `ha` Letter `ha` Upper `har'st` D) `ho'yo` (Status `ha` DONE) `ho` Check
 
 print tasks =
- Adapt @(Scrolling Tree) `ho` morph @Tree
+ Adapt @(Scrolling Tree) @Tree `ho` derive
  `har__` tasks `kyo` Focus
  `kyokl` Depth `ha` Forth `ha` Await `ha___` line
   `ho__'yokl` Forth `ha` Apply `ha` output
-  `ho__'yuk` Await `ha` output `ha` Caret `har'st` Newline
+  `ho__'yok'ut` Await `ha` output `ha` Caret `har'st` Newline
 
 type Indent = List Unit
 
 indent level = level
  `yok_` Plane @List
  `ha__'yo` Glyph `ha` Symbol `ha` Punctuate
- `ha__` Adapt @Twice `ho` morph @List
+ `ha__` Adapt @Twice `ho` derive
  `ha__` Space `hop'tb` Space
 
 -- line :: Status `I'T` Along String `I'T` Along Cursor `I'T` Along Indent `AR__` List ASCII
 line = field `ho` this @Indent `ho` indent
   `hop_` is `hu` " -> " `has` is `hu` "  - " `ha_` field `ho` this @Cursor
- `ho__` morph @List `ha` Merge @List @List `ha` Clasp
+ `ho__` derive `ha` Merge `ha` Clasp @List @List
   `hop_` is `hu` "IDEA " `has` is `hu` "TODO " `has` is `hu` "DONE " `ha_` field `ho` this @Status
- `ho__` morph @List `ha` Merge @List @List `ha` Clasp
-  `hop_` field `ho` this @String `ho` Adapt `ho` morph @List
- `ho__` morph @List `ha` Merge @List `ha` Clasp
+ `ho__` derive `ha` Merge `ha` Clasp @List @List
+  `hop_` field `ho` this @String `ho` Adapt `ho` derive
+ `ho__` derive `ha` Merge `ha` Clasp @List @List
 
 process = Unit `ryu` Enter @(World `JNT` State `T'I` Scrolling Tree `T` Task)
- `yuk____` Await `har` clear `hjd_'yp` Await `har` prepare
- `yuk____` Lease `ha_` State `ha` Event `har` fetch
+ `yok____'ut` Await `har` clear `hjd_'yp` Await `har` prepare
+ `yok____'ut` Lease `ha_` State `ha` Event `har` fetch
  `yok____` Await `ha_` print
- `yuk____` Await `har` input `yok___` Retry `ha_'yok` Check `ha` match
+ `yok____'ut` Await `har` input `yok___` Retry `ha_'yok` Check `ha` match
  `yok____` Apply `ha_` State `ha____` Event `ha` shift `ho'hu` Unit
   `has____` Apply `ha_` State `ha____` Event `ha` relay `ho'hu` Unit 
- `ho___'ha` Scope `har` point @Tree `ha` Locus @Tree
-    `ho__` Scope `har` point @Alone `ha` Root @Tree
+ `ho___'ha` Scope `har` within `ha` Locus @Tree
+    `ho__` Scope `har` within `ha` Root @Alone
     `ho__` Scope `har` field @Status @(Alone Task)
- `yuk____` Again `har'st` Same
+ `yok____'ut` Again `har'st` Same
 
-main = process `bt'har_` Adapt @Tree `ho` morph @(Scrolling Tree) `har` start
+main = process `bt'har_` Adapt @Tree `ho` derive `har` start

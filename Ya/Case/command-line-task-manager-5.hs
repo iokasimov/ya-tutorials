@@ -6,5 +6,5 @@ import "ya-console" Ya.Console
 type String = Nonempty List ASCII
 
 main = input `yok__` Retry
- `ha___'yok` Check `ha_` morph `ha` Stump `ha` Stops `ha'hjd'eq` (Glyph `ha` Letter `ha` Lower `har'st` J) `ho'yu` (is `har'st` Below)
-  `hop_'ys'has` Check `ha_` morph `ha` Stump `ha` Stops `ha'hjd'eq` (Glyph `ha` Letter `ha` Lower `har'st` K) `ho'yu` (is `har'st` Above)
+ `ha___'yok` Check `ha_` derive `ha` Stump `ha` Stops `ha'hjd'eq` (Glyph `ha` Letter `ha` Lower `har'st` J) -- `ho'yo'ut` (is `har'st` Below)
+  `hop_'ys'has` Check `ha_` derive `ha` Stump `ha` Stops `ha'hjd'eq` (Glyph `ha` Letter `ha` Lower `har'st` K) -- `ho'yo'ut` (is `har'st` Above)
