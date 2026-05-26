@@ -14,12 +14,12 @@ library
   ghc-options: -Wall -fno-warn-tabs -fno-strictness -fno-warn-orphans -fprint-potential-instances -Wno-missing-signatures -Wno-missing-pattern-synonym-signatures
   build-depends: ya, ya-world, ya-ascii, ya-literal, ya-console, base
 
-executable baby-steps
-  main-is: Ya/Case/baby-steps.hs
-  build-depends: ya, ya-world, ya-ascii, ya-literal, ya-console, ya-tutorials, base, ghc-prim
-  default-extensions: AllowAmbiguousTypes, DataKinds, ConstraintKinds, ExistentialQuantification, ExtendedDefaultRules, GADTs, QuantifiedConstraints, InstanceSigs, FlexibleContexts, FlexibleInstances, KindSignatures, LiberalTypeSynonyms, LambdaCase, FunctionalDependencies, MultiParamTypeClasses, NoImplicitPrelude, OverloadedStrings, OverloadedLists, PackageImports, PatternSynonyms, PolyKinds, RankNTypes, ViewPatterns, ScopedTypeVariables, StandaloneDeriving, TupleSections, TypeApplications, TypeFamilies, TypeFamilyDependencies, TypeOperators, DerivingVia
-  default-language: Haskell2010
-  ghc-options: -Wall -fno-warn-tabs -fno-strictness -fno-warn-orphans -fprint-potential-instances -Wno-missing-signatures -Wno-missing-pattern-synonym-signatures
+-- executable baby-steps
+  -- main-is: Ya/Case/baby-steps.hs
+  -- build-depends: ya, ya-world, ya-ascii, ya-literal, ya-console, ya-tutorials, base, ghc-prim
+  -- default-extensions: AllowAmbiguousTypes, DataKinds, ConstraintKinds, ExistentialQuantification, ExtendedDefaultRules, GADTs, QuantifiedConstraints, InstanceSigs, FlexibleContexts, FlexibleInstances, KindSignatures, LiberalTypeSynonyms, LambdaCase, FunctionalDependencies, MultiParamTypeClasses, NoImplicitPrelude, OverloadedStrings, OverloadedLists, PackageImports, PatternSynonyms, PolyKinds, RankNTypes, ViewPatterns, ScopedTypeVariables, StandaloneDeriving, TupleSections, TypeApplications, TypeFamilies, TypeFamilyDependencies, TypeOperators, DerivingVia
+  -- default-language: Haskell2010
+  -- ghc-options: -Wall -fno-warn-tabs -fno-strictness -fno-warn-orphans -fprint-potential-instances -Wno-missing-signatures -Wno-missing-pattern-synonym-signatures
 
 -- executable stack-machine-1
   -- main-is: Ya/Case/stack-machine-1.hs
@@ -161,12 +161,26 @@ executable baby-steps
   -- default-language: Haskell2010
   -- ghc-options: -Wall -fno-warn-tabs -fno-strictness -fno-warn-orphans -fprint-potential-instances -Wno-missing-signatures -Wno-missing-pattern-synonym-signatures
 
-executable command-line-task-manager-11
-  main-is: Ya/Case/command-line-task-manager-11.hs
-  build-depends: ya, ya-world, ya-ascii, ya-literal, ya-console, ya-tutorials, base, ghc-prim
-  default-extensions: AllowAmbiguousTypes, DataKinds, ConstraintKinds, ExistentialQuantification, GADTs, QuantifiedConstraints, InstanceSigs, FlexibleContexts, FlexibleInstances, KindSignatures, LiberalTypeSynonyms, LambdaCase, FunctionalDependencies, MultiParamTypeClasses, NoImplicitPrelude, OverloadedStrings, OverloadedLists, PackageImports, PatternSynonyms, PolyKinds, RankNTypes, ViewPatterns, ScopedTypeVariables, StandaloneDeriving, TupleSections, TypeApplications, TypeFamilies, TypeFamilyDependencies, TypeOperators, DerivingVia
-  default-language: Haskell2010
-  ghc-options: -Wall -fno-warn-tabs -fno-strictness -fno-warn-orphans -fprint-potential-instances -Wno-missing-signatures -Wno-missing-pattern-synonym-signatures
+-- executable command-line-task-manager-11
+  -- main-is: Ya/Case/command-line-task-manager-11.hs
+  -- build-depends: ya, ya-world, ya-ascii, ya-literal, ya-console, ya-tutorials, base, ghc-prim
+  -- default-extensions: AllowAmbiguousTypes, DataKinds, ConstraintKinds, ExistentialQuantification, GADTs, QuantifiedConstraints, InstanceSigs, FlexibleContexts, FlexibleInstances, KindSignatures, LiberalTypeSynonyms, LambdaCase, FunctionalDependencies, MultiParamTypeClasses, NoImplicitPrelude, OverloadedStrings, OverloadedLists, PackageImports, PatternSynonyms, PolyKinds, RankNTypes, ViewPatterns, ScopedTypeVariables, StandaloneDeriving, TupleSections, TypeApplications, TypeFamilies, TypeFamilyDependencies, TypeOperators, DerivingVia
+  -- default-language: Haskell2010
+  -- ghc-options: -Wall -fno-warn-tabs -fno-strictness -fno-warn-orphans -fprint-potential-instances -Wno-missing-signatures -Wno-missing-pattern-synonym-signatures
+
+-- executable command-line-task-manager-12
+  -- main-is: Ya/Case/command-line-task-manager-12.hs
+  -- build-depends: ya, ya-world, ya-ascii, ya-literal, ya-console, ya-tutorials, base, ghc-prim
+  -- default-extensions: AllowAmbiguousTypes, DataKinds, ConstraintKinds, ExistentialQuantification, GADTs, QuantifiedConstraints, InstanceSigs, FlexibleContexts, FlexibleInstances, KindSignatures, LiberalTypeSynonyms, LambdaCase, FunctionalDependencies, MultiParamTypeClasses, NoImplicitPrelude, OverloadedStrings, OverloadedLists, PackageImports, PatternSynonyms, PolyKinds, RankNTypes, ViewPatterns, ScopedTypeVariables, StandaloneDeriving, TupleSections, TypeApplications, TypeFamilies, TypeFamilyDependencies, TypeOperators, DerivingVia
+  -- default-language: Haskell2010
+  -- ghc-options: -Wall -fno-warn-tabs -fno-strictness -fno-warn-orphans -fprint-potential-instances -Wno-missing-signatures -Wno-missing-pattern-synonym-signatures
+
+-- executable command-line-task-manager-13
+--   main-is: Ya/Case/command-line-task-manager-13.hs
+--   build-depends: ya, ya-world, ya-ascii, ya-literal, ya-console, ya-tutorials, base, ghc-prim
+--   default-extensions: AllowAmbiguousTypes, DataKinds, ConstraintKinds, ExistentialQuantification, GADTs, QuantifiedConstraints, InstanceSigs, FlexibleContexts, FlexibleInstances, KindSignatures, LiberalTypeSynonyms, LambdaCase, FunctionalDependencies, MultiParamTypeClasses, NoImplicitPrelude, OverloadedStrings, OverloadedLists, PackageImports, PatternSynonyms, PolyKinds, RankNTypes, ViewPatterns, ScopedTypeVariables, StandaloneDeriving, TupleSections, TypeApplications, TypeFamilies, TypeFamilyDependencies, TypeOperators, DerivingVia
+--   default-language: Haskell2010
+--   ghc-options: -Wall -fno-warn-tabs -fno-strictness -fno-warn-orphans -fprint-potential-instances -Wno-missing-signatures -Wno-missing-pattern-synonym-signatures
 
 -- executable trapping-rain-water-1
 --   main-is: Ya/Case/trapping-rain-water-1.hs
@@ -188,3 +202,17 @@ executable command-line-task-manager-11
   -- default-extensions: AllowAmbiguousTypes, DataKinds, ConstraintKinds, ExistentialQuantification, ExtendedDefaultRules, GADTs, QuantifiedConstraints, InstanceSigs, FlexibleContexts, FlexibleInstances, KindSignatures, LiberalTypeSynonyms, LambdaCase, FunctionalDependencies, MultiParamTypeClasses, NoImplicitPrelude, OverloadedStrings, OverloadedLists, PackageImports, PatternSynonyms, PolyKinds, RankNTypes, ViewPatterns, ScopedTypeVariables, StandaloneDeriving, TupleSections, TypeApplications, TypeFamilies, TypeFamilyDependencies, TypeOperators, DerivingVia
   -- default-language: Haskell2010
   -- ghc-options: -Wall -fno-warn-tabs -fno-strictness -fno-warn-orphans -fprint-potential-instances -Wno-missing-signatures
+
+executable lambda-calculus-interpreter-1
+  main-is: Ya/Case/lambda-calculus-interpreter-1.hs
+  build-depends: ya, ya-world, ya-ascii, ya-literal, ya-console, ya-tutorials, base, ghc-prim
+  default-extensions: AllowAmbiguousTypes, DataKinds, ConstraintKinds, ExistentialQuantification, GADTs, QuantifiedConstraints, InstanceSigs, FlexibleContexts, FlexibleInstances, KindSignatures, LiberalTypeSynonyms, LambdaCase, FunctionalDependencies, MultiParamTypeClasses, NoImplicitPrelude, OverloadedStrings, OverloadedLists, PackageImports, PatternSynonyms, PolyKinds, RankNTypes, ViewPatterns, ScopedTypeVariables, StandaloneDeriving, TupleSections, TypeApplications, TypeFamilies, TypeFamilyDependencies, TypeOperators, DerivingVia
+  default-language: Haskell2010
+  ghc-options: -Wall -fno-warn-tabs -fno-strictness -fno-warn-orphans -fprint-potential-instances -Wno-missing-signatures -Wno-missing-pattern-synonym-signatures
+
+executable lambda-calculus-interpreter-2
+  main-is: Ya/Case/lambda-calculus-interpreter-2.hs
+  build-depends: ya, ya-world, ya-ascii, ya-literal, ya-console, ya-tutorials, base, ghc-prim
+  default-extensions: AllowAmbiguousTypes, DataKinds, ConstraintKinds, ExistentialQuantification, GADTs, QuantifiedConstraints, InstanceSigs, FlexibleContexts, FlexibleInstances, KindSignatures, LiberalTypeSynonyms, LambdaCase, FunctionalDependencies, MultiParamTypeClasses, NoImplicitPrelude, OverloadedStrings, OverloadedLists, PackageImports, PatternSynonyms, PolyKinds, RankNTypes, ViewPatterns, ScopedTypeVariables, StandaloneDeriving, TupleSections, TypeApplications, TypeFamilies, TypeFamilyDependencies, TypeOperators, DerivingVia
+  default-language: Haskell2010
+  ghc-options: -Wall -fno-warn-tabs -fno-strictness -fno-warn-orphans -fprint-potential-instances -Wno-missing-signatures -Wno-missing-pattern-synonym-signatures
