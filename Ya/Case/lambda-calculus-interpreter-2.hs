@@ -4,40 +4,31 @@ import "ya-ascii" Ya.ASCII
 import "ya-console" Ya.Console
 import "ya-literal" Ya.Literal
 
-type Identifier = Nonempty List Latin
+type Name = Latin
 
-type Manipulate = Along Identifier `S'T'I'TT'I` Twice
+type Term = Along Name `S'T'I'TT'I` Twice
 
-pattern Abstraction x = Clasp (This (Along x)) :: Manipulate Identifier
-pattern Application x = Clasp (That (Twice x)) :: Manipulate Identifier
+pattern Abstraction x xx = Clasp (This (Along (These xx x)))
+pattern Application x xx = Clasp (That (Twice (These x xx)))
 
-type Expression = Instruction Manipulate Identifier
+type Expression = Instruction Term Name
 
--- type Spate a o = Instruction (Along a) o
+abstraction'I = Impel `har_` Abstraction `har'st` X `har'st` Value `ha` X
 
--- x, xx :: Spate Identifier Unit
--- x = Instruction `ha` Value `har` Unit
--- xx = Instruction `ha` Impel `ha` Along `ha` (`hjd` "hello") `ha` Value `har` Unit
+application'I = Impel `har___` Application `har__` Impel `har_` Abstraction `har'st` X `har'st` Value `ha` X `har__'st` Value `ha` Y
 
--- TODO: we probably should start with a simple ASCII parser
--- TODO: try to use Representing object to initialise corrent/incorrect terms
+pattern ABS x xx = Impel (Abstraction x xx)
+pattern APP x xx = Impel (Application x xx)
+pattern VAR x = Value x
 
--- parse_1 :: Latin `AR___` Stops (Latin `P` Latin) Result -- Result
--- parse_1 = Stops `ha'hjd'eq` Y Unit `ho'yu` Yes Unit
+abs'I = ABS `har'st` X `har'st` VAR `ha` X
 
--- parse_1 :: List Latin `AR___` Stops (Latin `P` Latin) (List Result) -- Result
--- parse_1 = Stops `ha'hjd'eq` Y Unit `ho'yu` Yes Unit
+app'I = APP `har_` ABS `har'st` X `har'st` VAR `ha` X `har_'st` VAR `ha` Y
 
--- x :: List `C'AT` Maybe
--- x = Scope `har_` within `ha` Stock @Maybe
+-- TODO: Instruction Term `C'AR_____` Instruction Term `T'TT'I__` Term `S'T'I'TT'I` Alone
 
--- xx = within `ha` Front `ha` Stock @Alone `har` is @(List ASCII) "ABCD"
-
--- parse :: ASCII `AR___` Maybe Result
--- parse = 
-
-main = Pass `ryo` Enter @World
-  -- (Abstraction `har___` Y `ryo` Enter `hjd__` X `ryo` Enter :: Manipulate Identifier)
-   -- `yokl'yokl` Apply `ha` Apply `ha` Await `ha` output `ha` Glyph `ha` Letter `ha` Upper
- -- this `ha` within `ha` First @Maybe `har` is @(List ASCII) "ABCD" `yokl` Check `ha` Await `ha` output
- -- derive `ha` Stock @Maybe `har` is @(List ASCII) "ABCD" `yokl` Check `ha` Await `ha` output
+main = do
+ Instruction @Term abs'I `yokl` Forth `ha` Await `ha` output `ha` Glyph `ha` Letter `ha` Upper
+ output `ha` Caret `har'st` Tab
+ Instruction @Term app'I `yokl` Forth `ha` Await `ha` output `ha` Glyph `ha` Letter `ha` Upper
+ output `ha` Caret `har'st` Tab
