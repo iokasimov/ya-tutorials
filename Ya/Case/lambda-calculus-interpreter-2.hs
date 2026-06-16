@@ -25,8 +25,6 @@ abs'I = ABS `har'st` X `har'st` VAR `ha` X
 
 app'I = APP `har_` ABS `har'st` X `har'st` VAR `ha` X `har_'st` VAR `ha` Y
 
--- TODO: Instruction Term `C'AR_____` Instruction Term `T'TT'I__` Term `S'T'I'TT'I` Alone
-
 main = do
  Instruction @Term abs'I `yokl` Forth `ha` Await `ha` output `ha` Glyph `ha` Letter `ha` Upper
  output `ha` Caret `har'st` Tab

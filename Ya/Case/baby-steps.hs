@@ -2,12 +2,13 @@ import "ya" Ya
 import "ya-world" Ya.World
 import "ya-ascii" Ya.ASCII
 import "ya-console" Ya.Console
+import "ya-literal" Ya.Literal
 
 type String = List ASCII
 
 -- example = Exist `ha` is @String `hc` "Something!"
 --  -- `yi` is @(Optional (List ASCII))
---  -- `yo` is @String `hu` "Not something."
+--  -- `yo` is @String `ho'ut` "Not something."
 --  `yu` "Not something."
 --  `yuk` Check `hc` Exist @String "Is there something?"
 
@@ -16,8 +17,8 @@ type String = List ASCII
 
 x = is @(String `P` String) `har_` "Hello" `hjd` "World"
 
-exp1 = is @Unit `hu` "Hello" `ryio` is @(String `S` String)
-exp2 = is @Unit `hu` "World" `ryoi` is @(String `S` String)
+exp1 = is @Unit `ho'ut` "Hello" `ryio` is @(String `S` String)
+exp2 = is @Unit `ho'ut` "World" `ryoi` is @(String `S` String)
 
 -- xx :: _
 -- xx = basetype (Unit `ryu` Enter @(State Letter `JNT` Given String))
@@ -35,7 +36,33 @@ xxxx = Match @Letter (Lower `hu'st` False `has` Upper `hu'st` True) `yar` (Upper
 
 xxxxx = (har (Event `har` pop @List @ASCII) :: Scope (List ASCII) (Maybe ASCII))
 
+xxxxxx :: State (List Latin) (Maybe Latin)
+-- xxxxxx :: Latin `P` Latin
+xxxxxx = (R `ryo` Enter @(State `T'I` List Latin) `yuk` Apply `ha` State `ha` Event `har` pop) -- `bt'har__'st` [A Unit, B Unit, C Unit] -- `yior` Unit
+
 main = do
+ Exist `har'st` Glyph `ha` Letter `ha` Upper `ha` A `yokl` Check `ha` Await `ha` output
+ -- Exist `har'st` output `ha` Glyph `ha` Letter `ha` Upper `ha` A `yokl` Check `ha` Await
+ -- Exist `har'st` Await `ha` output `ha` Glyph `ha` Letter `ha` Upper `ha` A `yokl` Check
+
+ -- output `ha` Glyph `ha` Letter `ha` Upper `har____` R `ryo` Enter @(State Latin) `yuk` Apply `ha` State `ha` Event `ha` relay `har'st` B `bt'har__'st` A `yior` Unit
+ -- output `ha` Glyph `ha` Letter `ha` Upper `har____` R `ryo` Enter @(State Latin) `yuk` Lease `ha` State `ha` Event `ha` relay `har'st` B `bt'har__'st` A `yior` Unit
+
+ -- R `ryo` Enter @(State `T'I` List Latin) `yuk` Allot `ha` State `ha` Event `har` pop
+  -- `bt'har_` [A Unit, B Unit, C Unit] `yior` Unit
+    -- `yokl` Forth `ha` Await `ha` output `ha` Glyph `ha` Letter `ha` Upper
+
+ -- output `ha` Caret `har'st` Tab
+
+ -- R `ryo` Enter @(State `T'I` List Latin) `yuk` Lease `ha` State `ha` Event `har` pop
+  -- `bt'har_` [A Unit, B Unit, C Unit] `yior` Unit
+    -- `yokl` Forth `ha` Await `ha` output `ha` Glyph `ha` Letter `ha` Upper
+
+ -- R `ryo` Enter @(State Boolean) `yuk_` Lease `ha` State `ha` Event `har_'st` True `bt'has` False `bt'har_'st` False
+
+ -- Exist `har'st` A `yokl` Check `ha` Await `ha` output `ha` Glyph `ha` Letter `ha` Upper
+
+{-
  is @(Alone String) `har` Alone "Hi" `yor` Unit `yokl` Forth `ha` Await `ha` output
  "Hi" `_ryu` is @(Alone String) `yokl'yokl` Apply `ha` Forth `ha` Await `ha` output
  x `yoir` Unit `yokl` Forth `ha` Await `ha` output
@@ -61,7 +88,7 @@ main = do
  (Event `har` pop @List @ASCII)
   `hor` [Glyph `ha` Letter `ha` Upper `har'st` X]
   `yokl` Check `ha` Await `ha` output
-
+-}
  -- (Event `har` pop @List @ASCII)
   -- `har`
 
